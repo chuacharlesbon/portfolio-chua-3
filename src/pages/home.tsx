@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import { Appbar, Footer } from "@/components";
-import { Text } from "@/components/core/Text";
+import { Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
 
 export default function Home() {
