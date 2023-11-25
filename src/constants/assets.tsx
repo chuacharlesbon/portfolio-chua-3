@@ -1,3 +1,3 @@
 export const Images = {
-    favicon: "/my-logo.jpg"
+    favicon: "/assets/my-logo.jpg"
 }
