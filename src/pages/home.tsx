@@ -17,9 +17,9 @@ export default function Home() {
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
                 <meta property="og:image" content={Images.favicon} />
             </Head>
-            <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
+            <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
                 crossOrigin="anonymous"></Script>
-            <Script>
+            <Script id="g-ads-2">
                 (adsbygoogle = window.adsbygoogle || []).push({ });
             </Script>
             <main className="flex min-h-screen flex-col items-center justify-between p-24">
