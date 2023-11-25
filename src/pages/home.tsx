@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import Script from 'next/script';
+import 'tailwindcss/tailwind.css';
 import { Appbar, Footer } from "@/components";
+import { Div } from "@/components/core/Containers";
 import { Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
+import { RouteNames } from "@/constants/constants";
 
 export default function Home() {
     return (
@@ -22,9 +25,9 @@ export default function Home() {
             <Script id="g-ads-2">
                 (adsbygoogle = window.adsbygoogle || []).push({ });
             </Script>
-            <main className="flex min-h-screen flex-col items-center justify-between p-24">
-                <div>
-                    <Appbar />
+            <main className="flex min-h-screen w-full flex-col items-center justify-between">
+                <Div className='w-full px-4 desktop:px-0 desktop:w-1440px'>
+                    <Appbar location={RouteNames.home} />
                     <Text>Home Screen</Text>
                     <ins className="adsbygoogle"
                         style={{ display: "block" }}
@@ -34,7 +37,7 @@ export default function Home() {
                         data-full-width-responsive="true"
                     ></ins>
                     <Footer />
-                </div>
+                </Div>
             </main>
         </>
     )
