@@ -1,7 +1,11 @@
 import React, { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaSearch } from "react-icons/fa";
 import { Div, FlexRow, Spacer } from "@/components/core/Containers";
+import { ButtonClassA } from '@/components/core/Forms/Buttons';
+import { Text } from "@/components/core/TextElements";
+import { RawInput } from '@/components/core/Forms/RawInput';
 import { Images } from "@/constants/assets";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -67,6 +71,27 @@ const AppBarSlider: FC<any> = () => {
     );
 };
 
+export const SearchField: FC<any> = () => {
+    return (
+        <FlexRow className='w-full justify-between items-center'>
+            <Div>
+                <Text className='text-4xl font-bold'>
+                    Charles C.
+                </Text>
+                <Text>
+                    Full Stack Developer
+                </Text>
+            </Div>
+            <Div className='relative w-300px'>
+                <ButtonClassA className='absolute index-10 border border-purple-300 bg-purple-300 rounded-md px-4 py-2 right-0' onClick={() => { }}>
+                    <FaSearch className="text-2xl" />
+                </ButtonClassA>
+                <RawInput className="border border-purple-300 rounded-md px-4 py-2" placeholder='Search' type="search" />
+            </Div>
+        </FlexRow>
+    )
+}
+
 interface DataProps {
     location: string
     className?: string;
@@ -75,23 +100,42 @@ interface DataProps {
 }
 
 export const Appbar: FC<DataProps> = ({ location, className, children, ...props }) => (
-    <FlexRow className='justify-between items-center w-full p-8'>
-        <FlexRow>
+    <Div className='relative w-full'>
+        <FlexRow className='fixed index-10 justify-center items-center top-0 left-0 right-0 mx-auto w-48'>
             <Image
                 src={Images.favicon}
                 alt="C Logo"
-                className='rounded-full'
-                width={50}
-                height={50}
+                className='rounded-full border border-8 border-purple-1000'
+                width={100}
+                height={100}
             />
-            <Spacer className="w-20 h-4 hidden" />
-            <AppBarSlider />
         </FlexRow>
-        <FlexRow>
-            <Link className='px-4' href="/terms">Item 1</Link>
-            <Link className='px-4' href="/terms">Item 1</Link>
-            <Link className='px-4' href="/terms">Item 1</Link>
-            <Link className='px-4' href="/terms">Item 1</Link>
+        <FlexRow className='items-center justify-center w-full p-2 bg-purple-1000'>
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
+            <Spacer className="w-48 h-4" />
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
+            <ButtonClassA className='mx-2' onClick={() => { }}>
+                ITEM 1
+            </ButtonClassA>
         </FlexRow>
-    </FlexRow>
+    </Div>
 );

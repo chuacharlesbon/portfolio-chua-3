@@ -4,4 +4,5 @@ export const Images = {
     okada: "/assets/okada-logo.png",
     xffiliate: "/assets/xffiliate-logo.png",
     gpa: "/assets/gpa-logo.jpg",
+    cover: "/assets/side-view.jpg"
 }

@@ -78,6 +78,15 @@ const config: Config = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      purple: {
+        50: '#EDE7F6',
+        100: '#D1C4E9',
+        200: '#B39DDB',
+        300: '#9575CD',
+        400: '#7E57C2',
+        500: '#673AB7',
+        1000: '#B388FF',
+      },
       primary: {
         100: '#073763',
         200: '#073763B3',

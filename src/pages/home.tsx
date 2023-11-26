@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import 'tailwindcss/tailwind.css';
-import { Appbar, Footer } from "@/components";
-import { Div } from "@/components/core/Containers";
+import { Appbar, Footer, SearchField } from "@/components";
+import { Div, Spacer } from "@/components/core/Containers";
 import { Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
+import { CoverFeature } from '@/pages/HomeFeatures/cover';
 
 export default function Home() {
     return (
@@ -25,18 +26,22 @@ export default function Home() {
             <Script id="g-ads-2">
                 (adsbygoogle = window.adsbygoogle || []).push({ });
             </Script>
-            <main className="flex min-h-screen w-full flex-col items-center justify-between">
-                <Div className='w-full px-4 desktop:px-0 desktop:w-1440px'>
+            <main className="flex min-h-screen w-full flex-col items-center justify-between bg-purple-100">
+                <Div className='w-full'>
                     <Appbar location={RouteNames.home} />
-                    <Text>Home Screen</Text>
-                    <ins className="adsbygoogle"
-                        style={{ display: "block" }}
-                        data-ad-client="ca-pub-8167368561700289"
-                        data-ad-slot="7948594043"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"
-                    ></ins>
-                    <Footer />
+                    <Div className='w-full px-4 desktop:px-0 desktop:w-1440px'>
+                        <Spacer className="h-12" />
+                        {/* <SearchField /> */}
+                        <CoverFeature />
+                        <ins className="adsbygoogle"
+                            style={{ display: "block" }}
+                            data-ad-client="ca-pub-8167368561700289"
+                            data-ad-slot="7948594043"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"
+                        ></ins>
+                        <Footer />
+                    </Div>
                 </Div>
             </main>
         </>
