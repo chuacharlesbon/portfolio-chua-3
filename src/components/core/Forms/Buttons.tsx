@@ -11,7 +11,7 @@ export const ButtonClassA: FC<DataProps> = ({ className, children, onClick, isSu
 
     return (
             <button
-                className={`duration-700 shadow-lg border border-purple-300 rounded-md py-1 px-4 font-bold text-white hover:bg-white hover:text-purple-1000 ${className}`}
+                className={`duration-700 shadow-lg border border-primary-100 rounded-md py-1 px-4 font-bold text-white hover:bg-white hover:text-primary-100 ${className}`}
                 onClick={onClick}
                 type={isSubmit ? "submit" : "button"}
             >

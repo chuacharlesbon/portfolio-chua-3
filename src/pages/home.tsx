@@ -27,20 +27,24 @@ export default function Home() {
                 (adsbygoogle = window.adsbygoogle || []).push({ });
             </Script>
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-purple-100">
-                <Div className='w-full'>
+                <Div className='w-full min-h-screen'>
                     <Appbar location={RouteNames.home} />
-                    <Div className='w-full px-4 desktop:px-0 desktop:w-1440px'>
+                    <Div className='w-full min-h-screen px-4' style={{
+                        backgroundImage: `url(${Images.cover})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}>
                         <Spacer className="h-12" />
                         {/* <SearchField /> */}
-                        <CoverFeature />
-                        <ins className="adsbygoogle"
+                        {/* <CoverFeature /> */}
+                        {/* <ins className="adsbygoogle"
                             style={{ display: "block" }}
                             data-ad-client="ca-pub-8167368561700289"
                             data-ad-slot="7948594043"
                             data-ad-format="auto"
                             data-full-width-responsive="true"
-                        ></ins>
-                        <Footer />
+                        ></ins> */}
+                        {/* <Footer /> */}
                     </Div>
                 </Div>
             </main>
