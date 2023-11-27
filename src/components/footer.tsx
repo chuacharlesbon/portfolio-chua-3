@@ -151,7 +151,7 @@ export const Footer = () => (
                 </Div>
             </FlexRow>
             <Text className='font-bold text-center text-dark-100 mt-12 mb-4'>
-                Developer's Portfolio 2024
+                Developer&lsquo;s Portfolio 2024
             </Text>
         </Div>
     </Div>
