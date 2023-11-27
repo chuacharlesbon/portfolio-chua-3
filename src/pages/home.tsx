@@ -6,7 +6,6 @@ import { Div, Spacer } from "@/components/core/Containers";
 import { Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
-import { CoverFeature } from '@/pages/HomeFeatures/cover';
 
 export default function Home() {
     return (
