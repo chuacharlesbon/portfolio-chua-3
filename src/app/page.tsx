@@ -1,4 +1,6 @@
 'use client'
+import Head from 'next/head';
+import Script from 'next/script';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
@@ -51,18 +53,32 @@ export default function Home() {
     }, 2000)
   }, []);
 
-  return <main className="flex min-h-screen flex-col items-center justify-center p-24">
-    <Div className=''>{/* border border-primary-100 rounded-md p-2 */}
-      <Image
-        src={Images.favicon}
-        alt="C Logo"
-        className='rounded-full'
-        width={75}
-        height={75}
-      />
-      <LoadingDots />
-    </Div>
-  </main>
+  return (
+    <>
+      <Head>
+        <title>Charles C.</title>
+        <link rel="icon" href={Images.favicon} />
+        <meta name="title" content="Charles C." />
+        <meta name="description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
+        <meta name="keywords" content="capstone, developer, portfolio, full stack, developer, software engineer, charles bon chua, react, next, flutter, website, mobile app, web app, okada, xffiliate, cebuana, alajera, guam power, timberland"></meta>
+        <meta property="og:title" content="Charles C." />
+        <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
+        <meta property="og:image" content={Images.favicon} />
+      </Head>
+      <main className="flex min-h-screen flex-col items-center justify-center p-24">
+        <Div className=''>{/* border border-primary-100 rounded-md p-2 */}
+          <Image
+            src={Images.favicon}
+            alt="C Logo"
+            className='rounded-full'
+            width={75}
+            height={75}
+          />
+          <LoadingDots />
+        </Div>
+      </main>
+    </>
+  )
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
