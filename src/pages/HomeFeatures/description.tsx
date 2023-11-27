@@ -24,7 +24,7 @@ export const Description = () => (
             <Div className="px-4 py-8 bg-white bg-opacity-40 hover:bg-opacity-80 laptop:w-900px duration-700 rounded-lg">
                 <Text className="text-center text-primary-100 italic">
                     <Span className="text-4xl text-primary-100">
-                    &ldquo;
+                    "
                     </Span>
                     A competent and goal-oriented person who demonstrates the capacity to handle multiple responsibilities with diligence and a positive outlook.
                 </Text>
@@ -32,7 +32,7 @@ export const Description = () => (
                 <Text className="text-center text-primary-100 italic">
                     Apply my expertise and experience in a new professional setting and apply my abilities to help the company reach its development objective.
                     <Span className="text-4xl text-primary-100">
-                    &rdquo;
+                    "
                     </Span>
                 </Text>
                 <Spacer className="h-8 w-8" />
