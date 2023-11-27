@@ -1,10 +1,11 @@
+import React, { FC } from 'react';
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Div, FlexRow, Spacer } from "@/components/core/Containers";
 import { Text } from "@/components/core/TextElements";
 import { ButtonClassA } from "@/components/core/Forms/Buttons";
 
-export const Description = () => (
+export const Description: FC<any> = () => (
     <Div>
         <Spacer className="h-20 w-20" />
         <motion.div
