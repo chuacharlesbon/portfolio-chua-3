@@ -2,15 +2,67 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import { motion } from "framer-motion";
+import { Div } from "@/components/core/Containers";
+import { Images } from '@/constants/assets';
 
 export default function Home() {
   const router = useRouter();
+  const Dot = motion.span;
+  const LoadingDots = () => {
+    return (
+      <Div className="loading-dots mt-2">
+        <Dot
+          animate={{
+            scale: [0.5, 1.2, 0.5],
+            transition: {
+              duration: 0.5,
+              ease: "easeInOut",
+              repeatDelay: 0.5,
+            },
+          }}
+        />
+        <Dot
+          animate={{
+            scale: [0.5, 1.2, 0.5],
+            transition: {
+              duration: 0.5,
+              ease: "easeInOut",
+              repeatDelay: 0.33,
+            },
+          }}
+        />
+        <Dot
+          animate={{
+            scale: [0.5, 1.2, 0.5],
+            transition: {
+              duration: 0.5,
+              ease: "easeInOut",
+            },
+          }}
+        />
+      </Div>
+    );
+  };
 
   useEffect(() => {
-    router.replace('/home'); 
+    setTimeout(() => {
+      router.replace('/home');
+    }, 2000)
   }, []);
 
-  return <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+  return <main className="flex min-h-screen flex-col items-center justify-center p-24">
+    <Div className=''>{/* border border-primary-100 rounded-md p-2 */}
+      <Image
+        src={Images.favicon}
+        alt="C Logo"
+        className='rounded-full'
+        width={75}
+        height={75}
+      />
+      <LoadingDots />
+    </Div>
+  </main>
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
