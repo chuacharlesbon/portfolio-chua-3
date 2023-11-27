@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const Footer = () => (
     <Div className="w-full bg-white p-4 tablet:p-8">
-        <Div className="w-full bg-white mx-auto laptop:w-1440px">
+        <Div className="w-full bg-white mx-auto laptop:w-11/12 desktop:w-10/12">
             <FlexRow className='w-full items-center justify-between'>
                 <FlexRow className='items-center'>
                     <Image

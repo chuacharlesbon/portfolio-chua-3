@@ -29,7 +29,7 @@ export default function Home() {
             <Script id="g-ads-2">
                 (adsbygoogle = window.adsbygoogle || []).push({ });
             </Script>
-            <main className="flex min-h-screen w-full flex-col items-center justify-between bg-purple-100">
+            <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
                     loading ? <LoadingElement /> : <Spacer />
                 }
