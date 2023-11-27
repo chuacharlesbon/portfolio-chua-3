@@ -7,7 +7,7 @@ import { Appbar, Footer } from "@/components";
 import { Div, Spacer } from "@/components/core/Containers";
 import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
-import { Description } from '@/pages/HomeFeatures/description';
+import { Description } from '@/components/features/HomeFeatures/description';
 import { LoadingElement } from '@/components/features/loading_element';
 
 export default function Home() {

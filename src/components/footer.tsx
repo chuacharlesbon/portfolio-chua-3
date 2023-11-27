@@ -21,7 +21,7 @@ export const Footer = () => (
                         <Text className="text-dark-100">
                             Full Stack Developer
                         </Text>
-                        <Text className="text-xl text-dark-100 font-bold font-serif">
+                        <Text className="text-xl text-dark-100 font-bold">
                             Charles Bon L. Chua
                         </Text>
                     </Div>
