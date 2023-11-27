@@ -1,6 +1,7 @@
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Div, FlexRow, Spacer } from "@/components/core/Containers";
-import { Text, Span } from "@/components/core/TextElements";
+import { Text } from "@/components/core/TextElements";
 import { ButtonClassA } from "@/components/core/Forms/Buttons";
 
 export const Description = () => (
@@ -23,17 +24,13 @@ export const Description = () => (
         >
             <Div className="px-4 py-8 bg-white bg-opacity-40 hover:bg-opacity-80 laptop:w-900px duration-700 rounded-lg">
                 <Text className="text-center text-primary-100 italic">
-                    <Span className="text-4xl text-primary-100">
-                    "
-                    </Span>
+                    <FaQuoteLeft className="text-xl text-primary-100 inline mr-2" />
                     A competent and goal-oriented person who demonstrates the capacity to handle multiple responsibilities with diligence and a positive outlook.
                 </Text>
                 <Spacer className="h-2 w-2" />
                 <Text className="text-center text-primary-100 italic">
                     Apply my expertise and experience in a new professional setting and apply my abilities to help the company reach its development objective.
-                    <Span className="text-4xl text-primary-100">
-                    "
-                    </Span>
+                    <FaQuoteRight className="text-xl text-primary-100 inline ml-2" />
                 </Text>
                 <Spacer className="h-8 w-8" />
                 <Text className="text-center text-primary-100 font-bold">
