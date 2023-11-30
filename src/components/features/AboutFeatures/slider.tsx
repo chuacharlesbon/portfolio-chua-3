@@ -26,26 +26,26 @@ export const AboutSlider: FC<any> = () => {
     return (
         <Div className='w-full'>
             <Carousel
-                swipeable={false}
-                draggable={false}
-                showDots={false}
+                swipeable={true}
+                draggable={true}
+                showDots={true}
                 responsive={responsive}
                 ssr={true}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={2000}
+                autoPlaySpeed={3000}
                 removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
             >
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.cover})`,
+                    backgroundImage: `url(${Images.college})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'left',
+                    backgroundPosition: 'right',
                 }}>
                     <FlexRow className='w-4/5 h-full bg-gradient-to-r from-white justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-primary-100 text-xl'>
-                                About Me
+                                Studies and Academics
                             </Text>
                             <ButtonClassA className="border border-2 border-primary-100 phone:bg-transparent hover:bg-primary-100 text-primary-100 hover:text-white phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -54,15 +54,15 @@ export const AboutSlider: FC<any> = () => {
                     </FlexRow>
                 </Div>
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.cover})`,
+                    backgroundImage: `url(${Images.xtendly2})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'left',
+                    backgroundPosition: 'right',
                 }}>
                     <FlexRow className='w-4/5 h-full bg-gradient-to-r from-white justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-primary-100 text-xl'>
-                                About Me
+                                Marketplace and Corporate
                             </Text>
                             <ButtonClassA className="border border-2 border-primary-100 phone:bg-transparent hover:bg-primary-100 text-primary-100 hover:text-white phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -71,15 +71,15 @@ export const AboutSlider: FC<any> = () => {
                     </FlexRow>
                 </Div>
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.cover})`,
+                    backgroundImage: `url(${Images.zuitt2})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'left',
+                    backgroundPosition: 'top',
                 }}>
                     <FlexRow className='w-4/5 h-full bg-gradient-to-r from-white justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-primary-100 text-xl'>
-                                About Me
+                                Trainings and Seminars
                             </Text>
                             <ButtonClassA className="border border-2 border-primary-100 phone:bg-transparent hover:bg-primary-100 text-primary-100 hover:text-white phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -88,15 +88,15 @@ export const AboutSlider: FC<any> = () => {
                     </FlexRow>
                 </Div>
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.cover})`,
+                    backgroundImage: `url(${Images.journey2})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'left',
+                    backgroundPosition: 'right',
                 }}>
                     <FlexRow className='w-4/5 h-full bg-gradient-to-r from-white justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-primary-100 text-xl'>
-                                About Me
+                                Journey and Industry
                             </Text>
                             <ButtonClassA className="border border-2 border-primary-100 phone:bg-transparent hover:bg-primary-100 text-primary-100 hover:text-white phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE

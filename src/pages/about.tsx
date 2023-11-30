@@ -10,6 +10,7 @@ import { RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
 import { AboutSlider } from '@/components/features/AboutFeatures/slider';
 import { BackButton } from '@/components/features/back_button';
+import { AboutContents } from '@/components/features/AboutFeatures/contents';
 
 export default function About() {
     const [loading, setIsLoading] = React.useState(false);
@@ -49,6 +50,7 @@ export default function About() {
                         <Spacer className='h-12 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
                         <AboutSlider />
+                        <AboutContents />
                     </Div>
                     <Footer />
                 </Div>

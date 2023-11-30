@@ -21,7 +21,7 @@ if(textType === "center"){
         <FlexRow className='items-center justify-center w-full'>
         <div className={`mx-5 h-1 w-1/4 rounded-full ${className}`} />
         {textElement}
-        <div className={`mx-5 h-2 w-1/4 rounded-full ${className}`} />
+        <div className={`mx-5 h-1 w-1/4 rounded-full ${className}`} />
         </FlexRow>
     );
 }

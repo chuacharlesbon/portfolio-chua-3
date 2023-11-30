@@ -6,7 +6,12 @@ export const Images = {
     gpa: "/assets/gpa-logo.jpg",
     cover: "/assets/side-view.jpg",
     zuitt: "/assets/zuitt.png",
+    zuitt2: "/assets/desk-angle.jpg",
     xtendly: "/assets/xtendly.webp",
+    xtendly2: "/assets/xtendly2.jpg",
     vontos: "/assets/vontos.webp",
     prosperna: "/assets/prosperna.png",
+    college: "/assets/college.jpg",
+    journey: "/assets/journey.png",
+    journey2: "/assets/journey2.png",
 }
