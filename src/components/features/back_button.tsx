@@ -12,7 +12,7 @@ interface DataProps {
 export const BackButton: FC<DataProps> = ({ onClick }) => {
     const router = useRouter();
     return (
-        <Div className='w-full px-8 py-4'>
+        <Div className='w-full px-8 py-4 hidden'>
             <ButtonClassA className='phone:shadow-none' onClick={() => {
                 if(onClick){
                     onClick();

@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
 import 'tailwindcss/tailwind.css';
-import { Appbar, Footer } from "@/components";
+import { Appbar2, Footer } from "@/components";
 import { Div, Spacer } from "@/components/core/Containers";
 import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
@@ -35,7 +35,7 @@ export default function Contact() {
                     loading ? <LoadingElement /> : <Spacer />
                 }
                 <Div className='w-full min-h-screen'>
-                    <Appbar location={RouteNames.contact} onClick={() => setIsLoading(true)} />
+                    <Appbar2 location={RouteNames.contact} onClick={() => setIsLoading(true)} />
                     <Div
                         className='w-full min-h-screen px-4 flex flex-col items-center justify-center hidden'
                         style={{
