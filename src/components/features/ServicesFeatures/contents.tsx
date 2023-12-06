@@ -5,15 +5,15 @@ import { ButtonClassA } from '@/components/core/Forms/Buttons';
 import { Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
 
-export const AboutContents: FC<any> = () => {
+export const ServicesContents: FC<any> = () => {
     return (
         <Div className='w-10/12 py-24 mx-auto'>
             <TextDivider
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
-                        STUDIES AND ACADEMICS
+                    <Text className='text-3xl text-primary-100 text-center font-serif uppercase'>
+                        Software Engineering Consultant
                     </Text>
                 }
             />
@@ -31,8 +31,8 @@ export const AboutContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
-                        MARKETPLACE AND CORPORATE
+                    <Text className='text-3xl text-primary-100 text-center font-serif uppercase'>
+                        Web Apps & Websites
                     </Text>
                 }
             />
@@ -50,8 +50,8 @@ export const AboutContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
-                        TRAININGS AND SEMINARS
+                    <Text className='text-3xl text-primary-100 text-center font-serif uppercase'>
+                        Mobile, Desktop Apps Development
                     </Text>
                 }
             />
@@ -69,8 +69,8 @@ export const AboutContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
-                        JOURNEY AND INDUSTRY
+                    <Text className='text-3xl text-primary-100 text-center font-serif uppercase'>
+                        Engineering and Math Tutorials
                     </Text>
                 }
             />

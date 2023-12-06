@@ -15,7 +15,7 @@ import { RawInput } from '@/components/core/Forms/RawInput';
 import { Images } from "@/constants/assets";
 import { useWindowSize } from '@/hooks/useWindowSize';
 
-export const AboutSlider: FC<any> = () => {
+export const ServicesSlider: FC<any> = () => {
     const responsive = {
         mobile: {
             breakpoint: { max: 4000, min: 0 },
@@ -45,7 +45,7 @@ export const AboutSlider: FC<any> = () => {
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
-                                Studies and Academics
+                                Software Engineering Consultant
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -54,15 +54,15 @@ export const AboutSlider: FC<any> = () => {
                     </FlexRow>
                 </Div>
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.xtendly2})`,
+                    backgroundImage: `url(${Images.website2})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'right',
+                    backgroundPosition: 'center',
                 }}>
                     <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
-                                Marketplace and Corporate
+                                Web Apps & Websites
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -71,15 +71,15 @@ export const AboutSlider: FC<any> = () => {
                     </FlexRow>
                 </Div>
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.zuitt2})`,
+                    backgroundImage: `url(${Images.desktopMobile})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'top',
+                    backgroundPosition: 'center',
                 }}>
                     <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
-                                Trainings and Seminars
+                                Mobile, Desktop Apps Development
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -88,15 +88,15 @@ export const AboutSlider: FC<any> = () => {
                     </FlexRow>
                 </Div>
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.journey2})`,
+                    backgroundImage: `url(${Images.math})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'right',
+                    backgroundPosition: 'center',
                 }}>
                     <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
-                                Journey and Industry
+                                Engineering and Math Tutorials
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE

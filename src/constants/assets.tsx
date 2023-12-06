@@ -14,4 +14,8 @@ export const Images = {
     college: "/assets/college.jpg",
     journey: "/assets/journey.png",
     journey2: "/assets/journey2.png",
+    math: "/assets/bg-math.jpg",
+    desktopMobile: "/assets/bg-desktop-mobile.jpg",
+    website: "/assets/bg-website.png",
+    website2: "/assets/bg-website2.jpg",
 }
