@@ -10,6 +10,8 @@ import { RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
 import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
+import { WorksSlider } from '@/components/features/WorksFeatures/slider';
+import { WorksContents } from '@/components/features/WorksFeatures/contents';
 
 export default function Works() {
     const [loading, setIsLoading] = React.useState(false);
@@ -48,9 +50,8 @@ export default function Works() {
                     <Div className='w-full mx-auto'>
                         <Spacer className='h-12 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
-                        <Text className='text-center py-40'>
-                            WORKS
-                        </Text>
+                        <WorksSlider />
+                        <WorksContents />
                     </Div>
                     <Footer />
                 </Div>

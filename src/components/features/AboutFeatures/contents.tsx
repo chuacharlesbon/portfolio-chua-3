@@ -12,7 +12,7 @@ export const AboutContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
+                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif'>
                         STUDIES AND ACADEMICS
                     </Text>
                 }
@@ -31,7 +31,7 @@ export const AboutContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
+                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif'>
                         MARKETPLACE AND CORPORATE
                     </Text>
                 }
@@ -50,7 +50,7 @@ export const AboutContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
+                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif'>
                         TRAININGS AND SEMINARS
                     </Text>
                 }
@@ -69,7 +69,7 @@ export const AboutContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='text-3xl text-primary-100 text-center font-serif'>
+                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif'>
                         JOURNEY AND INDUSTRY
                     </Text>
                 }

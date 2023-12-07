@@ -18,4 +18,9 @@ export const Images = {
     desktopMobile: "/assets/bg-desktop-mobile.jpg",
     website: "/assets/bg-website.png",
     website2: "/assets/bg-website2.jpg",
+    native: "/assets/native.webp",
+    nextjs: "/assets/nextjs.png",
+    nodejs: "/assets/nodejs.jpg",
+    reactjs: "/assets/reactjs.webp",
+    flutter: "/assets/flutter.png",
 }
