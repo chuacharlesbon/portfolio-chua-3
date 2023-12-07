@@ -23,4 +23,7 @@ export const Images = {
     nodejs: "/assets/nodejs.jpg",
     reactjs: "/assets/reactjs.webp",
     flutter: "/assets/flutter.png",
+    development: "/assets/development.jpg",
+    technical: "/assets/technical.jpg",
+    otherSkills: "/assets/otherSkills.jpg",
 }
