@@ -26,4 +26,13 @@ export const Images = {
     development: "/assets/development.jpg",
     technical: "/assets/technical.jpg",
     otherSkills: "/assets/otherSkills.jpg",
+    formal1: "assets/formal1.jpg",
+    formal2: "assets/formal2.jpg",
+    formal3: "assets/formal3.jpg",
+    formal4: "assets/formal4.jpg",
+    formal5: "assets/formal5.jpg",
+    formal5b: "assets/formal5b.png",
+    gmeet: "assets/gmeet.jpg",
+    deskMail: "assets/deskMail.jpg",
+    deskAngle2: "assets/desk-angle2.jpg",
 }

@@ -15,6 +15,7 @@ const config: Config = {
       },
       aspectRatio: {
         '4/1': '4 / 1',
+        '3/2': '3 / 2',
       },
       fontFamily: {
         lato: ['Lato'],

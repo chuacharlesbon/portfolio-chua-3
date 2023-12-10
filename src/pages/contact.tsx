@@ -10,6 +10,8 @@ import { RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
 import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
+import { ContactSlider } from '@/components/features/ContactFeatures/slider';
+import { ContactContents } from '@/components/features/ContactFeatures/contents';
 
 export default function Contact() {
     const [loading, setIsLoading] = React.useState(false);
@@ -48,9 +50,8 @@ export default function Contact() {
                     <Div className='w-full mx-auto'>
                         <Spacer className='h-12 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
-                        <Text className='text-center py-40'>
-                            CONTACT
-                        </Text>
+                        <ContactSlider />
+                        <ContactContents />
                     </Div>
                     <Footer />
                 </Div>
