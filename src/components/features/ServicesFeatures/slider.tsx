@@ -33,11 +33,11 @@ export const ServicesSlider: FC<any> = () => {
                 ssr={true}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={3000}
+                autoPlaySpeed={5000}
                 removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
             >
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.college})`,
+                    backgroundImage: `url(${Images.formal5b})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
@@ -46,6 +46,9 @@ export const ServicesSlider: FC<any> = () => {
                         <Div>
                             <Text className='font-bold text-white text-xl'>
                                 Software Engineering Consultant
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Leveraging Expertise to Drive Your Success
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -64,6 +67,9 @@ export const ServicesSlider: FC<any> = () => {
                             <Text className='font-bold text-white text-xl'>
                                 Web Apps & Websites
                             </Text>
+                            <Text className='w-300px text-white py-4'>
+                                We are a team of experienced web developers who are passionate about creating beautiful, functional, and results-driven websites. We have the skills and expertise to take your digital marketing to the next level.
+                            </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
@@ -81,6 +87,9 @@ export const ServicesSlider: FC<any> = () => {
                             <Text className='font-bold text-white text-xl'>
                                 Mobile, Desktop Apps Development
                             </Text>
+                            <Text className='w-300px text-white py-4'>
+                                We create native applications that leverage the latest features and functionalities of each platform, ensuring a seamless and intuitive user experience. Developing robust and efficient desktop applications to streamline your workflows and boost productivity.
+                            </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
@@ -96,7 +105,10 @@ export const ServicesSlider: FC<any> = () => {
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
-                                Engineering and Math Tutorials
+                                Math and Physics Tutorials
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE

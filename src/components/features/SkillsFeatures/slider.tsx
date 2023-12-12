@@ -33,7 +33,7 @@ export const SkillsSlider: FC<any> = () => {
                 ssr={true}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={3000}
+                autoPlaySpeed={5000}
                 removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
             >
                 <Div className='w-full h-500px' style={{
@@ -45,7 +45,10 @@ export const SkillsSlider: FC<any> = () => {
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
-                                Development Tools
+                                Development Tools and Coding Skills
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Throughout my journey, I've actively pursued opportunities to hone my skills, explore diverse languages and frameworks, and build a strong foundation in software development.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -64,6 +67,9 @@ export const SkillsSlider: FC<any> = () => {
                             <Text className='font-bold text-white text-xl'>
                                 Technical and Academic Skills
                             </Text>
+                            <Text className='w-300px text-white py-4'>
+                                My academic background in engineering has equipped me with a solid foundation in arithmetic, algorithm and logic, while my technical skills allow me to translate these concepts into real-world solutions.
+                            </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
@@ -80,6 +86,9 @@ export const SkillsSlider: FC<any> = () => {
                         <Div>
                             <Text className='font-bold text-white text-xl'>
                                 Other Relevant Skills
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Diverse range of non-technical skills that complement my technical expertise, making me a valuable asset in any team environment.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE

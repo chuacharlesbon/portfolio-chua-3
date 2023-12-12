@@ -70,7 +70,7 @@ export const ServicesContents: FC<any> = () => {
                 textType='center'
                 textElement={
                     <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
-                        Engineering and Math Tutorials
+                        Math and Physics Tutorials
                     </Text>
                 }
             />

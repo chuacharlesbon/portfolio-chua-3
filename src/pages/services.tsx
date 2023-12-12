@@ -25,7 +25,7 @@ export default function Services() {
                 <meta name="keywords" content="capstone, developer, portfolio, full stack, developer, software engineer, charles bon chua, react, next, flutter, website, mobile app, web app, okada, xffiliate, cebuana, alajera, guam power, timberland"></meta>
                 <meta property="og:title" content="Charles C. | Services" />
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
-                <meta property="og:image" content={Images.favicon} />
+                <meta property="og:image" content={Images.seoServices} />
             </Head>
             <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
                 crossOrigin="anonymous"></Script>

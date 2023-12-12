@@ -33,7 +33,7 @@ export const WorksSlider: FC<any> = () => {
                 ssr={true}
                 infinite={true}
                 autoPlay={true}
-                autoPlaySpeed={3000}
+                autoPlaySpeed={5000}
                 removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
             >
                 <Div className='w-full h-500px' style={{
@@ -46,6 +46,9 @@ export const WorksSlider: FC<any> = () => {
                         <Div>
                             <Text className='font-bold text-white text-xl'>
                                 Next.js Projects
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Next.js is a popular choice for building fast, scalable, and SEO-friendly websites.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -64,6 +67,9 @@ export const WorksSlider: FC<any> = () => {
                             <Text className='font-bold text-white text-xl'>
                                 React.js Projects
                             </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Websites built using ReactJS, a JavaScript library for building user interfaces. (Component-based development and virtual DOM efficiency)
+                            </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
@@ -80,6 +86,9 @@ export const WorksSlider: FC<any> = () => {
                         <Div>
                             <Text className='font-bold text-white text-xl'>
                                 Flutter Projects
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Flutter is a powerful framework for building cross-platform mobile and web apps.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
@@ -98,6 +107,9 @@ export const WorksSlider: FC<any> = () => {
                             <Text className='font-bold text-white text-xl'>
                                 Node.js Projects
                             </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Backend projects showcasing the power and versatility of Node.js, a JavaScript runtime environment ideal for building efficient and scalable backend applications.
+                            </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
@@ -114,6 +126,9 @@ export const WorksSlider: FC<any> = () => {
                         <Div>
                             <Text className='font-bold text-white text-xl'>
                                 Native HTML5, CSS3, Vanilla Javascript Projects
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                This trio provides a robust foundation for building modern and interactive web experiences.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE

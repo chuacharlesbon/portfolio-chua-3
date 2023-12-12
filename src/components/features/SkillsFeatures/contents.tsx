@@ -13,7 +13,7 @@ export const SkillsContents: FC<any> = () => {
                 textType='center'
                 textElement={
                     <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
-                        Development Tools
+                        Development Tools and Coding Skills
                     </Text>
                 }
             />
