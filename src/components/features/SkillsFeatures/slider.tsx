@@ -10,7 +10,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Div, FlexColumn, FlexRow, Spacer } from "@/components/core/Containers";
 import { ButtonClassA } from '@/components/core/Forms/Buttons';
-import { Text } from "@/components/core/TextElements";
+import { Text, Span } from "@/components/core/TextElements";
 import { RawInput } from '@/components/core/Forms/RawInput';
 import { Images } from "@/constants/assets";
 import { useWindowSize } from '@/hooks/useWindowSize';
@@ -48,7 +48,7 @@ export const SkillsSlider: FC<any> = () => {
                                 Development Tools and Coding Skills
                             </Text>
                             <Text className='w-300px text-white py-4'>
-                                Throughout my journey, I've actively pursued opportunities to hone my skills, explore diverse languages and frameworks, and build a strong foundation in software development.
+                                Throughout my journey, I<Span>&#39;</Span>ve actively pursued opportunities to hone my skills, explore diverse languages and frameworks, and build a strong foundation in software development.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
