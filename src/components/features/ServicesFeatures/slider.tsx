@@ -108,7 +108,27 @@ export const ServicesSlider: FC<any> = () => {
                                 Math and Physics Tutorials
                             </Text>
                             <Text className='w-300px text-white py-4'>
-                                
+                                Transform your learning experience.
+                            </Text>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                                LEARN MORE
+                            </ButtonClassA>
+                        </Div>
+                    </FlexRow>
+                </Div>
+                <Div className='w-full h-500px' style={{
+                    backgroundImage: `url(${Images.market})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                        <Spacer className='w-20 h-20' />
+                        <Div>
+                            <Text className='font-bold text-white text-xl'>
+                                Stock Market and Investments
+                            </Text>
+                            <Text className='w-300px text-white py-4'>
+                                Explore risk management strategies to protect your capital and navigate market fluctuations. Craft portfolios aligned with your risk tolerance, time horizon, and financial aspirations.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE

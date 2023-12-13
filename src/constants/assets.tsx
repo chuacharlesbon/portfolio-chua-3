@@ -35,5 +35,6 @@ export const Images = {
     gmeet: "assets/gmeet.jpg",
     deskMail: "assets/deskMail.jpg",
     deskAngle2: "assets/desk-angle2.jpg",
-    seoServices: "/assets/seo-bg-services.png"
+    seoServices: "/assets/seo-bg-services.png",
+    market: "assets/market.jpg",
 }

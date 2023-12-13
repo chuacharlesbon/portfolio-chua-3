@@ -83,6 +83,25 @@ export const ServicesContents: FC<any> = () => {
                 </Div>
                 <Spacer className='w-1/3 h-300px bg-grey-400' />
             </FlexRow>
+            <Spacer className='w-12 h-12' />
+            <TextDivider
+                className='bg-grey-100'
+                textType='center'
+                textElement={
+                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                        Stock Market and Investments
+                    </Text>
+                }
+            />
+            <Spacer className='w-12 h-12' />
+            <FlexRow className='w-full items-center justify-around'>
+                <Spacer className='w-1/3 h-300px bg-grey-400' />
+                <Div className='w-1/3'>
+                    <Text className='text-secondary-200'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra dui quis tortor accumsan commodo. Morbi facilisis ipsum libero, sit amet hendrerit ligula dictum in. Fusce cursus tortor ut quam pharetra, vel venenatis ipsum tincidunt. Mauris vel erat porta, malesuada felis et, porttitor purus. Sed nisl ante, fringilla sit amet.
+                    </Text>
+                </Div>
+            </FlexRow>
         </Div>
     );
 };
