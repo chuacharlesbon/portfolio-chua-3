@@ -9,6 +9,7 @@ import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
 import { Description } from '@/components/features/HomeFeatures/description';
 import { LoadingElement } from '@/components/features/loading_element';
+import { HomeContents } from '@/components/features/HomeFeatures/contents';
 
 export default function Home() {
     const [loading, setIsLoading] = React.useState(false);
@@ -49,7 +50,8 @@ export default function Home() {
                             data-full-width-responsive="true"
                         ></ins> */}
                     </Div>
-                    <Footer />
+                    <HomeContents />
+                    <Footer isDarkTheme={true} />
                 </Div>
             </main>
         </>
