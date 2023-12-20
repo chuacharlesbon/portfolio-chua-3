@@ -321,7 +321,7 @@ export const Appbar2: FC<DataProps> = ({ location, className, children, onClick,
                     }}
                 >
                     <ButtonClassA
-                        className='phone:shadow-none phone:px-0 w-32 bg-white text-primary-100 flex flex-row items-center justify-center hover:bg-primary-100 hover:text-white h-12 border-b border-grey-400'
+                        className='phone:shadow-none phone:px-0 w-72 bg-white text-primary-100 flex flex-row items-center justify-center hover:bg-primary-100 hover:text-white h-12 border-b border-grey-400'
                         onClick={() => {
                             if (onClick) {
                                 onClick();
@@ -335,6 +335,9 @@ export const Appbar2: FC<DataProps> = ({ location, className, children, onClick,
                             width={36}
                             height={36}
                         />
+                        <Text className='font-bold text-primary-100'>
+                            Charles C.
+                        </Text>
                     </ButtonClassA>
                 </motion.div>
                 <FlexRow className='items-center'>
