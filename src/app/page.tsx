@@ -16,7 +16,7 @@ export default function Home() {
       <Div className="loading-dots mt-2">
         <Dot
           animate={{
-            scale: [0.5, 1.2, 0.5],
+            scale: [0.2, 1.2, 0.2],
             transition: {
               duration: 0.5,
               ease: "easeInOut",
@@ -26,7 +26,7 @@ export default function Home() {
         />
         <Dot
           animate={{
-            scale: [0.5, 1.2, 0.5],
+            scale: [0.2, 1.2, 0.2],
             transition: {
               duration: 0.5,
               ease: "easeInOut",
@@ -36,7 +36,7 @@ export default function Home() {
         />
         <Dot
           animate={{
-            scale: [0.5, 1.2, 0.5],
+            scale: [0.2, 1.2, 0.2],
             transition: {
               duration: 0.5,
               ease: "easeInOut",
