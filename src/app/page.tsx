@@ -1,4 +1,5 @@
 'use client'
+import axios from 'axios';
 import Head from 'next/head';
 import Script from 'next/script';
 import Image from 'next/image';
@@ -48,6 +49,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    axios.get('https://cmt-server-2.vercel.app/api/ping');
     setTimeout(() => {
       router.replace('/home');
     }, 2000)
