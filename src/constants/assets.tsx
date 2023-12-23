@@ -38,4 +38,9 @@ export const Images = {
     seoServices: "/assets/seo-bg-services.png",
     market: "assets/market.jpg",
     xtendlyLogo: "assets/xtendly_logo.webp",
+    linkedInLogo: "assets/linkedin-logo.png",
+    gitlabLogo: "assets/gitlab-logo.png",
+    githubLogo: "assets/github-logo.png",
+    facebookLogo: "assets/facebook-logo.png",
+    twitterLogo: "assets/twitter-logo.png",
 }

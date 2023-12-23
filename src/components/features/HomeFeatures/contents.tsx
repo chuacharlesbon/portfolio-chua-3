@@ -9,6 +9,7 @@ import { Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
 import { RawInput } from '@/components/core/Forms/RawInput';
 import { FormLabel } from '@/components/core/Forms/FormLabel';
+import { ImSpinner } from 'react-icons/im';
 
 export const HomeContents: FC<any> = () => {
 
@@ -28,7 +29,9 @@ export const HomeContents: FC<any> = () => {
             <Spacer className='w-10 h-10' />
             <InView as="div" onChange={(inView, entry) => {
                 if (!isXtendlyVisible) {
-                    setXtendly(inView);
+                    setTimeout(()=> {
+                        setXtendly(inView);
+                    }, 750);
                 }
             }}>
                 {
@@ -71,7 +74,7 @@ export const HomeContents: FC<any> = () => {
                                 </FlexRow>
                             </motion.div>
                         </>
-                        : <></>
+                        : <ImSpinner className="animate-spin my-4 text-grey-400 text-4xl text-center mx-auto" />
                 }
             </InView>
 
@@ -82,7 +85,9 @@ export const HomeContents: FC<any> = () => {
             <Spacer className='w-10 h-10' />
             <InView as="div" onChange={(inView, entry) => {
                 if (!isVontosVisible) {
-                    setVontos(inView);
+                    setTimeout(()=> {
+                        setVontos(inView);
+                    }, 750);
                 }
             }}>
                 {
@@ -125,7 +130,7 @@ export const HomeContents: FC<any> = () => {
                                 </FlexRow>
                             </motion.div>
                         </>
-                        : <></>
+                        : <ImSpinner className="animate-spin my-4 text-grey-400 text-4xl text-center mx-auto" />
                 }
             </InView>
 
@@ -160,7 +165,7 @@ export const HomeContents: FC<any> = () => {
                                     y: +50, // Start the element off the top of the screen
                                 }}
                             >
-                                <FlexRow className='w-full items-center justify-between'>
+                                <FlexRow className='w-full items-stretch hover:items-start justify-between'>
                                     <Div className='duration-700 p-6 w-30p aspect-[3/2] border border-grey-500 rounded-lg shadow-md hover:shadow-lg hover:border-grey-400 hover:p-4'>
                                         <Div className='w-full aspect-[3/2]'>
                                             <Div
@@ -227,7 +232,7 @@ export const HomeContents: FC<any> = () => {
                                 </FlexRow>
                             </motion.div>
                         </>
-                        : <></>
+                        : <ImSpinner className="animate-spin my-4 text-blue-100 text-4xl text-center mx-auto" />
                 }
             </InView>
             <Spacer className='w-10 h-10' />

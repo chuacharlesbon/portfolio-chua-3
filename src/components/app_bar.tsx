@@ -7,7 +7,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { MdHome, MdCall, MdTravelExplore } from "react-icons/md";
 import { motion } from "framer-motion";
 import "react-multi-carousel/lib/styles.css";
-import { Div, FlexRow, Spacer } from "@/components/core/Containers";
+import { Div, FlexColumn, FlexRow, Spacer } from "@/components/core/Containers";
 import { ButtonClassA } from '@/components/core/Forms/Buttons';
 import { Text } from "@/components/core/TextElements";
 import { RawInput } from '@/components/core/Forms/RawInput';
@@ -42,12 +42,39 @@ interface DataProps {
     onClick?: any;
     props?: any;
     isDarkTheme?: any;
+    onDimBackground?: any;
 }
 
-export const Appbar: FC<DataProps> = ({ location, className, children, onClick, ...props }) => {
+export const Appbar: FC<DataProps> = ({ location, className, children, onClick, onDimBackground, ...props }) => {
     const router = useRouter();
+    const [isShown, setIsShown] = React.useState(false);
+
+    let timerIds: NodeJS.Timeout[] = [];
+    function setTimer(callback: any, delay: any) {
+        const timerId = setTimeout(callback, delay);
+        timerIds.push(timerId);
+    }
+    function clearAllTimers() {
+        timerIds.forEach((timerId) => clearTimeout(timerId));
+        timerIds = [];
+    }
+
+    const onIconHover = (isOnHover: boolean) => {
+        if (isOnHover) {
+            setIsShown(true);
+            onDimBackground(true);
+            clearAllTimers();
+        } else {
+            
+            setTimer(() => {
+                setIsShown(false);
+                onDimBackground(false);
+            }, 2000)
+        }
+    }
+
     return (
-        <Div className='relative w-full'>
+        <Div className='w-full'>
             <FlexRow className='fixed index-10 items-center justify-center w-full p-2 bg-dark-100'>
                 <motion.div
                     animate={{
@@ -267,7 +294,7 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                     </ButtonClassA>
                 </motion.div>
             </FlexRow>
-            <FlexRow className='fixed index-20 justify-center items-center top-0 left-0 right-0 mx-auto w-48'>
+            <FlexColumn className='fixed index-20 justify-start items-center top-0 left-0 right-0 mx-auto w-48 group'>
                 {
                     location === RouteNames.home
                         ? <motion.div
@@ -280,13 +307,20 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                                 delay: 2
                             }}
                         >
-                            <Image
-                                src={Images.favicon}
-                                alt="C Logo"
-                                className='rounded-full border border-8 border-dark-100'
-                                width={100}
-                                height={100}
-                            />
+                            <FlexRow className='w-full items-center justify-center'>
+                                <button
+                                    onMouseEnter={() => onIconHover(true)}
+                                    onMouseLeave={() => onIconHover(false)}
+                                >
+                                    <Image
+                                        src={Images.favicon}
+                                        alt="C Logo"
+                                        className='rounded-full border border-8 border-dark-100'
+                                        width={100}
+                                        height={100}
+                                    />
+                                </button>
+                            </FlexRow>
                         </motion.div>
                         : <Image
                             src={Images.favicon}
@@ -296,7 +330,138 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                             height={100}
                         />
                 }
-            </FlexRow>
+                {
+                    isShown
+                        ? <>
+                            <FlexRow className='relative'>
+                                <motion.div
+                                    initial={{ scale: 0 }}
+                                    animate={{ rotate: 360, scale: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 260,
+                                        damping: 20,
+                                        delay: 0
+                                    }}
+                                >
+                                    <button
+                                        className='absolute -left-24 -top-1/2'
+                                        onMouseEnter={() => onIconHover(true)}
+                                        onMouseLeave={() => onIconHover(false)}
+                                    >
+                                        <Div
+                                            className='duration-700 w-12 h-12 p-2 bg-dark rounded-md hover:bg-dark-100 hover:bg-opacity-40'
+                                            style={{
+                                                backgroundImage: `url(${Images.facebookLogo})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </button>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ scale: 0 }}
+                                    animate={{ rotate: 360, scale: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 260,
+                                        damping: 20,
+                                        delay: 1.25
+                                    }}
+                                >
+                                    <button
+                                        className='absolute left-0 -top-1/2 ml-72 pl-4'
+                                        onMouseEnter={() => onIconHover(true)}
+                                        onMouseLeave={() => onIconHover(false)}
+                                    >
+                                        <Div
+                                            className='duration-700 w-12 h-12 p-2 bg-dark rounded-md hover:bg-dark-100 hover:bg-opacity-40'
+                                            style={{
+                                                backgroundImage: `url(${Images.twitterLogo})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </button>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ scale: 0 }}
+                                    animate={{ rotate: 360, scale: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 260,
+                                        damping: 20,
+                                        delay: 0.25
+                                    }}
+                                >
+                                    <button
+                                        onMouseEnter={() => onIconHover(true)}
+                                        onMouseLeave={() => onIconHover(false)}
+                                    >
+                                        <Div
+                                            className='duration-700 mr-12 w-12 h-12 p-2 bg-dark rounded-md hover:bg-dark-100 hover:bg-opacity-40'
+                                            style={{
+                                                backgroundImage: `url(${Images.linkedInLogo})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </button>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ scale: 0 }}
+                                    animate={{ rotate: 360, scale: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 260,
+                                        damping: 20,
+                                        delay: 0.5
+                                    }}
+                                >
+                                    <button
+                                        onMouseEnter={() => onIconHover(true)}
+                                        onMouseLeave={() => onIconHover(false)}
+                                    >
+                                        <Div
+                                            className='duration-700 mt-12 w-12 h-12 p-2 bg-dark rounded-md hover:bg-dark-100 hover:bg-opacity-40'
+                                            style={{
+                                                backgroundImage: `url(${Images.gitlabLogo})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </button>
+
+                                </motion.div>
+                                <motion.div
+                                    initial={{ scale: 0 }}
+                                    animate={{ rotate: 360, scale: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 260,
+                                        damping: 20,
+                                        delay: 0.75
+                                    }}
+                                >
+                                    <button
+                                        onMouseEnter={() => onIconHover(true)}
+                                        onMouseLeave={() => onIconHover(false)}
+                                    >
+                                        <Div
+                                            className='duration-700 ml-12 w-12 h-12 p-2 bg-dark rounded-md hover:bg-dark-100 hover:bg-opacity-40'
+                                            style={{
+                                                backgroundImage: `url(${Images.githubLogo})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </button>
+                                </motion.div>
+                            </FlexRow>
+                        </>
+                        : <></>
+                }
+            </FlexColumn>
         </Div>
     );
 }

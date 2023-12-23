@@ -39,6 +39,7 @@ const config: Config = {
         '350px': '350px',
         '300px': '300px',
         '200px': '200px',
+        '100px': '100px',
       }),
       width: () => ({
         '3000px': '3000px',
@@ -57,6 +58,7 @@ const config: Config = {
         '300px': '300px',
         '250px': '250px',
         '200px': '200px',
+        '100px': '100px',
         '1/7': '14%',
         '1/8': '12.5%',
         '2/8': '25%',
@@ -80,6 +82,7 @@ const config: Config = {
       desktop: '1600px',
     },
     colors: {
+      fullBlack: '#000000',
       transparent: 'transparent',
       current: 'currentColor',
       purple: {

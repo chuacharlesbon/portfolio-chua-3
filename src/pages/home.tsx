@@ -10,9 +10,11 @@ import { RouteNames } from "@/constants/constants";
 import { Description } from '@/components/features/HomeFeatures/description';
 import { LoadingElement } from '@/components/features/loading_element';
 import { HomeContents } from '@/components/features/HomeFeatures/contents';
+import { DimElement } from '@/components/features/dim_element';
 
 export default function Home() {
     const [loading, setIsLoading] = React.useState(false);
+    const [isDim, setDim] = React.useState(false);
     return (
         <>
             <Head>
@@ -29,8 +31,15 @@ export default function Home() {
                 {
                     loading ? <LoadingElement /> : <Spacer />
                 }
+                {
+                    isDim ? <DimElement /> : <Spacer />
+                }
                 <Div className='w-full min-h-screen'>
-                    <Appbar location={RouteNames.home} onClick={() => setIsLoading(true)} />
+                    <Appbar
+                        onDimBackground={setDim}
+                        location={RouteNames.home}
+                        onClick={() => setIsLoading(true)}
+                    />
                     <Div className='w-full min-h-screen px-4 flex flex-col items-center justify-center' style={{
                         backgroundImage: `url(${Images.cover})`,
                         backgroundSize: 'cover',
