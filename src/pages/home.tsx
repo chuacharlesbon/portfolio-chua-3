@@ -25,11 +25,6 @@ export default function Home() {
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
                 <meta property="og:image" content={Images.favicon} />
             </Head>
-            <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
-                crossOrigin="anonymous"></Script>
-            <Script id="g-ads-2">
-                (adsbygoogle = window.adsbygoogle || []).push({ });
-            </Script>
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
                     loading ? <LoadingElement /> : <Spacer />
@@ -42,13 +37,21 @@ export default function Home() {
                         backgroundPosition: 'left',
                     }}>
                         <Description />
-                        {/* <ins className="adsbygoogle"
+                        <Script
+                            async id="g-ads-1"
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
+                            crossOrigin="anonymous"
+                            strategy="afterInteractive" />
+                        <Script id="g-ads-2">
+                            (adsbygoogle = window.adsbygoogle || []).push({ });
+                        </Script>
+                        <ins className="adsbygoogle"
                             style={{ display: "block" }}
                             data-ad-client="ca-pub-8167368561700289"
                             data-ad-slot="7948594043"
                             data-ad-format="auto"
                             data-full-width-responsive="true"
-                        ></ins> */}
+                        ></ins>
                     </Div>
                     <HomeContents />
                     <Footer isDarkTheme={true} />

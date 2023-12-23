@@ -61,8 +61,16 @@ export const Description: FC<any> = () => {
                 }}
             >
                 <FlexRow className="w-full items-center justify-center py-8">
-                    <ButtonClassA className="border border-2 border-white hover:bg-white text-white hover:text-primary-100 phone:py-4 phone:px-8" onClick={() => router.push('/home')}>
-                        LEARN MORE
+                    <ButtonClassA
+                        className="border border-2 border-white hover:bg-white text-white hover:text-primary-100 phone:py-4 phone:px-8"
+                        onClick={() => {
+                            const element = document.getElementById('home-content-1');
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                    >
+                        GET STARTED
                     </ButtonClassA>
                 </FlexRow>
             </motion.div>

@@ -37,4 +37,5 @@ export const Images = {
     deskAngle2: "assets/desk-angle2.jpg",
     seoServices: "/assets/seo-bg-services.png",
     market: "assets/market.jpg",
+    xtendlyLogo: "assets/xtendly_logo.webp",
 }
