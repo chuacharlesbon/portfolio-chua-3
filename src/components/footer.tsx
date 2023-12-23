@@ -10,7 +10,7 @@ interface DataProps {
   }
 
 export const Footer: FC<DataProps> = ({isDarkTheme}) => (
-    <Div className={`w-full p-4 tablet:p-8 border-t border-grey-400 ${!(isDarkTheme ?? false) ? 'bg-white text-dark-100' : 'bg-dark-100 text-white'}`}>
+    <Div className={`w-full p-4 tablet:p-8 border-t border-grey-400 ${!(isDarkTheme ?? true) ? 'bg-white text-dark-100' : 'bg-dark-100 text-white'}`}>
         <Div className="w-full mx-auto laptop:w-11/12 desktop:w-10/12">
             <FlexRow className='phone:flex-col tablet:flex-row w-full items-center justify-between'>
                 <FlexRow className='items-center'>
@@ -75,48 +75,48 @@ export const Footer: FC<DataProps> = ({isDarkTheme}) => (
                 <FlexColumn className="w-2/5 items-start justify-start">
                     <FlexRow className='w-full'>
                         <FlexColumn className='w-1/2 items-start justify-start'>
-                            <Link className='text-white my-1 hover:underline' href="/home">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/home">
                                 Home
                             </Link>
-                            <Link className='text-white my-1 hover:underline' href="/about">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/about">
                                 About
                             </Link>
-                            <Link className='text-white my-1 hover:underline' href="/works">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/works">
                                 Works
                             </Link>
-                            <Link className='text-white my-1 hover:underline' href="/contact">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/contact">
                                 Contact
                             </Link>
                         </FlexColumn>
                         <FlexColumn className='w-1/2 items-start justify-start'>
-                            <Link className='text-white my-1 hover:underline' href="/skills">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/skills">
                                 Skills
                             </Link>
-                            <Link className='text-white my-1 hover:underline' href="/services">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/services">
                                 Services
                             </Link>
-                            <Link className='text-white my-1 hover:underline' href="/connect">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/connect">
                                 Connect
                             </Link>
-                            <Link className='text-white my-1 hover:underline' href="/explore">
+                            <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/explore">
                                 Explore
                             </Link>
                         </FlexColumn>
                     </FlexRow>
                     <Spacer className="w-8 h-8" />
-                    <Link className='text-white my-1 hover:underline' href="mailto:chuacharlesbon@gmail.com?cc=charlessbonnchua@gmail.com&subject=Client%20Inquiry" target="_top">
+                    <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="mailto:chuacharlesbon@gmail.com?cc=charlessbonnchua@gmail.com&subject=Client%20Inquiry" target="_top">
                         <Span className='mr-2'>
                             Email: 
                         </Span>
                         chuacharlesbon@gmail.com
                     </Link>
-                    <Link className='text-white my-1 hover:underline' href="https://gitlab.com/chuacharlesbon" target="_blank">
+                    <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="https://gitlab.com/chuacharlesbon" target="_blank">
                         <Span className='mr-2'>
                             Gitlab: 
                         </Span>
                         https://gitlab.com
                     </Link>
-                    <Link className='text-white my-1 hover:underline' href="https://www.linkedin.com/in/charles-chua-12116122a/y" target="_blank">
+                    <Link className={`${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="https://www.linkedin.com/in/charles-chua-12116122a/y" target="_blank">
                         <Span className='mr-2'>
                             LinkedIn: 
                         </Span>
