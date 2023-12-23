@@ -143,7 +143,7 @@ export const HomeContents: FC<any> = () => {
                 }
             }}>
                 {
-                    isXtendlyVisible
+                    isNewsVisible
                         ? <>
                             <motion.div
                                 animate={{
