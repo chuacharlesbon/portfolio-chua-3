@@ -22,7 +22,7 @@ export const ContactContents: FC<any> = () => {
                     </Text>
                     <Spacer className='w-8 h-8' />
                     <form>
-                        <FormLabel className='text-primary-100 font-bold'>
+                        <FormLabel className='text-dark-100 font-bold'>
                             Name:
                         </FormLabel>
                         <RawInput
@@ -31,7 +31,7 @@ export const ContactContents: FC<any> = () => {
                             type='name'
                         />
                         <Spacer className='w-4 h-4' />
-                        <FormLabel className='text-primary-100 font-bold'>
+                        <FormLabel className='text-dark-100 font-bold'>
                             Email:
                         </FormLabel>
                         <RawInput
@@ -40,7 +40,7 @@ export const ContactContents: FC<any> = () => {
                             type='email'
                         />
                         <Spacer className='w-8 h-8' />
-                        <ButtonClassA className="w-full rounded-lg border border-blue-100 text-white bg-blue-100 phone:shadow-none phone:py-2 phone:px-4 hover:bg-primary-100 hover:border-primary-100" onClick={() => { }}>
+                        <ButtonClassA className="w-full rounded-lg border border-blue-100 text-white bg-blue-100 phone:shadow-none phone:py-2 phone:px-4 hover:bg-dark-100 hover:border-dark-100" onClick={() => { }}>
                             SEND
                         </ButtonClassA>
                         <Spacer className='w-4 h-4' />

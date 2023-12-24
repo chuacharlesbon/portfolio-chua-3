@@ -57,7 +57,7 @@ export const Input: FC<InputProps> = ({
       <div className="flex flex-row">
         <label
           className={`block mb-2 font-poppins font-regular 
-        text-primary-100 ${lableSize || 'text-lg'}`}
+        text-dark-100 ${lableSize || 'text-lg'}`}
           htmlFor={name}
         >
           {label}
@@ -73,8 +73,8 @@ export const Input: FC<InputProps> = ({
       <input
         className={classNames(
           `border ${
-            validation ? 'border-red-100' : 'border-primary-100'
-          } text-primary-100 font-poppins phone:text-sm tablet:text-base
+            validation ? 'border-red-100' : 'border-dark-100'
+          } text-dark-100 font-poppins phone:text-sm tablet:text-base
        rounded-lg py-5 px-7 focus:ring-primary-200 focus:border-primary-200 block w-full`,
           className,
         )}

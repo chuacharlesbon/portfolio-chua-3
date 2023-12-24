@@ -51,7 +51,7 @@ export const RawInput: FC<RawInputProps> = ({
       <input
         className={classNames(
           `border ${
-            validation ? 'border-red-100' : 'border-primary-100'
+            validation ? 'border-red-100' : 'border-dark-100'
           } rounded-lg block w-full`,
           className,
         )}

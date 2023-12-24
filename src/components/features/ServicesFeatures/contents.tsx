@@ -12,7 +12,7 @@ export const ServicesContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Software Engineering Consultant
                     </Text>
                 }
@@ -31,7 +31,7 @@ export const ServicesContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Web Apps & Websites
                     </Text>
                 }
@@ -50,7 +50,7 @@ export const ServicesContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Mobile, Desktop Apps Development
                     </Text>
                 }
@@ -69,7 +69,7 @@ export const ServicesContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Math and Physics Tutorials
                     </Text>
                 }
@@ -88,7 +88,7 @@ export const ServicesContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Stock Market and Investments
                     </Text>
                 }

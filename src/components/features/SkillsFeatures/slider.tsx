@@ -41,7 +41,7 @@ export const SkillsSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -50,7 +50,7 @@ export const SkillsSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Throughout my journey, I<Span>&#39;</Span>ve actively pursued opportunities to hone my skills, explore diverse languages and frameworks, and build a strong foundation in software development.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -61,7 +61,7 @@ export const SkillsSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -70,7 +70,7 @@ export const SkillsSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 My academic background in engineering has equipped me with a solid foundation in arithmetic, algorithm and logic, while my technical skills allow me to translate these concepts into real-world solutions.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -81,7 +81,7 @@ export const SkillsSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -90,7 +90,7 @@ export const SkillsSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Diverse range of non-technical skills that complement my technical expertise, making me a valuable asset in any team environment.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>

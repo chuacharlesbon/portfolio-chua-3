@@ -65,7 +65,7 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
             onDimBackground(true);
             clearAllTimers();
         } else {
-            
+
             setTimer(() => {
                 setIsShown(false);
                 onDimBackground(false);
@@ -359,21 +359,22 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                                         />
                                     </button>
                                 </motion.div>
-                                <motion.div
-                                    initial={{ scale: 0 }}
-                                    animate={{ rotate: 360, scale: 1 }}
-                                    transition={{
-                                        type: "spring",
-                                        stiffness: 260,
-                                        damping: 20,
-                                        delay: 1.25
-                                    }}
+                                <button
+                                    className='absolute left-0 -top-1/2 ml-72 pl-4'
+                                    onMouseEnter={() => onIconHover(true)}
+                                    onMouseLeave={() => onIconHover(false)}
                                 >
-                                    <button
-                                        className='absolute left-0 -top-1/2 ml-72 pl-4'
-                                        onMouseEnter={() => onIconHover(true)}
-                                        onMouseLeave={() => onIconHover(false)}
+                                    <motion.div
+                                        initial={{ scale: 0 }}
+                                        animate={{ rotate: 360, scale: 1 }}
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 260,
+                                            damping: 20,
+                                            delay: 1.25
+                                        }}
                                     >
+
                                         <Div
                                             className='duration-700 w-12 h-12 p-2 bg-dark rounded-md hover:bg-dark-100 hover:bg-opacity-40'
                                             style={{
@@ -382,8 +383,9 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                                                 backgroundPosition: 'center',
                                             }}
                                         />
-                                    </button>
-                                </motion.div>
+                                    </motion.div>
+                                </button>
+
                                 <motion.div
                                     initial={{ scale: 0 }}
                                     animate={{ rotate: 360, scale: 1 }}
@@ -487,7 +489,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                     }}
                 >
                     <ButtonClassA
-                        className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                        className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                         onClick={() => {
                             if (onClick) {
                                 onClick();
@@ -531,7 +533,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -558,7 +560,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -585,7 +587,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -612,7 +614,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -639,7 +641,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -666,7 +668,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -693,7 +695,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -720,7 +722,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-primary-100 hover:bg-primary-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();

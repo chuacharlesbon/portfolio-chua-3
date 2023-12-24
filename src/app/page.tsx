@@ -68,7 +68,7 @@ export default function Home() {
         <meta property="og:image" content={Images.favicon} />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center p-24">
-        <Div className=''>{/* border border-primary-100 rounded-md p-2 */}
+        <Div className=''>{/* border border-dark-100 rounded-md p-2 */}
           <Image
             src={Images.favicon}
             alt="C Logo"

@@ -41,13 +41,13 @@ export const ContactSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
                                 Send Me A Message
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 Get Started
                             </ButtonClassA>
                         </Div>

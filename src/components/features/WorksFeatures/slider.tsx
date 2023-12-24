@@ -41,7 +41,7 @@ export const WorksSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -50,7 +50,7 @@ export const WorksSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Next.js is a popular choice for building fast, scalable, and SEO-friendly websites.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -61,7 +61,7 @@ export const WorksSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -70,7 +70,7 @@ export const WorksSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Websites built using ReactJS, a JavaScript library for building user interfaces. (Component-based development and virtual DOM efficiency)
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -81,7 +81,7 @@ export const WorksSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -90,7 +90,7 @@ export const WorksSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Flutter is a powerful framework for building cross-platform mobile and web apps.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -101,7 +101,7 @@ export const WorksSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -110,7 +110,7 @@ export const WorksSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Backend projects showcasing the power and versatility of Node.js, a JavaScript runtime environment ideal for building efficient and scalable backend applications.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -121,7 +121,7 @@ export const WorksSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-primary-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -130,7 +130,7 @@ export const WorksSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 This trio provides a robust foundation for building modern and interactive web experiences.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-primary-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>

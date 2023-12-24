@@ -44,3 +44,26 @@ export const Images = {
     facebookLogo: "assets/facebook-logo.png",
     twitterLogo: "assets/twitter-logo.png",
 }
+
+export const ImageUrl = {
+    cover: "https://my-assets-indol.vercel.app/assets/cover.png",
+}
+
+export const Icons = {
+    postman: "/assets/logo-postman.png",
+    vscode: "/assets/logo-vscode.png",
+    bootstrap: "/assets/logo-bootstrap.png",
+    react: "/assets/logo-react.png",
+    firebase: "/assets/logo-firebase.webp",
+    gcp: "/assets/logo-gcp.png",
+    appstore: "/assets/logo-appstore.png",
+    xcode: "/assets/logo-xcode.png",
+    dart: "/assets/logo-dart.png",
+    flutter: "/assets/logo-flutter.png",
+    restapi: "/assets/logo-rest.png",
+    tailwind: "/assets/logo-tailwind.png",
+    next: "/assets/logo-next.png",
+    node: "/assets/logo-nodejs.png",
+    javascript: "/assets/logo-javascript.png",
+    //postMan: "/assets/logo.png",
+}

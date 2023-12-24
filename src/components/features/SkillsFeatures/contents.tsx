@@ -12,7 +12,7 @@ export const SkillsContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Development Tools and Coding Skills
                     </Text>
                 }
@@ -31,7 +31,7 @@ export const SkillsContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Technical and Academic Skills
                     </Text>
                 }
@@ -50,7 +50,7 @@ export const SkillsContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Other Relevant Skills
                     </Text>
                 }
@@ -69,7 +69,7 @@ export const SkillsContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Node.js Projects
                     </Text>
                 }
@@ -88,7 +88,7 @@ export const SkillsContents: FC<any> = () => {
                 className='bg-grey-100'
                 textType='center'
                 textElement={
-                    <Text className='w-1/3 text-3xl text-primary-100 text-center font-serif uppercase'>
+                    <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
                         Native HTML5, CSS3 & Javascript Projects
                     </Text>
                 }

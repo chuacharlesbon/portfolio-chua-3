@@ -27,20 +27,20 @@ export const Description: FC<any> = () => {
                 }}
             >
                 <Div className="px-4 py-8 bg-white bg-opacity-40 hover:bg-opacity-80 laptop:w-900px duration-700 rounded-lg">
-                    <Text className="text-center text-primary-100 italic">
-                        <FaQuoteLeft className="text-xl text-primary-100 inline mr-2" />
+                    <Text className="text-center text-dark-100 italic">
+                        <FaQuoteLeft className="text-xl text-dark-100 inline mr-2" />
                         A competent and goal-oriented person who demonstrates the capacity to handle multiple responsibilities with diligence and a positive outlook.
                     </Text>
                     <Spacer className="h-2 w-2" />
-                    <Text className="text-center text-primary-100 italic">
+                    <Text className="text-center text-dark-100 italic">
                         Apply my expertise and experience in a new professional setting and apply my abilities to help the company reach its development objective.
-                        <FaQuoteRight className="text-xl text-primary-100 inline ml-2" />
+                        <FaQuoteRight className="text-xl text-dark-100 inline ml-2" />
                     </Text>
                     <Spacer className="h-8 w-8" />
-                    <Text className="text-center text-primary-100 font-bold">
+                    <Text className="text-center text-dark-100 font-bold">
                         Full Stack Developer
                     </Text>
-                    <Text className="font-serif text-4xl text-center text-primary-100 italic">
+                    <Text className="font-serif text-4xl text-center text-dark-100 italic">
                         Charles Bon L. Chua
                     </Text>
                 </Div>
@@ -62,7 +62,7 @@ export const Description: FC<any> = () => {
             >
                 <FlexRow className="w-full items-center justify-center py-8">
                     <ButtonClassA
-                        className="border border-2 border-white hover:bg-white text-white hover:text-primary-100 phone:py-4 phone:px-8"
+                        className="border border-2 border-white hover:bg-white text-white hover:text-dark-100 phone:py-4 phone:px-8"
                         onClick={() => {
                             const element = document.getElementById('home-content-1');
                             if (element) {

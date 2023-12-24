@@ -19,7 +19,7 @@ export const BackButton: FC<DataProps> = ({ onClick }) => {
                 }
                 history.back();
             }}>
-                <FlexRow className='font-bold text-primary-100 text-xl items-center'>
+                <FlexRow className='font-bold text-dark-100 text-xl items-center'>
                     <FaChevronLeft />
                     <Spacer className='w-4 h-4' />
                     <Span>
