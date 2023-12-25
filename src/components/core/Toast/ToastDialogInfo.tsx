@@ -16,16 +16,50 @@ interface ButtonProps {
 export const ToastDialogInfo: FC<ButtonProps> = ({
   title, description, onClose, isOpen, toastKind, children
 }) => {
-  let color = 'green-100';
 
-  if (toastKind === 'success') {
-    color = 'green-100';
-  } else if (toastKind === 'error') {
-    color = 'red-100';
-  } else if (toastKind === 'warning') {
-    color = 'yellow-100';
-  } else if (toastKind === 'info') {
-    color = 'dark-100';
+  const getTitle = () => {
+    switch (toastKind) {
+      case 'info':
+        return <div className={`font-semibold font-robot text-base text-dark-100`}>
+          {title.toUpperCase()}
+        </div>;
+        break;
+      case 'success':
+        return <div className={`font-semibold font-robot text-base text-green-100`}>
+          {title.toUpperCase()}
+        </div>;
+        break;
+      case 'error':
+        return <div className={`font-semibold font-robot text-base text-red-100`}>
+          {title.toUpperCase()}
+        </div>;
+        break;
+      case 'warning':
+        return <div className={`font-semibold font-robot text-base text-yellow-100`}>
+          {title.toUpperCase()}
+        </div>;
+        break;
+      default:
+        return <div className={`font-semibold font-robot text-base text-dark-100`}>
+          {title.toUpperCase()}
+        </div>;
+        break;
+    }
+  }
+
+  const getIcon = () => {
+    switch (toastKind) {
+      case 'info':
+        return <FaTimes className={`text-lg text-dark-100`} />;
+      case 'success':
+        return <FaTimes className={`text-lg text-green-100`} />;
+      case 'error':
+        return <FaTimes className={`text-lg text-red-100`} />;
+      case 'warning':
+        return <FaTimes className={`text-lg text-yellow-100`} />;
+      default:
+        return <FaTimes className={`text-lg text-dark-100`} />;
+    }
   }
 
   return (
@@ -55,33 +89,31 @@ export const ToastDialogInfo: FC<ButtonProps> = ({
                 id="toast-success"
                 role="alert"
               >
-              <FlexRow className={`w-full justify-between ${description ? 'items-start' : 'items-center'}`}>
-                <div>
-                  <div className={`font-semibold font-robot text-base text-${color}`}>
-                    {title.toUpperCase()}
+                <FlexRow className={`w-full justify-between ${description ? 'items-start' : 'items-center'}`}>
+                  <div>
+                    {getTitle()}
+                    {
+                      description
+                        ? <div className="text-sm font-normal font-robot text-dark-100">{description}</div>
+                        : <></>
+                    }
                   </div>
-                  {
-                    description
-                    ? <div className="text-sm font-normal font-robot text-dark-100">{description}</div>
-                    : <></>
-                  }
-                </div>
-                <div className='w-4 h-4' />
-                <button
-                  aria-label="Close"
-                  className="bg-white text-grey-200 hover:text-grey-100 
+                  <div className='w-4 h-4' />
+                  <button
+                    aria-label="Close"
+                    className="bg-white text-grey-200 hover:text-grey-100 
               rounded-lg inline-flex h-8 w-8 justify-center items-center border border-grey-400 outline-grey-500"
-                  data-collapse-toggle="toast-success"
-                  onClick={onClose}
-                  type="button"
-                >
-                  <FaTimes className={`text-lg text-${color}`} />
-                </button>
-              </FlexRow>
+                    data-collapse-toggle="toast-success"
+                    onClick={onClose}
+                    type="button"
+                  >
+                    {getIcon()}
+                  </button>
+                </FlexRow>
 
-              <div className='w-full'>
-                {children}
-              </div>
+                <div className='w-full'>
+                  {children}
+                </div>
 
               </div>
             </div>
