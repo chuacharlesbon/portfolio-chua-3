@@ -309,13 +309,14 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                         >
                             <FlexRow className='w-full items-center justify-center'>
                                 <button
-                                    onMouseEnter={() => onIconHover(true)}
+                                    onMouseEnter={() => {}}
                                     onMouseLeave={() => onIconHover(false)}
+                                    onClick={() => onIconHover(true)}
                                 >
                                     <Image
                                         src={Images.favicon}
                                         alt="C Logo"
-                                        className='rounded-full border border-8 border-dark-100'
+                                        className='rounded-full border border-8 border-dark-100 hover:border-grey-100'
                                         width={100}
                                         height={100}
                                     />
