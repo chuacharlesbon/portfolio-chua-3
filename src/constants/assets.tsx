@@ -43,6 +43,7 @@ export const Images = {
     githubLogo: "assets/github-logo.png",
     facebookLogo: "assets/facebook-logo.png",
     twitterLogo: "assets/twitter-logo.png",
+    zuittLogo: "assets/logo-zuitt.png",
 }
 
 export const ImageUrl = {
@@ -65,5 +66,10 @@ export const Icons = {
     next: "/assets/logo-next.png",
     node: "/assets/logo-nodejs.png",
     javascript: "/assets/logo-javascript.png",
+    html: "/assets/logo-html5.png",
+    css: "/assets/logo-css3.png",
+    mongodb: "/assets/logo-mongodb.png",
+    sublime: "/assets/logo-sublime-text-3.png",
+    git: "/assets/logo-git.png",
     //postMan: "/assets/logo.png",
 }

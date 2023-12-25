@@ -11,10 +11,14 @@ import { Description } from '@/components/features/HomeFeatures/description';
 import { LoadingElement } from '@/components/features/loading_element';
 import { HomeContents } from '@/components/features/HomeFeatures/contents';
 import { DimElement } from '@/components/features/dim_element';
+import { ToastDialogInfo } from '@/components/core/Toast';
 
 export default function Home() {
+    
     const [loading, setIsLoading] = React.useState(false);
     const [isDim, setDim] = React.useState(false);
+    const [isToastOpen, setToastOpen] = React.useState(true);
+
     return (
         <>
             <Head>
@@ -34,6 +38,15 @@ export default function Home() {
                 {
                     isDim ? <DimElement /> : <Spacer />
                 }
+                <ToastDialogInfo
+                    title='NOTICE'
+                    description='This page is currently in development.'
+                    toastKind='info'
+                    onClose={() => setToastOpen(false)}
+                    isOpen={isToastOpen}
+                >
+                    
+                </ToastDialogInfo>
                 <Div className='w-full min-h-screen'>
                     <Appbar
                         onDimBackground={setDim}

@@ -6,7 +6,7 @@ import { Text } from "@/components/core/TextElements";
 
 export const LoadingElement: FC<any> = () => {
     return (
-        <Div className="fixed index-50 flex min-h-screen w-full flex-col items-center justify-center bg-white">
+        <Div className="fixed z-50 flex min-h-screen w-full flex-col items-center justify-center bg-white">
             <motion.div
                 animate={{
                     opacity: 1,
