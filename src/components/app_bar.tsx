@@ -311,7 +311,14 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                                 <button
                                     onMouseEnter={() => {}}
                                     onMouseLeave={() => onIconHover(false)}
-                                    onClick={() => onIconHover(true)}
+                                    onClick={() => {
+                                        if(!isShown){
+                                            onIconHover(true);
+                                        }else{
+                                            setIsShown(false);
+                                            onDimBackground(false);
+                                        }
+                                    }}
                                 >
                                     <Image
                                         src={Images.favicon}
