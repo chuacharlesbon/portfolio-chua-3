@@ -75,7 +75,7 @@ export const ToastDialogInfo: FC<ButtonProps> = ({
                   onClick={onClose}
                   type="button"
                 >
-                  <FaTimes className="text-lg" />
+                  <FaTimes className={`text-lg text-${color}`} />
                 </button>
               </FlexRow>
 
