@@ -80,11 +80,7 @@ export const HomeContents: FC<any> = () => {
                                         </Div>
                                     </FlexRow>
                                 </motion.div>
-                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
-                                <Text className='text-blue-100 text-center font-semibold'>
-                                    Tools, Skills and Tech Stack
-                                </Text>
-                                <Spacer className='w-4 h-4' />
+
                                 <motion.div
                                     animate={{
                                         opacity: 1,
@@ -100,6 +96,11 @@ export const HomeContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                    <Text className='text-blue-100 text-center font-semibold'>
+                                        Tools, Skills and Tech Stack
+                                    </Text>
+                                    <Spacer className='w-4 h-4' />
                                     <Div className='mx-auto text-center grid grid-cols-2 tablet:w-1/2 tablet:grid-cols-4 laptop:w-3/4 laptop:grid-cols-8 gap-4 items-center justify-center'>
                                         <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
@@ -260,11 +261,7 @@ export const HomeContents: FC<any> = () => {
                                         </Div>
                                     </FlexRow>
                                 </motion.div>
-                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
-                                <Text className='text-blue-100 text-center font-semibold'>
-                                    Tools, Skills and Tech Stack
-                                </Text>
-                                <Spacer className='w-4 h-4' />
+
                                 <motion.div
                                     animate={{
                                         opacity: 1,
@@ -280,6 +277,11 @@ export const HomeContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                    <Text className='text-blue-100 text-center font-semibold'>
+                                        Tools, Skills and Tech Stack
+                                    </Text>
+                                    <Spacer className='w-4 h-4' />
                                     <Div className='mx-auto text-center grid grid-cols-2 tablet:w-1/2 tablet:grid-cols-4 laptop:w-3/5 gap-4 items-center justify-center'>
                                         <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
@@ -394,11 +396,7 @@ export const HomeContents: FC<any> = () => {
                                         </Div>
                                     </FlexRow>
                                 </motion.div>
-                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
-                                <Text className='text-blue-100 text-center font-semibold'>
-                                    Tools, Skills and Tech Stack
-                                </Text>
-                                <Spacer className='w-4 h-4' />
+
                                 <motion.div
                                     animate={{
                                         opacity: 1,
@@ -414,6 +412,11 @@ export const HomeContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                    <Text className='text-blue-100 text-center font-semibold'>
+                                        Tools, Skills and Tech Stack
+                                    </Text>
+                                    <Spacer className='w-4 h-4' />
                                     <Div className='mx-auto text-center grid grid-cols-2 tablet:w-1/2 tablet:grid-cols-4 laptop:w-3/4 laptop:grid-cols-8 gap-4 items-center justify-center'>
                                         <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image

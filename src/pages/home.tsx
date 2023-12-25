@@ -5,6 +5,7 @@ import Script from 'next/script';
 import 'tailwindcss/tailwind.css';
 import { Appbar, Footer } from "@/components";
 import { Div, Spacer } from "@/components/core/Containers";
+import { Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
 import { Description } from '@/components/features/HomeFeatures/description';
@@ -40,12 +41,13 @@ export default function Home() {
                 }
                 <ToastDialogInfo
                     title='NOTICE'
-                    description='This page is currently in development.'
                     toastKind='info'
                     onClose={() => setToastOpen(false)}
                     isOpen={isToastOpen}
                 >
-                    
+                    <Text className='text-dark-100 text-center py-4'>
+                    This page is currently in development. Thank you.
+                    </Text>
                 </ToastDialogInfo>
                 <Div className='w-full min-h-screen'>
                     <Appbar

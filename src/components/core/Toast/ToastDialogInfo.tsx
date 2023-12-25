@@ -7,7 +7,7 @@ interface ButtonProps {
   className?: string;
   title: string;
   onClose: any;
-  description: string;
+  description?: string;
   isOpen: boolean;
   toastKind: string;
   children?: any;
@@ -55,13 +55,18 @@ export const ToastDialogInfo: FC<ButtonProps> = ({
                 id="toast-success"
                 role="alert"
               >
-              <FlexRow className='w-full items-start justify-between'>
+              <FlexRow className={`w-full justify-between ${description ? 'items-start' : 'items-center'}`}>
                 <div>
                   <div className={`font-semibold font-robot text-base text-${color}`}>
                     {title.toUpperCase()}
                   </div>
-                  <div className="text-sm font-normal font-robot text-dark-100">{description}</div>
+                  {
+                    description
+                    ? <div className="text-sm font-normal font-robot text-dark-100">{description}</div>
+                    : <></>
+                  }
                 </div>
+                <div className='w-4 h-4' />
                 <button
                   aria-label="Close"
                   className="bg-white text-grey-200 hover:text-grey-100 
