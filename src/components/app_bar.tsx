@@ -323,7 +323,7 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                                     <Image
                                         src={Images.favicon}
                                         alt="C Logo"
-                                        className='rounded-full border border-8 border-dark-100 hover:border-grey-100'
+                                        className='duration-700 rounded-full border border-8 border-dark-100 hover:border-grey-100'
                                         width={100}
                                         height={100}
                                     />
