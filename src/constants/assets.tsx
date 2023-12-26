@@ -71,5 +71,6 @@ export const Icons = {
     mongodb: "/assets/logo-mongodb.png",
     sublime: "/assets/logo-sublime-text-3.png",
     git: "/assets/logo-git.png",
-    //postMan: "/assets/logo.png",
+    apple: "/assets/logo-apple.png",
+    tip: "/assets/logo-tip.png",
 }
