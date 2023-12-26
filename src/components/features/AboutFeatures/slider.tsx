@@ -41,7 +41,7 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -66,7 +66,7 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'top',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -91,7 +91,7 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
@@ -116,7 +116,7 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-dark-100 justify-start items-center'>
+                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
                         <Spacer className='w-20 h-20' />
                         <Div>
                             <Text className='font-bold text-white text-xl'>
