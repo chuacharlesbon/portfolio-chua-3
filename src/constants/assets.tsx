@@ -78,4 +78,9 @@ export const Icons = {
     chowking: "/assets/logo-chowking.png",
     kuyaj: "/assets/logo-kuyaj.png",
     jfc: "/assets/logo-jfc.jpg",
+    windows: "/assets/logo-windows.png",
+    linux: "/assets/logo-linux.png",
+    figma: "/assets/logo-figma.jpg",
+    sap: "/assets/logo-sap.png",
+    krita: "/assets/logo-krita.png",
 }

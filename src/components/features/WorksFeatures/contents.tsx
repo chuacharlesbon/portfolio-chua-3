@@ -699,14 +699,14 @@ export const WorksContents: FC<any> = () => {
                 </Text>
                 <Spacer className='w-10 h-10' />
                 <InView as="div" onChange={(inView, entry) => {
-                    if (!isNextjsVisible) {
+                    if (!isHTMLVisible) {
                         setTimeout(() => {
-                            setNextjs(inView);
+                            setHTML(inView);
                         }, 750);
                     }
                 }}>
                     {
-                        isNextjsVisible
+                        isHTMLVisible
                             ? <Div className='py-4'>
                                 <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 tabletWide:w-700px gap-4 tabletWide:gap-8 items-center justify-center'>
                                     <motion.div
