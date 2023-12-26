@@ -185,6 +185,10 @@ export const AboutContents: FC<any> = () => {
                                                 }} />
                                         </Div>
                                         <Div className='w-4/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Zuitt Learning Institute
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
                                                 &#8226; Front-End Web Development with HTML5, CSS3, BootStrap 4 (March 2022)
                                             </Text>
@@ -230,6 +234,10 @@ export const AboutContents: FC<any> = () => {
                                                 }} />
                                         </Div>
                                         <Div className='w-4/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Apple Inc. - Webinars
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
                                                 &#8226; XCode Setup and Build
                                             </Text>
@@ -293,6 +301,10 @@ export const AboutContents: FC<any> = () => {
                                                 }} />
                                         </Div>
                                         <Div className='w-4/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Technological Institute of the Philippines
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
                                                 &#8226; BS Civil Engineering
                                             </Text>
@@ -332,6 +344,10 @@ export const AboutContents: FC<any> = () => {
                                                 }} />
                                         </Div>
                                         <Div className='w-4/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Saint Rita College - Manila
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
                                                 &#8226; First Honorable Mention, SY 2012-2013
                                             </Text>
@@ -469,6 +485,12 @@ export const AboutContents: FC<any> = () => {
                                             </Text>
                                             <Text className='text-secondary-200'>
                                                 &#8226; Kitchen Staff
+                                            </Text>
+                                            <Text className='text-secondary-200'>
+                                                &#8226; IKitchen-Inc Food Safety and Food Process Training - 2017
+                                            </Text>
+                                            <Text className='text-secondary-200'>
+                                                &#8226; JCW On-Site Supervisor Training and Certification - 2017
                                             </Text>
                                         </Div>
                                     </FlexRow>
