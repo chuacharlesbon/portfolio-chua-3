@@ -73,4 +73,9 @@ export const Icons = {
     git: "/assets/logo-git.png",
     apple: "/assets/logo-apple.png",
     tip: "/assets/logo-tip.png",
+    src: "/assets/logo-src.png",
+    jcw: "/assets/logo-jcw.png",
+    chowking: "/assets/logo-chowking.png",
+    kuyaj: "/assets/logo-kuyaj.png",
+    jfc: "/assets/logo-jfc.jpg",
 }
