@@ -452,6 +452,42 @@ export const WorksContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
+                                                    Okada App
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                    2024
+                                                </Text>
+                                            </Div>
+                                        </Div>
+                                    </motion.div>
+                                    <motion.div
+                                        animate={{
+                                            opacity: 1,
+                                            y: 0, // Reset the y position to avoid jumping
+                                        }}
+                                        transition={{
+                                            delay: 0.50,
+                                            duration: 0.5,
+                                            ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                        }}
+                                        initial={{
+                                            opacity: 0,
+                                            y: +50, // Start the element off the top of the screen
+                                        }}
+                                    >
+                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square'>
+                                                <Div
+                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                /* style={{
+                                                    backgroundImage: `url(${Images.favicon})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                }} */
+                                                >
+                                                </Div>
+                                                <Spacer className='w-2 h-2 ' />
+                                                <Text className='text-dark-100 font-bold'>
                                                     Captive Portal
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
