@@ -119,7 +119,7 @@ export const AboutContents: FC<any> = () => {
                                             </Text> 
                                             <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
-                                                &#8226; Consultations with web and mobile developers aid in achieving the projects' digital objectives.
+                                                &#8226; Consultations with web and mobile developers aid in achieving the projects digital objectives.
                                             </Text>
                                             <Text className='text-secondary-200'>
                                                 &#8226; Work independently or as part of a team, able to provide low-level technical documentations
@@ -290,7 +290,7 @@ export const AboutContents: FC<any> = () => {
                                                 &#8226; BS Civil Engineering
                                             </Text>
                                             <Text className='text-secondary-200'>
-                                                &#8226; Dean's Lister
+                                                &#8226; Deans Lister
                                             </Text>
                                             <Text className='text-secondary-200'>
                                                 &#8226; 2013 - 2019
