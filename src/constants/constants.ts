@@ -9,3 +9,7 @@ export const RouteNames = {
     connect: "connect",
     explore: "explore",
 }
+
+export const RedirectionURL = {
+    investment: "https://www.facebook.com/profile.php?id=100069620875651",
+}

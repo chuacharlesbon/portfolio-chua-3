@@ -50,7 +50,12 @@ export const ServicesSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Leveraging Expertise to Drive Your Success
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { 
+                                const element = document.getElementById('services-content-consult');
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -70,7 +75,12 @@ export const ServicesSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 We are a team of experienced web developers who are passionate about creating beautiful, functional, and results-driven websites. We have the skills and expertise to take your digital marketing to the next level.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { 
+                                const element = document.getElementById('services-content-web');
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -90,7 +100,12 @@ export const ServicesSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 We create native applications that leverage the latest features and functionalities of each platform, ensuring a seamless and intuitive user experience. Developing robust and efficient desktop applications to streamline your workflows and boost productivity.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { 
+                                const element = document.getElementById('services-content-mobile');
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -110,7 +125,12 @@ export const ServicesSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Transform your learning experience.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { 
+                                const element = document.getElementById('services-content-tutorial');
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
@@ -130,7 +150,12 @@ export const ServicesSlider: FC<any> = () => {
                             <Text className='w-300px text-white py-4'>
                                 Explore risk management strategies to protect your capital and navigate market fluctuations. Craft portfolios aligned with your risk tolerance, time horizon, and financial aspirations.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { }}>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { 
+                                const element = document.getElementById('services-content-invest');
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}>
                                 LEARN MORE
                             </ButtonClassA>
                         </Div>
