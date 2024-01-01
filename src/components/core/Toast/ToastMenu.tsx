@@ -39,7 +39,7 @@ export const ToastMenu: FC<ButtonProps> = ({
                             className="h-full w-full overflow-hidden text-left z-50 p-4 align-middle transition-all transform flex flex-col justify-end items-center"
                         >
                             <div
-                                className={`flex flex-col justify-around p-4 text-gray-500 w-full medium:w-300px rounded-lg shadow-xl dark:text-gray-400 font-robot bg-secondary-100`}
+                                className={`flex flex-col justify-around p-4 text-gray-500 w-full medium:w-300px rounded-lg shadow-xl dark:text-gray-400 font-robot bg-secondary-100 mb-8`}
                                 id="toast-success"
                                 role="alert"
                             >
