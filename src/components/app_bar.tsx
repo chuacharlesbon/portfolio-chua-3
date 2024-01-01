@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { BsCoin } from "react-icons/bs";
+import { BsCoin, BsMenuButtonFill } from "react-icons/bs";
 import { FaSearch, FaUser, FaHandPaper, FaLink } from "react-icons/fa";
 import { GiCheckMark } from "react-icons/gi";
 import { MdHome, MdCall, MdTravelExplore } from "react-icons/md";
@@ -13,6 +13,8 @@ import { Text } from "@/components/core/TextElements";
 import { RawInput } from '@/components/core/Forms/RawInput';
 import { Images } from "@/constants/assets";
 import { RouteNames } from '@/constants/constants';
+import Link from 'next/link';
+import { ToastMenu } from './core/Toast';
 
 export const SearchField: FC<any> = () => {
     return (
@@ -48,6 +50,7 @@ interface DataProps {
 export const Appbar: FC<DataProps> = ({ location, className, children, onClick, onDimBackground, ...props }) => {
     const router = useRouter();
     const [isShown, setIsShown] = React.useState(false);
+    const [isToastOpen, setToastOpen] = React.useState(false);
 
     let timerIds: NodeJS.Timeout[] = [];
     function setTimer(callback: any, delay: any) {
@@ -75,7 +78,64 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
 
     return (
         <Div className='w-full'>
-            <FlexRow className='fixed index-10 items-center justify-center w-full p-2 bg-dark-100'>
+            <FlexRow className={`tabletWide:hidden bg-dark-100 fixed index-10 h-12 items-center justify-between w-full px-2 border-b border-grey-400`}>
+            <motion.div
+                    animate={{
+                        opacity: 1,
+                        y: 0, // Reset the y position to avoid jumping
+                    }}
+                    transition={{
+                        delay: location !== RouteNames.home ? 0 : 0.2,
+                        duration: 0.5,
+                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                    }}
+                    initial={{
+                        opacity: 0,
+                        y: -50, // Start the element off the top of the screen
+                    }}
+                >
+                    <ButtonClassA
+                        className={`text-white hover:bg-secondary-200 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                        onClick={() => {
+                            if (onClick) {
+                                onClick();
+                            }
+                            router.push('/home')
+                        }}>
+                        <Spacer className='w-2 h-2 medium:w-8 medium:h-8' />
+                        <Image
+                            src={Images.favicon}
+                            alt="C Logo"
+                            className='rounded-full'
+                            width={36}
+                            height={36}
+                        />
+                        <Spacer className='w-4 h-4' />
+                        <Div>
+                            <Text className='font-bold text-xs laptopSm:text-base text-left'>
+                                Charles C.
+                            </Text>
+                            <Text className='font-light text-xs text-left'>
+                                Full Stack Developer
+                            </Text>
+                        </Div>
+                        <Spacer className='w-2 h-2 medium:w-8 medium:h-8' />
+                    </ButtonClassA>
+                </motion.div>
+
+                <ButtonClassA
+                    className={`tabletWide:hidden text-white hover:bg-secondary-200 phone:shadow-none phone:px-4 medium:px-8 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                    onClick={() => setToastOpen(true)}
+                >
+                    <BsMenuButtonFill />
+                </ButtonClassA>
+                <ToastMenu
+                    title='MAIN MENU'
+                    onClose={() => setToastOpen(false)}
+                    isOpen={isToastOpen}
+                />
+            </FlexRow>
+            <FlexRow className='phone:hidden tabletWide:flex fixed index-10 items-center justify-center w-full p-2 bg-dark-100'>
                 <motion.div
                     animate={{
                         opacity: 1,
@@ -294,7 +354,7 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
                     </ButtonClassA>
                 </motion.div>
             </FlexRow>
-            <FlexColumn className='fixed index-20 justify-start items-center top-0 left-0 right-0 mx-auto w-48 group'>
+            <FlexColumn className='phone:hidden tabletWide:flex fixed index-20 justify-start items-center top-0 left-0 right-0 mx-auto w-48 group'>
                 {
                     location === RouteNames.home
                         ? <motion.div
@@ -477,7 +537,10 @@ export const Appbar: FC<DataProps> = ({ location, className, children, onClick, 
 }
 
 export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, children, onClick, ...props }) => {
+    
     const router = useRouter();
+    const [isToastOpen, setToastOpen] = React.useState(false);
+    
     return (
         <Div className='relative w-full'>
             <FlexRow className={`${(isDarkTheme ?? true) ? 'bg-dark-100' : 'bg-white'} fixed index-10 h-12 items-center justify-between w-full px-2 border-b border-grey-400`}>
@@ -504,7 +567,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                             }
                             router.push('/home')
                         }}>
-                        <Spacer className='w-8 h-8' />
+                        <Spacer className='w-2 h-2 medium:w-8 medium:h-8' />
                         <Image
                             src={Images.favicon}
                             alt="C Logo"
@@ -514,17 +577,30 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         />
                         <Spacer className='w-4 h-4' />
                         <Div>
-                            <Text className='font-bold text-left'>
+                            <Text className='font-bold text-xs laptopSm:text-base text-left'>
                                 Charles C.
                             </Text>
                             <Text className='font-light text-xs text-left'>
                                 Full Stack Developer
                             </Text>
                         </Div>
-                        <Spacer className='w-8 h-8' />
+                        <Spacer className='w-2 h-2 medium:w-8 medium:h-8' />
                     </ButtonClassA>
                 </motion.div>
-                <FlexRow className='items-center'>
+
+                <ButtonClassA
+                    className={`tabletWide:hidden ${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-4 medium:px-8 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                    onClick={() => setToastOpen(true)}
+                >
+                    <BsMenuButtonFill />
+                </ButtonClassA>
+                <ToastMenu
+                    title='MAIN MENU'
+                    onClose={() => setToastOpen(false)}
+                    isOpen={isToastOpen}
+                />
+
+                <FlexRow className='items-center phone:hidden tabletWide:flex'>
                     <motion.div
                         animate={{
                             opacity: 1,
@@ -541,7 +617,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -568,7 +644,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -595,7 +671,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -622,7 +698,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -649,7 +725,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -676,7 +752,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -703,7 +779,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
@@ -730,7 +806,7 @@ export const Appbar2: FC<DataProps> = ({ isDarkTheme, location, className, child
                         }}
                     >
                         <ButtonClassA
-                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} w-32 phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400`}
+                            className={`${(isDarkTheme ?? true) ? 'text-white hover:bg-secondary-200' : 'bg-white text-dark-100 hover:bg-dark-100 hover:text-white'} phone:shadow-none phone:px-0 flex flex-row items-center justify-center h-12 border-b border-grey-400 w-24 text-sm laptopSm:w-32 laptopSm:text-base`}
                             onClick={() => {
                                 if (onClick) {
                                     onClick();
