@@ -3,6 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
 import 'tailwindcss/tailwind.css';
+import { GiGears } from "react-icons/gi";
 import { Appbar2, Footer } from "@/components";
 import { Div, Spacer } from "@/components/core/Containers";
 import { Images } from "@/constants/assets";
@@ -46,11 +47,17 @@ export default function Explore() {
                         {/* SECTIONS HERE */}
                     </Div>
                     <Div className='w-full mx-auto'>
-                        <Spacer className='h-12 w-32' />
+                        <Spacer className='h-40 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
-                        <Text className='text-center py-40'>
-                            EXPLORE
+                        <GiGears className="text-9xl text-grey-400 text-center mx-auto" />
+                        <Spacer className='h-8 w-32' />
+                        <Text className='text-center text-secondary-200 font-light'>
+                            Page not found: EXPLORE
                         </Text>
+                        <Text className='text-center text-2xl'>
+                            We are working on it.
+                        </Text>
+                        <Spacer className='h-40 w-32' />
                     </Div>
                     <Footer />
                 </Div>
