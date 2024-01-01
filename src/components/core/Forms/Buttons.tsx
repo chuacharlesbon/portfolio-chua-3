@@ -19,3 +19,16 @@ export const ButtonClassA: FC<DataProps> = ({ className, children, onClick, isSu
             </button>
     );
 };
+
+export const RawButtonClass: FC<DataProps> = ({ className, children, onClick, isSubmit }) => {
+
+    return (
+            <button
+                className={className}
+                onClick={onClick}
+                type={isSubmit ? "submit" : "button"}
+            >
+                {children}
+            </button>
+    );
+};

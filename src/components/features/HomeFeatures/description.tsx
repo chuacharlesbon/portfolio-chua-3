@@ -40,7 +40,7 @@ export const Description: FC<any> = () => {
                     <Text className="text-center text-dark-100 font-bold">
                         Full Stack Developer
                     </Text>
-                    <Text className="font-serif text-4xl text-center text-dark-100 italic">
+                    <Text className="font-serif text-4xl text-center text-dark-100">
                         Charles Bon L. Chua
                     </Text>
                 </Div>

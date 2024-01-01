@@ -10,6 +10,7 @@ import { Icons, Images } from "@/constants/assets";
 import { RawInput } from '@/components/core/Forms/RawInput';
 import { FormLabel } from '@/components/core/Forms/FormLabel';
 import { ImSpinner } from 'react-icons/im';
+import { RedirectionURL } from '@/constants/constants';
 
 export const HomeContents: FC<any> = () => {
 
@@ -21,7 +22,7 @@ export const HomeContents: FC<any> = () => {
 
     return (
         <Div className='w-full bg-grey-600'>
-            <Div className='w-10/12 mx-auto p-4'>
+            <Div className='tablet:w-10/12 mx-auto p-4'>
                 <div id='home-content-1' />
 
                 {/* /////////////////////// */}
@@ -42,7 +43,7 @@ export const HomeContents: FC<any> = () => {
                 }}>
                     {
                         isXtendlyVisible
-                            ? <Div className='py-4 laptopSm:py-8 laptop:py-12 rounded-md shadow-lg bg-white'>
+                            ? <Div className='py-12 rounded-md shadow-lg bg-white'>
                                 <motion.div
                                     animate={{
                                         opacity: 1,
@@ -58,8 +59,27 @@ export const HomeContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
-                                    <FlexRow className='w-full items-center justify-center laptop:text-lg desktop:text-xl'>
-                                        <Div className='w-3/5 p-4'>
+                                    <FlexRow className='w-full text-base phone:flex-col tabletWide:flex-row items-center phone:justify-center tabletWide:justify-around laptop:text-lg desktop:text-xl'>
+                                        <Div className='phone:w-full tabletWide:hidden'>
+                                            <Div
+                                                className='w-40 h-40 mx-auto'
+                                                style={{
+                                                    backgroundImage: `url(${Images.xtendlyLogo})`,
+                                                    backgroundSize: 'cover',
+                                                    backgroundPosition: 'center',
+                                                }} />
+                                        </Div>
+                                        <Div className='phone:w-full tabletWide:w-3/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Xtendly Philippines, Inc.
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Full Stack Web/Mobile Developer
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Since May 2022
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
                                                 More than a year of experience in web and mobile development working with ecommerce,
                                                 admin systems, marketing sites, and affiliate web apps
@@ -69,7 +89,7 @@ export const HomeContents: FC<any> = () => {
                                                 Developer websites and mobile apps using React.js & Flutter.
                                             </Text>
                                         </Div>
-                                        <Div className='w-1/4'>
+                                        <Div className='phone:hidden tabletWide:block tabletWide:w-1/4'>
                                             <Div
                                                 className='w-40 h-40 mx-auto'
                                                 style={{
@@ -223,7 +243,7 @@ export const HomeContents: FC<any> = () => {
                 }}>
                     {
                         isVontosVisible
-                            ? <Div className='py-4 laptopSm:py-8 laptop:py-12 rounded-md shadow-lg bg-white'>
+                            ? <Div className='py-12 rounded-md shadow-lg bg-white'>
                                 <motion.div
                                     animate={{
                                         opacity: 1,
@@ -239,8 +259,8 @@ export const HomeContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
-                                    <FlexRow className='w-full items-center justify-center'>
-                                        <Div className='w-1/4'>
+                                    <FlexRow className='w-full text-base phone:flex-col tabletWide:flex-row items-center phone:justify-center tabletWide:justify-around'>
+                                        <Div className='phone:w-full tabletWide:w-1/4'>
                                             <Div
                                                 className='w-40 h-40 mx-auto'
                                                 style={{
@@ -249,7 +269,17 @@ export const HomeContents: FC<any> = () => {
                                                     backgroundPosition: 'center',
                                                 }} />
                                         </Div>
-                                        <Div className='w-3/5 p-4'>
+                                        <Div className='phone:w-full tabletWide:w-3/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Vontos Technologies
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Consultant
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Since July 2023
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200 laptop:text-lg desktop:text-xl'>
                                                 Consultations with web and mobile developers aid in achieving the projects digital objectives.
 
@@ -353,7 +383,7 @@ export const HomeContents: FC<any> = () => {
                 }}>
                     {
                         isZuittVisible
-                            ? <Div className='py-4 laptopSm:py-8 laptop:py-12 rounded-md shadow-lg bg-white'>
+                            ? <Div className='py-12 rounded-md shadow-lg bg-white'>
                                 <motion.div
                                     animate={{
                                         opacity: 1,
@@ -369,8 +399,27 @@ export const HomeContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
-                                    <FlexRow className='w-full items-center justify-center laptop:text-lg desktop:text-xl'>
-                                        <Div className='w-3/5 p-4'>
+                                    <FlexRow className='w-full text-base phone:flex-col tabletWide:flex-row items-center phone:justify-center tabletWide:justify-around laptop:text-lg desktop:text-xl'>
+                                        <Div className='phone:w-full tabletWide:hidden'>
+                                            <Div
+                                                className='h-40 w-40 mx-auto'
+                                                style={{
+                                                    backgroundImage: `url(${Images.zuittLogo})`,
+                                                    backgroundSize: 'cover',
+                                                    backgroundPosition: 'center',
+                                                }} />
+                                        </Div>
+                                        <Div className='phone:w-full tabletWide:w-3/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Zuitt Learning Institute
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Full Stack Developer
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Since March 2022
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
                                                 Front-End Web Development with HTML5, CSS3, BootStrap 4 (March 2022)
                                             </Text>
@@ -385,7 +434,7 @@ export const HomeContents: FC<any> = () => {
 
                                             </Text>
                                         </Div>
-                                        <Div className='w-1/4'>
+                                        <Div className='phone:hidden tabletWide:block tabletWide:w-1/4'>
                                             <Div
                                                 className='h-40 w-40 mx-auto'
                                                 style={{
@@ -553,16 +602,122 @@ export const HomeContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
-                                    <FlexRow className='w-full items-stretch hover:items-start justify-between'>
-                                        <Div className='duration-700 p-6 w-30p aspect-[3/2] rounded-lg shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                    <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4 gap-4 tablet:gap-8 items-center justify-center'>
+                                        <a
+                                            className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
+                                            href={RedirectionURL.okadaUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <Div className='w-full phone:aspect-square tablet:aspect-[3/2] flex flex-col justify-between'>
+                                                <Div
+                                                    className='w-full h-3/4 bg-grey-400 border border-grey-500'
+                                                    style={{
+                                                        backgroundImage: `url(${Images.okadaCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
+                                                >
+
+                                                </Div>
+                                                <Spacer className='w-2 h-2 ' />
+                                                <Text className='text-dark-100 font-bold'>
+                                                    Okada Mobile App is now on App Store & Google Play
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                    2024
+                                                </Text>
+                                            </Div>
+                                        </a>
+                                        <a
+                                            className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
+                                            href={RedirectionURL.tmbpUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <Div className='w-full phone:aspect-square tablet:aspect-[3/2] flex flex-col justify-between'>
+                                                <Div
+                                                    className='w-full h-3/4 bg-grey-400 border border-grey-500'
+                                                    style={{
+                                                        backgroundImage: `url(${Images.tmbpCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
+                                                >
+
+                                                </Div>
+                                                <Spacer className='w-2 h-2 ' />
+                                                <Text className='text-dark-100 font-bold'>
+                                                    Timberland Bike Park App now on App Store & Google Play
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                    December 2023
+                                                </Text>
+                                            </Div>
+                                        </a>
+                                        <a
+                                            className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
+                                            href={RedirectionURL.cljUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <Div className='w-full phone:aspect-square tablet:aspect-[3/2] flex flex-col justify-between'>
+                                                <Div
+                                                    className='w-full h-3/4 bg-grey-400 border border-grey-500'
+                                                    style={{
+                                                        backgroundImage: `url(${Images.cljCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
+                                                >
+
+                                                </Div>
+                                                <Spacer className='w-2 h-2 ' />
+                                                <Text className='text-dark-100 font-bold'>
+                                                    Cebuana Lhuillier Jewelry released their new website
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                    November 2023
+                                                </Text>
+                                            </Div>
+                                        </a>
+                                        <a
+                                            className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
+                                            href={RedirectionURL.xfilUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <Div className='w-full phone:aspect-square tablet:aspect-[3/2] flex flex-col justify-between'>
+                                                <Div
+                                                    className='w-full h-3/4 bg-grey-400 border border-grey-500'
+                                                    style={{
+                                                        backgroundImage: `url(${Images.xfilCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
+                                                >
+
+                                                </Div>
+                                                <Spacer className='w-2 h-2 ' />
+                                                <Text className='text-dark-100 font-bold'>
+                                                    Try Affiliate Marketing seamlessly with Xffiliate!
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                    October 2022
+                                                </Text>
+                                            </Div>
+                                        </a>
+                                    </Div>
+                                    <FlexRow className='hidden phone:flex-col tabletWide:flex-row w-full phone:items-center tabletWide:items-stretch tabletWide:hover:items-start phone:justify-start tabletWide:justify-between'>
+                                        <Div className='duration-700 p-6 phone:w-300px tabletWide:w-30p aspect-[3/2] rounded-lg shadow-md bg-white hover:shadow-lg hover:p-4 phone:my-4 tabletWide:my-0'>
                                             <Div className='w-full aspect-[3/2]'>
                                                 <Div
-                                                    className='w-full aspect-[2/1] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    className='w-full h-3/5 bg-grey-400'
+                                                    style={{
+                                                        backgroundImage: `url(${Images.tmbpCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
 
                                                 </Div>
@@ -575,15 +730,15 @@ export const HomeContents: FC<any> = () => {
                                                 </Text>
                                             </Div>
                                         </Div>
-                                        <Div className='duration-700 p-6 w-30p aspect-[3/2] rounded-lg shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <Div className='duration-700 p-6 phone:w-300px tabletWide:w-30p aspect-[3/2] rounded-lg shadow-md bg-white hover:shadow-lg hover:p-4 phone:my-4 tabletWide:my-0'>
                                             <Div className='w-full aspect-[3/2]'>
                                                 <Div
                                                     className='w-full aspect-[2/1] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.cljCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
 
                                                 </Div>
@@ -596,7 +751,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Text>
                                             </Div>
                                         </Div>
-                                        <Div className='duration-700 p-6 w-30p aspect-[3/2] rounded-lg shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <Div className='duration-700 p-6 phone:w-300px tabletWide:w-30p aspect-[3/2] rounded-lg shadow-md bg-white hover:shadow-lg hover:p-4 phone:my-4 tabletWide:my-0'>
                                             <Div className='w-full aspect-[3/2]'>
                                                 <Div
                                                     className='w-full aspect-[2/1] bg-grey-400'

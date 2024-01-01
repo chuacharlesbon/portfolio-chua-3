@@ -12,6 +12,10 @@ export const RouteNames = {
 
 export const RedirectionURL = {
     investment: "https://www.facebook.com/profile.php?id=100069620875651",
+    okadaUrl: "https://play.google.com/store/apps/details?id=com.okada.production",
+    tmbpUrl: "https://play.google.com/store/apps/details?id=com.timberland.timberlandMobile",
+    cljUrl: "https://www.cebuanalhuillierjewelry.com",
+    xfilUrl: "https://xffiliate.com",
 }
 
 export const MenuList = [

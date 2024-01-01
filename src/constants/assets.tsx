@@ -44,6 +44,10 @@ export const Images = {
     facebookLogo: "assets/facebook-logo.png",
     twitterLogo: "assets/twitter-logo.png",
     zuittLogo: "assets/logo-zuitt.png",
+    okadaCover: "assets/cover-okada.jpg",
+    tmbpCover: "assets/cover-tmbp.png",
+    cljCover: "assets/cover-clj.png",
+    xfilCover: "assets/cover-xfil.png",
 }
 
 export const ImageUrl = {
