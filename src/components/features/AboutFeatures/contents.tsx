@@ -257,7 +257,7 @@ export const AboutContents: FC<any> = () => {
                                         <Div
                                             className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                             style={{
-                                                backgroundImage: `url(${Images.apple})`,
+                                                backgroundImage: `url(${Icons.apple})`,
                                                 backgroundSize: 'cover',
                                                 backgroundPosition: 'center',
                                             }}
@@ -334,7 +334,7 @@ export const AboutContents: FC<any> = () => {
                                         <Div
                                             className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                             style={{
-                                                backgroundImage: `url(${Images.tip})`,
+                                                backgroundImage: `url(${Icons.tip})`,
                                                 backgroundSize: 'cover',
                                                 backgroundPosition: 'center',
                                             }}
@@ -387,7 +387,7 @@ export const AboutContents: FC<any> = () => {
                                         <Div
                                             className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                             style={{
-                                                backgroundImage: `url(${Images.src})`,
+                                                backgroundImage: `url(${Icons.src})`,
                                                 backgroundSize: 'cover',
                                                 backgroundPosition: 'center',
                                             }}
