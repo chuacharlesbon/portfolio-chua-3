@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Script from 'next/script';
 import 'tailwindcss/tailwind.css';
 import { GiGears } from "react-icons/gi";
+import { IoWarning } from "react-icons/io5";
 import { Appbar2, Footer } from "@/components";
 import { Div, Spacer } from "@/components/core/Containers";
 import { Images } from "@/constants/assets";
@@ -49,7 +50,10 @@ export default function Explore() {
                     <Div className='w-full mx-auto'>
                         <Spacer className='h-40 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
-                        <GiGears className="text-9xl text-grey-400 text-center mx-auto" />
+                        <Div className="relative mx-auto w-32">
+                            <GiGears className="text-9xl text-grey-400 text-center mx-auto" />
+                            <IoWarning className="absolute text-red-400 bottom-0 right-0 text-4xl" />
+                        </Div>
                         <Spacer className='h-8 w-32' />
                         <Text className='text-center text-secondary-200 font-light'>
                             Page not found: EXPLORE
