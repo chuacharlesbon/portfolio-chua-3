@@ -93,7 +93,7 @@ export const Footer: FC<DataProps> = ({ isDarkTheme }) => (
                                 Contact
                             </Link>
                         </FlexColumn>
-                        <FlexColumn className='w-1/2 items-start justify-start'>
+                        <FlexColumn className='w-1/2 phone:items-center tablet:items-start justify-start'>
                             <Link className={`phone:text-center tablet:text-left ${(isDarkTheme ?? true) ? 'text-white' : 'text-dark-100'} my-1 hover:underline`} href="/skills">
                                 Skills
                             </Link>
