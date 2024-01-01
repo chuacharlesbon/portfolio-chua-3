@@ -41,16 +41,16 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
-                        <Spacer className='w-20 h-20' />
-                        <Div>
-                            <Text className='font-bold text-white text-xl'>
+                    <FlexRow className='phone:w-full tablet:w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
+                        <Spacer className='phone:hidden tablet:block w-20 h-20' />
+                        <Div className="phone:w-full tablet:w-auto">
+                            <Text className='font-bold text-white text-xl phone:text-center tablet:text-left'>
                                 Marketplace and Corporate
                             </Text>
-                            <Text className='w-300px text-white py-4'>
+                            <Text className='w-300px text-white py-4 phone:text-center tablet:text-left'>
                                 Throughout my career, I<Span>&#39;</Span>ve had the privilege of working in a variety of roles and industries, gaining valuable experience and expanding my skillset.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => {
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => {
                                 const element = document.getElementById('about-content-work');
                                 if (element) {
                                     element.scrollIntoView({ behavior: 'smooth' });
@@ -66,16 +66,16 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'top',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
-                        <Spacer className='w-20 h-20' />
-                        <Div>
-                            <Text className='font-bold text-white text-xl'>
+                    <FlexRow className='phone:w-full tablet:w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
+                        <Spacer className='phone:hidden tablet:block w-20 h-20' />
+                        <Div className="phone:w-full tablet:w-auto">
+                            <Text className='font-bold text-white text-xl phone:text-center tablet:text-left'>
                                 Trainings and Seminars
                             </Text>
-                            <Text className='w-300px text-white py-4'>
+                            <Text className='w-300px text-white py-4 phone:text-center tablet:text-left'>
                                 Throughout my professional journey, I<Span>&#39;</Span>ve always placed a strong emphasis on continuous learning and professional development.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => {
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => {
                                 const element = document.getElementById('about-content-training');
                                 if (element) {
                                     element.scrollIntoView({ behavior: 'smooth' });
@@ -91,16 +91,16 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
-                        <Spacer className='w-20 h-20' />
-                        <Div>
-                            <Text className='font-bold text-white text-xl'>
+                    <FlexRow className='phone:w-full tablet:w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
+                        <Spacer className='phone:hidden tablet:block w-20 h-20' />
+                        <Div className="phone:w-full tablet:w-auto">
+                            <Text className='font-bold text-white text-xl phone:text-center tablet:text-left'>
                                 Studies and Academics
                             </Text>
-                            <Text className='w-300px text-white py-4'>
+                            <Text className='w-300px text-white py-4 phone:text-center tablet:text-left'>
                                 My journey towards professional expertise began with a solid academic foundation which equipped me with a strong theoretical foundation in different aspects.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => {
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => {
                                 const element = document.getElementById('about-content-academic');
                                 if (element) {
                                     element.scrollIntoView({ behavior: 'smooth' });
@@ -116,16 +116,16 @@ export const AboutSlider: FC<any> = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>
-                    <FlexRow className='w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
-                        <Spacer className='w-20 h-20' />
-                        <Div>
-                            <Text className='font-bold text-white text-xl'>
+                    <FlexRow className='phone:w-full tablet:w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
+                        <Spacer className='phone:hidden tablet:block w-20 h-20' />
+                        <Div className="phone:w-full tablet:w-auto">
+                            <Text className='font-bold text-white text-xl phone:text-center tablet:text-left'>
                                 Journey and Industry
                             </Text>
-                            <Text className='w-300px text-white py-4'>
+                            <Text className='w-300px text-white py-4 phone:text-center tablet:text-left'>
                                 My journey in the industry has been a thrilling adventure of learning, growth, and achievement, actively pursued opportunities to develop my skills, expand my knowledge, and take on increasing responsibilities.
                             </Text>
-                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8" onClick={() => { 
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => { 
                                 const element = document.getElementById('about-content-others');
                                 if (element) {
                                     element.scrollIntoView({ behavior: 'smooth' });

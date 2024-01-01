@@ -17,7 +17,7 @@ export const AboutContents: FC<any> = () => {
 
     return (
         <Div className='w-full bg-grey-600'>
-            <Div className='w-10/12 mx-auto p-4'>
+            <Div className='phone:w-full tablet:w-10/12 mx-auto p-4'>
 
                 {/* /////////////////////////// */}
                 {/* Marketplace Section         */}
@@ -54,8 +54,18 @@ export const AboutContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Div className='py-4 w-full tablet:hidden'>
+                                        <Div
+                                            className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
+                                            style={{
+                                                backgroundImage: `url(${Images.xtendlyLogo})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
                                     <FlexRow className='w-full items-center justify-between'>
-                                        <Div className='w-1/5'>
+                                        <Div className='phone:hidden tablet:block w-1/5'>
                                             <Div
                                                 className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                                 style={{
@@ -64,7 +74,7 @@ export const AboutContents: FC<any> = () => {
                                                     backgroundPosition: 'center',
                                                 }} />
                                         </Div>
-                                        <Div className='w-4/5 p-4'>
+                                        <Div className='phone:w-full tablet:w-4/5 p-4'>
                                             <Text className='text-secondary-200 font-semibold'>
                                                 Xtendly Philippines, Inc.
                                             </Text>
@@ -104,8 +114,18 @@ export const AboutContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Div className='py-4 w-full tablet:hidden'>
+                                        <Div
+                                            className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
+                                            style={{
+                                                backgroundImage: `url(${Images.vontos})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
                                     <FlexRow className='w-full items-center justify-between'>
-                                        <Div className='w-1/5'>
+                                        <Div className='phone:hidden tablet:block w-1/5'>
                                             <Div
                                                 className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                                 style={{
@@ -114,7 +134,7 @@ export const AboutContents: FC<any> = () => {
                                                     backgroundPosition: 'center',
                                                 }} />
                                         </Div>
-                                        <Div className='w-4/5 p-4'>
+                                        <Div className='phone:w-full tablet:w-4/5 p-4'>
                                             <Text className='text-secondary-200 font-semibold'>
                                                 Vontos Technologies
                                             </Text>
@@ -174,8 +194,18 @@ export const AboutContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Div className='py-4 w-full tablet:hidden'>
+                                        <Div
+                                            className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
+                                            style={{
+                                                backgroundImage: `url(${Images.zuittLogo})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
                                     <FlexRow className='w-full items-center justify-between'>
-                                        <Div className='w-1/5'>
+                                        <Div className='phone:hidden tablet:block w-1/5'>
                                             <Div
                                                 className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                                 style={{
@@ -184,7 +214,7 @@ export const AboutContents: FC<any> = () => {
                                                     backgroundPosition: 'center',
                                                 }} />
                                         </Div>
-                                        <Div className='w-4/5 p-4'>
+                                        <Div className='phone:w-full tablet:w-4/5 p-4'>
                                             <Text className='text-secondary-200 font-semibold'>
                                                 Zuitt Learning Institute
                                             </Text>
@@ -223,8 +253,18 @@ export const AboutContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Div className='py-4 w-full tablet:hidden'>
+                                        <Div
+                                            className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
+                                            style={{
+                                                backgroundImage: `url(${Images.apple})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
                                     <FlexRow className='w-full items-center justify-between'>
-                                        <Div className='w-1/5'>
+                                        <Div className='phone:hidden tablet:block w-1/5'>
                                             <Div
                                                 className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                                 style={{
@@ -233,7 +273,7 @@ export const AboutContents: FC<any> = () => {
                                                     backgroundPosition: 'center',
                                                 }} />
                                         </Div>
-                                        <Div className='w-4/5 p-4'>
+                                        <Div className='phone:w-full tablet:w-4/5 p-4'>
                                             <Text className='text-secondary-200 font-semibold'>
                                                 Apple Inc. - Webinars
                                             </Text>
@@ -290,8 +330,18 @@ export const AboutContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Div className='py-4 w-full tablet:hidden'>
+                                        <Div
+                                            className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
+                                            style={{
+                                                backgroundImage: `url(${Images.tip})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
                                     <FlexRow className='w-full items-center justify-between'>
-                                        <Div className='w-1/5'>
+                                        <Div className='phone:hidden tablet:block w-1/5'>
                                             <Div
                                                 className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                                 style={{
@@ -300,7 +350,7 @@ export const AboutContents: FC<any> = () => {
                                                     backgroundPosition: 'center',
                                                 }} />
                                         </Div>
-                                        <Div className='w-4/5 p-4'>
+                                        <Div className='phone:w-full tablet:w-4/5 p-4'>
                                             <Text className='text-secondary-200 font-semibold'>
                                                 Technological Institute of the Philippines
                                             </Text>
@@ -333,8 +383,18 @@ export const AboutContents: FC<any> = () => {
                                         y: +50, // Start the element off the top of the screen
                                     }}
                                 >
+                                    <Div className='py-4 w-full tablet:hidden'>
+                                        <Div
+                                            className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
+                                            style={{
+                                                backgroundImage: `url(${Images.src})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
                                     <FlexRow className='w-full items-center justify-between'>
-                                        <Div className='w-1/5'>
+                                        <Div className='phone:hidden tablet:block w-1/5'>
                                             <Div
                                                 className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                                 style={{
@@ -343,7 +403,7 @@ export const AboutContents: FC<any> = () => {
                                                     backgroundPosition: 'center',
                                                 }} />
                                         </Div>
-                                        <Div className='w-4/5 p-4'>
+                                        <Div className='phone:w-full tablet:w-4/5 p-4'>
                                             <Text className='text-secondary-200 font-semibold'>
                                                 Saint Rita College - Manila
                                             </Text>
