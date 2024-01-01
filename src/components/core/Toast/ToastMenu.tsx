@@ -73,6 +73,7 @@ export const ToastMenu: FC<ButtonProps> = ({
                                             <Link
                                                 className={`hover:bg-dark-100 text-white group flex rounded-md items-center w-full p-2 text-base`}
                                                 href={link.url}
+                                                key={link.name}
                                             >
                                                 {link.name}
                                             </Link>
