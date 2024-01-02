@@ -48,6 +48,17 @@ export const Images = {
     tmbpCover: "assets/cover-tmbp.png",
     cljCover: "assets/cover-clj.png",
     xfilCover: "assets/cover-xfil.png",
+    worksAlajeras: "assets/works-alajeras.png",
+    worksCaptive: "assets/works-captive.png",
+    worksCebuana: "assets/works-cebuana.png",
+    worksEcommerce: "assets/works-ecommerce.png",
+    worksFileshare: "assets/works-fileshare.png",
+    worksGPA: "assets/works-gpa.png",
+    worksNextjs: "assets/works-nextjs.png",
+    worksOthers: "assets/works-others.png",
+    worksPortfolio1: "assets/works-portfolio1.png",
+    worksReal: "assets/works-real.png",
+    worksXfil: "assets/works-xfil.png",
 }
 
 export const ImageUrl = {

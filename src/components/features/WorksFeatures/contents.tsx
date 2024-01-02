@@ -59,11 +59,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksNextjs})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -95,11 +95,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksFileshare})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -158,11 +158,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksXfil})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -194,11 +194,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksGPA})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -206,7 +206,7 @@ export const WorksContents: FC<any> = () => {
                                                     GPA Marketing
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    - -  - -
+                                                    2022
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -230,11 +230,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksEcommerce})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -269,11 +269,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksReal})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -335,11 +335,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksCebuana})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -371,11 +371,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.tmbpCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -407,11 +407,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksAlajeras})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -443,11 +443,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.okadaCover})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -479,11 +479,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksCaptive})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -545,11 +545,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.nodejs})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -584,11 +584,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.nodejs})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -623,11 +623,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.nodejs})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -662,11 +662,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.nodejs})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -728,11 +728,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksPortfolio1})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
@@ -767,11 +767,11 @@ export const WorksContents: FC<any> = () => {
                                             <Div className='w-full aspect-square'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400'
-                                                /* style={{
-                                                    backgroundImage: `url(${Images.favicon})`,
-                                                    backgroundSize: 'contain',
-                                                    backgroundPosition: 'center',
-                                                }} */
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksOthers})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
                                                 >
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
