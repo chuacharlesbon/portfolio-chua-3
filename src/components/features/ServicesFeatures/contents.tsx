@@ -48,10 +48,10 @@ export const ServicesContents: FC<any> = () => {
                     />
                     <Div className='phone:w-full tablet:w-1/3'>
                         <Text className='text-secondary-200 phone:text-center tablet:text-right'>
-                            We'll brainstorm solutions together, debug errors, and refine your code, making you a better developer every step of the way.
+                            Brainstorm solutions together, debug errors, and refine your code, making you a better developer every step of the way.
                         </Text>
                         <Text className='text-secondary-200 phone:text-center tablet:text-right'>
-                            Don't get overwhelmed by ambitious projects but break them down into manageable steps and guide you through each stage.
+                            Feel confident and capable of complex projects, breaking them down into manageable steps and guide you through each stage.
                         </Text>
                         <ButtonClassA className="border border-2 border-grey-100 phone:bg-transparent hover:bg-grey-100 text-dark-100 hover:text-white phone:py-2 phone:px-4 my-8 block phone:mx-auto tablet:ml-auto tablet:mr-0" onClick={() => router.push(`/${RouteNames.contact}`)}>
                             BOOK AN APPOINTMENT
