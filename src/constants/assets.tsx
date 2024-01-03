@@ -59,6 +59,9 @@ export const Images = {
     worksPortfolio1: "assets/works-portfolio1.png",
     worksReal: "assets/works-real.png",
     worksXfil: "assets/works-xfil.png",
+    coverStocks: "assets/cover-stocks.png",
+    coverConsultant: "assets/cover-consultant.jpg",
+    coverMath: "assets/cover-math.png",
 }
 
 export const ImageUrl = {
