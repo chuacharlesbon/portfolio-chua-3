@@ -780,6 +780,19 @@ export const HomeContents: FC<any> = () => {
                 </InView>
                 <Spacer className='w-10 h-10' />
                 <Spacer className='w-20 h-20 hidden laptop:block' />
+
+                <Div className='px-4 mx-auto text-center w-full bg-grey-600'>
+                    <iframe
+                    src={`https://www.youtube.com/embed/0v-NODONCLU`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                    className="mx-auto text-center w-full aspect-[3/2] tablet:w-400px laptop:w-500px"
+                    />
+                </Div>
+
+                <Spacer className='w-10 h-10' />
+                <Spacer className='w-20 h-20 hidden laptop:block' />
             </Div>
         </Div>
     );
