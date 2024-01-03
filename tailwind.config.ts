@@ -17,6 +17,7 @@ const config: Config = {
         '4/1': '4 / 1',
         '3/2': '3 / 2',
         '2/1': '2 / 1',
+        '5/4': '5 / 4',
       },
       fontFamily: {
         lato: ['Lato'],
@@ -162,6 +163,9 @@ const config: Config = {
         100: '#F8FBFF',
         200: '#E8F3FD',
       },
+      blueGreen: {
+        100: '#0d98ba',
+      }
     },
   },
   plugins: [],

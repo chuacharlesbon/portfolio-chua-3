@@ -2,10 +2,11 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { Div, FlexColumn, FlexRow, Spacer, TextDivider } from "@/components/core/Containers";
 import { ButtonClassA } from '@/components/core/Forms/Buttons';
-import { Text } from "@/components/core/TextElements";
+import { Span, Text } from "@/components/core/TextElements";
 import { Icons, Images } from "@/constants/assets";
 import { InView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import { GoDotFill } from "react-icons/go";
 import { ImSpinner } from 'react-icons/im';
 
 export const WorksContents: FC<any> = () => {
@@ -39,7 +40,7 @@ export const WorksContents: FC<any> = () => {
                     {
                         isNextjsVisible
                             ? <Div className='py-4'>
-                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 tabletWide:w-700px gap-4 tabletWide:gap-8 items-center justify-center'>
+                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 gap-4 tabletWide:gap-8 items-center justify-center'>
                                     <motion.div
                                         animate={{
                                             opacity: 1,
@@ -55,10 +56,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksNextjs})`,
                                                         backgroundSize: 'cover',
@@ -66,12 +67,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Developer Portfolio
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     December 2023
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -91,10 +95,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksFileshare})`,
                                                         backgroundSize: 'cover',
@@ -102,12 +106,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     File Share
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     September 2023
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -138,7 +145,7 @@ export const WorksContents: FC<any> = () => {
                     {
                         isReactjsVisible
                             ? <Div className='py-4'>
-                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 laptop:w-10/12 laptopSm:grid-cols-3 desktop:grid-cols-4 desktop:w-full gap-4 items-center justify-center'>
+                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 gap-4 tabletWide:gap-8 items-center justify-center'>
                                     <motion.div
                                         animate={{
                                             opacity: 1,
@@ -154,10 +161,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksXfil})`,
                                                         backgroundSize: 'cover',
@@ -165,12 +172,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Xffiliate
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     October 2022
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -190,10 +200,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksGPA})`,
                                                         backgroundSize: 'cover',
@@ -201,12 +211,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
-                                                    GPA Marketing
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
+                                                    Guam Power Authority
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     2022
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -226,10 +239,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksEcommerce})`,
                                                         backgroundSize: 'cover',
@@ -237,15 +250,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     ECommerce Web App
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     April 2022
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Sample Project
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -265,10 +278,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksReal})`,
                                                         backgroundSize: 'cover',
@@ -276,15 +289,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Real Estate Web App
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     May 2022
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Sample Project
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -315,7 +328,7 @@ export const WorksContents: FC<any> = () => {
                     {
                         isFlutterVisible
                             ? <Div className='py-4'>
-                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 laptop:w-10/12 laptopSm:grid-cols-3 desktop:grid-cols-4 desktop:w-full gap-4 items-center justify-center'>
+                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 gap-4 tabletWide:gap-8 items-center justify-center'>
                                     <motion.div
                                         animate={{
                                             opacity: 1,
@@ -331,10 +344,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksCebuana})`,
                                                         backgroundSize: 'cover',
@@ -342,12 +355,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Cebuana Lhuillier
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     November 2023
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -367,10 +383,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.tmbpCover})`,
                                                         backgroundSize: 'cover',
@@ -378,12 +394,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Timberland Bike Park
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     December 2023
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -403,10 +422,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksAlajeras})`,
                                                         backgroundSize: 'cover',
@@ -414,12 +433,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Alajeras
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     December 2023
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -439,10 +461,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.okadaCover})`,
                                                         backgroundSize: 'cover',
@@ -450,12 +472,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Okada App
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     2024
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -475,10 +500,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksCaptive})`,
                                                         backgroundSize: 'cover',
@@ -486,15 +511,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Captive Portal
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     October 2023
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Prototype
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Prototype
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -525,7 +550,7 @@ export const WorksContents: FC<any> = () => {
                     {
                         isNodejsVisible
                             ? <Div className='py-4'>
-                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 laptop:w-10/12 laptopSm:grid-cols-3 desktop:grid-cols-4 desktop:w-full gap-4 items-center justify-center'>
+                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 gap-4 tabletWide:gap-8 items-center justify-center'>
                                     <motion.div
                                         animate={{
                                             opacity: 1,
@@ -541,10 +566,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.nodejs})`,
                                                         backgroundSize: 'cover',
@@ -552,15 +577,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Captive Portal CMS
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     October 2023
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Prototype
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Prototype
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -580,10 +605,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.nodejs})`,
                                                         backgroundSize: 'cover',
@@ -591,15 +616,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     ECommerce
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     April 2022
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Sample Project
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -619,10 +644,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.nodejs})`,
                                                         backgroundSize: 'cover',
@@ -630,15 +655,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Real Estate CMS
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     April 2022
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Sample Project
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -658,10 +683,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='w-300px mx-auto duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.nodejs})`,
                                                         backgroundSize: 'cover',
@@ -669,15 +694,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Coming Soon
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     2024
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Prototype
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Prototype
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -708,7 +733,7 @@ export const WorksContents: FC<any> = () => {
                     {
                         isHTMLVisible
                             ? <Div className='py-4'>
-                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 tabletWide:w-700px gap-4 tabletWide:gap-8 items-center justify-center'>
+                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 gap-4 tabletWide:gap-8 items-center justify-center'>
                                     <motion.div
                                         animate={{
                                             opacity: 1,
@@ -724,10 +749,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksPortfolio1})`,
                                                         backgroundSize: 'cover',
@@ -735,15 +760,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Developer Portfolio v1
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     March 2022
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Sample Project
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -763,10 +788,10 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square shadow-md bg-white hover:shadow-lg hover:p-4'>
-                                            <Div className='w-full aspect-square'>
+                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
-                                                    className='w-full aspect-[3/2] bg-grey-400'
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
                                                         backgroundImage: `url(${Images.worksOthers})`,
                                                         backgroundSize: 'cover',
@@ -774,15 +799,15 @@ export const WorksContents: FC<any> = () => {
                                                     }}
                                                 >
                                                 </Div>
-                                                <Spacer className='w-2 h-2 ' />
-                                                <Text className='text-dark-100 font-bold'>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
                                                     Other Websites
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light'>
                                                     2022
                                                 </Text>
-                                                <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    Sample Project
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
                                         </Div>
