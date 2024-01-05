@@ -16,6 +16,10 @@ export const RedirectionURL = {
     tmbpUrl: "https://play.google.com/store/apps/details?id=com.timberland.timberlandMobile",
     cljUrl: "https://www.cebuanalhuillierjewelry.com",
     xfilUrl: "https://xffiliate.com",
+    facebookUrl: "https://www.facebook.com/charles.chua.549",
+    gitlabUrl: "https://gitlab.com/chuacharlesbon",
+    githubUrl: "https://github.com/chuacharlesbon",
+    linkedInUrl: "https://www.linkedin.com/in/charles-chua-12116122a/",
 }
 
 export const MenuList = [

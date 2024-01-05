@@ -6,9 +6,9 @@ import 'tailwindcss/tailwind.css';
 import { GiGears } from "react-icons/gi";
 import { IoWarning } from "react-icons/io5";
 import { Appbar2, Footer } from "@/components";
-import { Div, Spacer } from "@/components/core/Containers";
-import { Images } from "@/constants/assets";
-import { RouteNames } from "@/constants/constants";
+import { Div, Spacer, FlexColumn } from "@/components/core/Containers";
+import { Icons, Images } from "@/constants/assets";
+import { RedirectionURL, RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
 import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
@@ -47,7 +47,7 @@ export default function Connect() {
                         }}>
                         {/* SECTIONS HERE */}
                     </Div>
-                    <Div className='w-full mx-auto'>
+                    <Div className='w-full mx-auto hidden'>
                         <Spacer className='h-40 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
                         <Div className="relative mx-auto w-32">
@@ -62,6 +62,92 @@ export default function Connect() {
                             We are working on it.
                         </Text>
                         <Spacer className='h-40 w-32' />
+                    </Div>
+                    <Div className='w-full mx-auto'>
+                        <Spacer className='h-12 w-32' />
+                        <Div
+                            className='w-full bg-grey-600 py-10 laptop:py-20'
+                            style={{
+                                backgroundImage: `url(${Images.backGalaxy})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                            }}
+                        >
+                            <Div className='mx-auto text-center grid grid-cols-2 tablet:w-3/4 laptopSm:w-3/5 laptopSm:grid-cols-4 gap-4 items-center justify-center'>
+                                <a
+                                    className='flex flex-col duration-700 w-24 h-24 tablet:w-52 tablet:h-52 aspect-square items-center justify-between bg-opacity-10 bg-blue-100 hover:bg-opacity-50 rounded-xl mx-auto p-4'
+                                    href={RedirectionURL.facebookUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Div
+                                        className='mx-auto text-center rounded-md w-10 h-10 tablet:w-36 tablet:h-36'
+                                        style={{
+                                            backgroundImage: `url(${Images.facebookLogo})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <Text className='text-secondary-200 text-white font-bold'>
+                                        Facebook
+                                    </Text>
+                                </a>
+                                <a
+                                    className='flex flex-col duration-700 w-24 h-24 tablet:w-52 tablet:h-52 aspect-square items-center justify-between bg-opacity-10 bg-blue-100 hover:bg-opacity-50 rounded-xl mx-auto p-4'
+                                    href={RedirectionURL.gitlabUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Div
+                                        className='mx-auto text-center rounded-md w-10 h-10 tablet:w-36 tablet:h-36'
+                                        style={{
+                                            backgroundImage: `url(${Images.gitlabLogo})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <Text className='text-secondary-200 text-white font-bold'>
+                                        Gitlab
+                                    </Text>
+                                </a>
+                                <a
+                                    className='flex flex-col duration-700 w-24 h-24 tablet:w-52 tablet:h-52 aspect-square items-center justify-between bg-opacity-10 bg-blue-100 hover:bg-opacity-50 rounded-xl mx-auto p-4'
+                                    href={RedirectionURL.linkedInUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Div
+                                        className='mx-auto text-center rounded-md w-10 h-10 tablet:w-36 tablet:h-36'
+                                        style={{
+                                            backgroundImage: `url(${Images.linkedInLogo})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <Text className='text-secondary-200 text-white font-bold'>
+                                        LinkedIn
+                                    </Text>
+                                </a>
+                                <a
+                                    className='flex flex-col duration-700 w-24 h-24 tablet:w-52 tablet:h-52 aspect-square items-center justify-between bg-opacity-10 bg-blue-100 hover:bg-opacity-50 rounded-xl mx-auto p-4'
+                                    href={RedirectionURL.githubUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Div
+                                        className='mx-auto text-center rounded-md w-10 h-10 tablet:w-36 tablet:h-36'
+                                        style={{
+                                            backgroundImage: `url(${Images.githubLogo2})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <Text className='text-secondary-200 text-white font-bold'>
+                                        Github
+                                    </Text>
+                                </a>
+                            </Div> 
+                        </Div>
                     </Div>
                     <Footer />
                 </Div>
