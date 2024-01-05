@@ -111,7 +111,7 @@ export default function Explore() {
                                         </Text>
                                         <Spacer className='h-10 w-10' />
                                         <Text className='italic font-serif w-64 tablet:w-72'>
-                                            Kare-kare is more than just a dish; it's a symbol of Filipino family gatherings, of festive occasions, of shared laughter and warm memories. It's a dish that nourishes not just the body, but also the soul.
+                                            Kare-kare is more than just a dish. It is a symbol of Filipino family gatherings, of festive occasions, of shared laughter and warm memories. It is a dish that nourishes not just the body, but also the soul.
                                         </Text>
                                     </FlexColumn>
                                     <Div
