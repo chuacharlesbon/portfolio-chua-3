@@ -67,6 +67,9 @@ export const Images = {
     cook: "assets/cook.jpg",
     recipe1: "assets/recipe1.jpg",
     coverFood: "assets/coverFood.jpg",
+    coverAnime: "assets/cover-anime.jpg",
+    animeFilo: "assets/img-filo.jpg",
+    animeRap: "assets/img-rap.jpg",
 }
 
 export const ImageUrl = {
