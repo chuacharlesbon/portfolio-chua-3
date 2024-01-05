@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css';
 import { GiGears } from "react-icons/gi";
 import { IoWarning } from "react-icons/io5";
 import { Appbar2, Footer } from "@/components";
-import { Div, Spacer } from "@/components/core/Containers";
+import { Div, FlexRow, FlexColumn, Spacer } from "@/components/core/Containers";
 import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
@@ -47,7 +47,7 @@ export default function Explore() {
                         }}>
                         {/* SECTIONS HERE */}
                     </Div>
-                    <Div className='w-full mx-auto'>
+                    <Div className='w-full mx-auto hidden'>
                         <Spacer className='h-40 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
                         <Div className="relative mx-auto w-32">
@@ -62,6 +62,69 @@ export default function Explore() {
                             We are working on it.
                         </Text>
                         <Spacer className='h-40 w-32' />
+                    </Div>
+                    <Div className='w-full mx-auto'>
+                        <Spacer className='h-12 w-32' />
+                        <Div
+                            className='w-full'
+                            style={{
+                                backgroundImage: `url(${Images.coverFood})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                            }}
+                        >
+                            <Div
+                                className='w-full bg-white bg-opacity-25 py-10 laptop:py-20'
+                            >
+                                <FlexRow className='phone:flex-col tablet:flex-row mx-auto p-4 w-full laptop:w-10/12 justify-center items-center'>
+                                    <Div
+                                        className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3]'
+                                        style={{
+                                            backgroundImage: `url(${Images.cook})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <FlexColumn className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3] items-center justify-center bg-white bg-opacity-75'>
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Around three years of expertise in food standards and production in the food industry.
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Trained a set of individuals teaching different skills in terms of cooking and creativity.
+                                        </Text>
+                                    </FlexColumn>
+                                </FlexRow>
+                                <Spacer className='h-10 w-10 laptop:h-20' />
+                                <FlexRow className='phone:flex-col tablet:flex-row mx-auto p-4 w-full laptop:w-10/12 justify-center items-center'>
+                                    <Div
+                                        className='w-full tablet:hidden tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3]'
+                                        style={{
+                                            backgroundImage: `url(${Images.recipe1})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <FlexColumn className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3] items-center justify-center bg-white bg-opacity-75'>
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Dive into the Delectable Depths of Kare-Kare: A Culinary Tour of a Filipino Treasure
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Kare-kare is more than just a dish; it's a symbol of Filipino family gatherings, of festive occasions, of shared laughter and warm memories. It's a dish that nourishes not just the body, but also the soul.
+                                        </Text>
+                                    </FlexColumn>
+                                    <Div
+                                        className='phone:hidden w-full tablet:block tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3]'
+                                        style={{
+                                            backgroundImage: `url(${Images.recipe1})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                </FlexRow>
+                            </Div>
+                        </Div>
                     </Div>
                     <Footer />
                 </Div>

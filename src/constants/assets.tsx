@@ -64,6 +64,9 @@ export const Images = {
     coverConsultant: "assets/cover-consultant.jpg",
     coverMath: "assets/cover-math.png",
     backGalaxy: "assets/back-galaxy.jpg",
+    cook: "assets/cook.jpg",
+    recipe1: "assets/recipe1.jpg",
+    coverFood: "assets/coverFood.jpg",
 }
 
 export const ImageUrl = {
