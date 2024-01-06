@@ -15,6 +15,9 @@ export const metadata: Metadata = {
       url: ImageUrl.cover,
     }],
   },
+  other: {
+    google-site-verification: "ewawsLX9_9TZyMFjdeqxxGSWXpYSk6vUaAgtwwqakFE"
+  }
 }
 
 export default function RootLayout({
