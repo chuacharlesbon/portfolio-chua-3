@@ -15,9 +15,8 @@ export const metadata: Metadata = {
       url: ImageUrl.cover,
     }],
   },
-  other: {
-    name: "google-site-verification",
-    content: "ewawsLX9_9TZyMFjdeqxxGSWXpYSk6vUaAgtwwqakFE"
+  verification: {
+    google: 'ewawsLX9_9TZyMFjdeqxxGSWXpYSk6vUaAgtwwqakFE',
   },
 }
 
