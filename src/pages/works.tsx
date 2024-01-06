@@ -22,7 +22,7 @@ export default function Works() {
                 <link rel="icon" href={Images.favicon} />
                 <meta name="title" content="Charles C. | Works" />
                 <meta name="description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
-                <meta name="keywords" content="capstone, developer, portfolio, full stack, developer, software engineer, charles bon chua, react, next, flutter, website, mobile app, web app, okada, xffiliate, cebuana, alajera, guam power, timberland"></meta>
+                <meta name="keywords" content="capstone, developer, portfolio, full stack, developer, software engineer, charles bon chua, react, next, flutter, website, mobile app, web app, okada, xffiliate, cebuana, alajera, guam power, timberland" />
                 <meta property="og:title" content="Charles C. | Works" />
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
                 <meta property="og:image" content={Images.desktopMobile} />
