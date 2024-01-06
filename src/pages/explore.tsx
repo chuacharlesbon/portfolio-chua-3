@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css';
 import { GiGears } from "react-icons/gi";
 import { IoWarning } from "react-icons/io5";
 import { Appbar2, Footer } from "@/components";
-import { Div, Spacer } from "@/components/core/Containers";
+import { Div, FlexRow, FlexColumn, Spacer, TextDivider } from "@/components/core/Containers";
 import { Images } from "@/constants/assets";
 import { RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
@@ -22,7 +22,7 @@ export default function Explore() {
                 <link rel="icon" href={Images.favicon} />
                 <meta name="title" content="Charles C. | Explore" />
                 <meta name="description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
-                <meta name="keywords" content="capstone, developer, portfolio, full stack, developer, software engineer, charles bon chua, react, next, flutter, website, mobile app, web app, okada, xffiliate, cebuana, alajera, guam power, timberland"></meta>
+                <meta name="keywords" content="capstone, developer, portfolio, full stack, developer, software engineer, charles bon chua, react, next, flutter, website, mobile app, web app, okada, xffiliate, cebuana, alajera, guam power, timberland" />
                 <meta property="og:title" content="Charles C. | Explore" />
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
                 <meta property="og:image" content={Images.favicon} />
@@ -47,7 +47,7 @@ export default function Explore() {
                         }}>
                         {/* SECTIONS HERE */}
                     </Div>
-                    <Div className='w-full mx-auto'>
+                    <Div className='w-full mx-auto hidden'>
                         <Spacer className='h-40 w-32' />
                         <BackButton onClick={() => setIsLoading(true)} />
                         <Div className="relative mx-auto w-32">
@@ -62,6 +62,153 @@ export default function Explore() {
                             We are working on it.
                         </Text>
                         <Spacer className='h-40 w-32' />
+                    </Div>
+                    <Div className='w-full mx-auto'>
+                        <Spacer className='h-12 w-32' />
+                        <Div
+                            className='w-full'
+                            style={{
+                                backgroundImage: `url(${Images.coverFood})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                            }}
+                        >
+                            <Spacer className='h-12 w-32' />
+                            <Div className='w-full py-4 bg-white bg-opacity-75'>
+                                <TextDivider
+                                    className='bg-grey-100 phone:hidden tabletWide:block'
+                                    textType='center'
+                                    textElement={
+                                        <Text className='text-xl tabletWide:w-1/3 tabletWide:text-3xl text-dark-100 text-center font-serif uppercase'>
+                                            Food and Recipes
+                                        </Text>
+                                    }
+                                />
+                            </Div>
+                            <Div
+                                className='w-full bg-white bg-opacity-25 py-10 laptop:py-20'
+                            >
+                                <FlexRow className='phone:flex-col tablet:flex-row mx-auto p-4 w-full laptop:w-10/12 justify-center items-center'>
+                                    <Div
+                                        className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3]'
+                                        style={{
+                                            backgroundImage: `url(${Images.cook})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <FlexColumn className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3] items-center justify-center bg-white bg-opacity-75'>
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Around three years of expertise in food standards and production in the food industry.
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Trained a set of individuals teaching different skills in terms of cooking and creativity.
+                                        </Text>
+                                    </FlexColumn>
+                                </FlexRow>
+                                <Spacer className='h-10 w-10 laptop:h-20' />
+                                <FlexRow className='phone:flex-col tablet:flex-row mx-auto p-4 w-full laptop:w-10/12 justify-center items-center'>
+                                    <Div
+                                        className='w-full tablet:hidden tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3]'
+                                        style={{
+                                            backgroundImage: `url(${Images.recipe1})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <FlexColumn className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3] items-center justify-center bg-white bg-opacity-75'>
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Dive into the Delectable Depths of Kare-Kare: A Culinary Tour of a Filipino Treasure
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Kare-kare is more than just a dish. It is a symbol of Filipino family gatherings, of festive occasions, of shared laughter and warm memories. It is a dish that nourishes not just the body, but also the soul.
+                                        </Text>
+                                    </FlexColumn>
+                                    <Div
+                                        className='phone:hidden w-full tablet:block tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[2/3]'
+                                        style={{
+                                            backgroundImage: `url(${Images.recipe1})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                </FlexRow>
+                            </Div>
+                        </Div>
+                        <Div
+                            className='w-full'
+                            style={{
+                                backgroundImage: `url(${Images.coverAnime})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                            }}
+                        >
+                            <Spacer className='h-12 w-32' />
+                            <Div className='w-full py-4 bg-white bg-opacity-75'>
+                                <TextDivider
+                                    className='bg-grey-100 phone:hidden tabletWide:block'
+                                    textType='center'
+                                    textElement={
+                                        <Text className='text-xl tabletWide:w-1/3 tabletWide:text-3xl text-dark-100 text-center font-serif uppercase'>
+                                            Illustrations and Digital Arts
+                                        </Text>
+                                    }
+                                />
+                            </Div>
+                            <Div
+                                className='w-full bg-white bg-opacity-25 py-10 laptop:py-20'
+                            >
+                                <FlexRow className='phone:flex-col tablet:flex-row mx-auto p-4 w-full laptop:w-10/12 justify-center items-center'>
+                                    <Div
+                                        className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[3/4]'
+                                        style={{
+                                            backgroundImage: `url(${Images.animeFilo})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <FlexColumn className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[3/4] items-center justify-center bg-white bg-opacity-75'>
+                                        <Text className='italic font-serif w-64 tablet:w-72 text-xl'>
+                                            Digital Work # 1
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Filo (フィーロ Fīro?) is a Filolial purchased alongside Raphtalia during the outset of the story who develops into a Filolial Queen due to her association with the Shield Hero and she is a staunch ally to the hero, as the possessor of unique class-up effects. She also becomes particularly close to the Second Princess Melty Q Melromarc.
+                                        </Text>
+                                    </FlexColumn>
+                                </FlexRow>
+                                <Spacer className='h-10 w-10 laptop:h-20' />
+                                <FlexRow className='phone:flex-col tablet:flex-row mx-auto p-4 w-full laptop:w-10/12 justify-center items-center'>
+                                    <Div
+                                        className='w-full tablet:hidden tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[3/4]'
+                                        style={{
+                                            backgroundImage: `url(${Images.animeRap})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                    <FlexColumn className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[3/4] items-center justify-center bg-white bg-opacity-75'>
+                                        <Text className='italic font-serif w-64 tablet:w-72 text-xl'>
+                                            Digital Work # 2
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Raphtalia (ラフタリア Rafutaria?) is the main heroine and deuteragonist of The Rising of the Shield Hero series. She is the first real companion of the Shield Hero, Naofumi Iwatani. Although she was originally bought as his slave, she was never abused, even finding herself bonding with him.
+                                        </Text>
+                                    </FlexColumn>
+                                    <Div
+                                        className='phone:hidden w-full tablet:block tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-[3/4]'
+                                        style={{
+                                            backgroundImage: `url(${Images.animeRap})`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                        }}
+                                    />
+                                </FlexRow>
+                            </Div>
+                        </Div>
                     </Div>
                     <Footer />
                 </Div>

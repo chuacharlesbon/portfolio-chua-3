@@ -41,6 +41,7 @@ export const Images = {
     linkedInLogo: "assets/linkedin-logo.png",
     gitlabLogo: "assets/gitlab-logo.png",
     githubLogo: "assets/github-logo.png",
+    githubLogo2: "assets/github-logo-black.png",
     facebookLogo: "assets/facebook-logo.png",
     twitterLogo: "assets/twitter-logo.png",
     zuittLogo: "assets/logo-zuitt.png",
@@ -62,6 +63,13 @@ export const Images = {
     coverStocks: "assets/cover-stocks.png",
     coverConsultant: "assets/cover-consultant.jpg",
     coverMath: "assets/cover-math.png",
+    backGalaxy: "assets/back-galaxy.jpg",
+    cook: "assets/cook.jpg",
+    recipe1: "assets/recipe1.jpg",
+    coverFood: "assets/coverFood.jpg",
+    coverAnime: "assets/cover-anime.jpg",
+    animeFilo: "assets/img-filo.jpg",
+    animeRap: "assets/img-rap.jpg",
 }
 
 export const ImageUrl = {

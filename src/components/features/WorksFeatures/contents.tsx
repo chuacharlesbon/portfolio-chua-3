@@ -720,7 +720,7 @@ export const WorksContents: FC<any> = () => {
                 <Spacer className='w-20 h-20 hidden laptop:block' />
                 <Spacer className='w-10 h-10' />
                 <Text className="text-dark-100 text-2xl laptop:text-3xl desktop:text-4xl text-center font-semibold">
-                    Native HTML5/CSS/Javascript Projects
+                    HTML5/CSS/Javascript Projects
                 </Text>
                 <Spacer className='w-10 h-10' />
                 <InView as="div" onChange={(inView, entry) => {

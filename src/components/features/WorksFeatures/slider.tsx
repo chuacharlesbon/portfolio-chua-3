@@ -145,7 +145,7 @@ export const WorksSlider: FC<any> = () => {
                         <Spacer className='phone:hidden tablet:block w-20 h-20' />
                         <Div className="phone:w-full tablet:w-auto">
                             <Text className='font-bold text-white text-xl phone:text-center tablet:text-left'>
-                                Native HTML5, CSS3, Vanilla Javascript Projects
+                                HTML5, CSS3, Vanilla Javascript Projects
                             </Text>
                             <Text className='w-300px text-white py-4 phone:text-center tablet:text-left phone:mx-auto tablet:mr-auto tablet:ml-0'>
                                 This trio provides a robust foundation for building modern and interactive web experiences.
