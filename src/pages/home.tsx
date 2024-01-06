@@ -31,6 +31,7 @@ export default function Home() {
                 <meta property="og:title" content="Charles C. | Home" />
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
                 <meta property="og:image" content={Images.favicon} />
+                <meta name="google-site-verification" content="V8I3HSifNNoKc_jFdX3ysuEMvJz9hBT3VOoXUEXiQS4" />
             </Head>
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
