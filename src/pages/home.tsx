@@ -13,12 +13,20 @@ import { LoadingElement } from '@/components/features/loading_element';
 import { HomeContents } from '@/components/features/HomeFeatures/contents';
 import { DimElement } from '@/components/features/dim_element';
 import { ToastDialogInfo } from '@/components/core/Toast';
+import UserContext from '@/context';
 
 export default function Home() {
     
     const [loading, setIsLoading] = React.useState(false);
     const [isDim, setDim] = React.useState(false);
     const [isToastOpen, setToastOpen] = React.useState(true);
+    
+    const {user, setUser} = React.useContext(UserContext);
+    console.log(user)
+    React.useEffect(() => {
+        setUser("Home");
+        console.log(user);
+    }, []);
 
     return (
         <>

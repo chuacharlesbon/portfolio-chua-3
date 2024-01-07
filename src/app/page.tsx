@@ -51,7 +51,7 @@ export default function Home() {
   useEffect(() => {
     axios.get('https://cmt-server-2.vercel.app/api/ping');
     setTimeout(() => {
-      router.replace('/home');
+      router.push('/home');
     }, 2000)
   }, []);
 
