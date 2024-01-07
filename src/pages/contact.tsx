@@ -12,19 +12,14 @@ import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
 import { ContactSlider } from '@/components/features/ContactFeatures/slider';
 import { ContactContents } from '@/components/features/ContactFeatures/contents';
-import UserContext from '@/context';
+import UserContext, { AppWrapper } from '@/context';
 
 export default function Contact() {
     const [loading, setIsLoading] = React.useState(false);
-
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
-    React.useEffect(() => {
-        setUser("Contact");
-        console.log(user);
-    }, []);
     return (
-        <>
+        <AppWrapper>
             <Head>
                 <title>Charles C. | Contact</title>
                 <link rel="icon" href={Images.favicon} />
@@ -65,6 +60,6 @@ export default function Contact() {
                     <Footer />
                 </Div>
             </main>
-        </>
+        </AppWrapper>
     )
 }

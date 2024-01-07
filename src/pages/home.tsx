@@ -13,7 +13,7 @@ import { LoadingElement } from '@/components/features/loading_element';
 import { HomeContents } from '@/components/features/HomeFeatures/contents';
 import { DimElement } from '@/components/features/dim_element';
 import { ToastDialogInfo } from '@/components/core/Toast';
-import UserContext from '@/context';
+import UserContext, { AppWrapper } from '@/context';
 
 export default function Home() {
     
@@ -22,14 +22,10 @@ export default function Home() {
     const [isToastOpen, setToastOpen] = React.useState(true);
     
     const {user, setUser} = React.useContext(UserContext);
-    console.log(user)
-    React.useEffect(() => {
-        setUser("Home");
-        console.log(user);
-    }, []);
+    console.log(user);
 
     return (
-        <>
+        <AppWrapper>
             <Head>
                 <title>Charles C. | Home</title>
                 <link rel="icon" href={Images.favicon} />
@@ -90,6 +86,6 @@ export default function Home() {
                     <Footer isDarkTheme={true} />
                 </Div>
             </main>
-        </>
+        </AppWrapper>
     )
 }

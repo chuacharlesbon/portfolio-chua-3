@@ -9,6 +9,7 @@ import { RawInput } from '@/components/core/Forms/RawInput';
 import { FormLabel } from '@/components/core/Forms/FormLabel';
 import axios from 'axios';
 import { ToastDialogInfo } from '@/components/core/Toast';
+import UserContext from '@/context';
 
 export const ContactContents: FC<any> = () => {
 
@@ -53,6 +54,13 @@ export const ContactContents: FC<any> = () => {
                 }, 3000);
             });
     }
+
+    const {user, setUser} = React.useContext(UserContext);
+    console.log(user);
+    React.useEffect(() => {
+        setUser("Contact content");
+        console.log(user);
+    }, []);
 
     return (
         <Div className='w-full bg-grey-600 py-10 laptop:py-20'>

@@ -11,6 +11,7 @@ import { RawInput } from '@/components/core/Forms/RawInput';
 import { FormLabel } from '@/components/core/Forms/FormLabel';
 import { ImSpinner } from 'react-icons/im';
 import { RedirectionURL } from '@/constants/constants';
+import UserContext from '@/context';
 
 export const HomeContents: FC<any> = () => {
 
@@ -19,6 +20,13 @@ export const HomeContents: FC<any> = () => {
     const [isVontosVisible, setVontos] = React.useState(false);
     const [isZuittVisible, setZuitt] = React.useState(false);
     const [isNewsVisible, setNews] = React.useState(false);
+
+    const {user, setUser} = React.useContext(UserContext);
+    console.log(user);
+    React.useEffect(() => {
+        setUser("Home content");
+        console.log(user);
+    }, []);
 
     return (
         <Div className='w-full bg-grey-600'>
