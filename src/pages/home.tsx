@@ -37,6 +37,20 @@ export default function Home() {
                 <meta property="og:image" content={Images.favicon} />
                 <meta name="google-site-verification" content="V8I3HSifNNoKc_jFdX3ysuEMvJz9hBT3VOoXUEXiQS4" />
             </Head>
+            <Script
+                strategy="lazyOnload"
+                src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
+            />
+            <Script strategy="lazyOnload">
+                {`
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-8EG7WTTNQT', {
+                            page_path: window.location.pathname,
+                            });
+                        `}
+            </Script>
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
                     loading ? <LoadingElement /> : <Spacer />

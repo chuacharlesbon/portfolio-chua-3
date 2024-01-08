@@ -28,6 +28,20 @@ export default function Skills() {
                 <meta property="og:image" content={Images.math} />
                 <meta name="google-site-verification" content="V8I3HSifNNoKc_jFdX3ysuEMvJz9hBT3VOoXUEXiQS4" />
             </Head>
+            <Script
+                strategy="lazyOnload"
+                src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
+            />
+            <Script strategy="lazyOnload">
+                {`
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-8EG7WTTNQT', {
+                            page_path: window.location.pathname,
+                            });
+                        `}
+            </Script>
             <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
                 crossOrigin="anonymous"></Script>
             <Script id="g-ads-2">
