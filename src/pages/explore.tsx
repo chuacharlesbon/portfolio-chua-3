@@ -29,10 +29,11 @@ export default function Explore() {
                 <meta name="google-site-verification" content="V8I3HSifNNoKc_jFdX3ysuEMvJz9hBT3VOoXUEXiQS4" />
             </Head>
             <Script
+                id="gtag-explore-1"
                 strategy="lazyOnload"
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
-            <Script strategy="lazyOnload">
+            <Script id="gtag-explore-2" strategy="lazyOnload">
                 {`
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}

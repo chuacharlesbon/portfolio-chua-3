@@ -30,10 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Script
+        id="gtag-root-1"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
       />
-      <Script strategy="lazyOnload">
+      <Script id="gtag-root-2" strategy="lazyOnload">
         {`
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}
