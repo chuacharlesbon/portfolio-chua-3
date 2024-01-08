@@ -34,7 +34,7 @@ export const WorksContents: FC<any> = () => {
                     if (!isNextjsVisible) {
                         setTimeout(() => {
                             setNextjs(inView);
-                        }, 750);
+                        }, 500);
                     }
                 }}>
                     {
@@ -138,8 +138,8 @@ export const WorksContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isReactjsVisible) {
                         setTimeout(() => {
-                            setReactjs(true);
-                        }, 750);
+                            setReactjs(inView);
+                        }, 500);
                     }
                 }}>
                     {
@@ -322,7 +322,7 @@ export const WorksContents: FC<any> = () => {
                     if (!isFlutterVisible) {
                         setTimeout(() => {
                             setFlutter(inView);
-                        }, 750);
+                        }, 500);
                     }
                 }}>
                     {
@@ -544,7 +544,7 @@ export const WorksContents: FC<any> = () => {
                     if (!isNodejsVisible) {
                         setTimeout(() => {
                             setNodejs(inView);
-                        }, 750);
+                        }, 500);
                     }
                 }}>
                     {
@@ -727,7 +727,7 @@ export const WorksContents: FC<any> = () => {
                     if (!isHTMLVisible) {
                         setTimeout(() => {
                             setHTML(inView);
-                        }, 750);
+                        }, 500);
                     }
                 }}>
                     {
