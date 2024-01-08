@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ImageUrl } from '@/constants/assets'
 import { AppWrapper } from '@/context'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
+      />
+      <Script strategy="lazyOnload">
+        {`
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-8EG7WTTNQT', {
+                            page_path: window.location.pathname,
+                            });
+                        `}
+      </Script>
       <body className={inter.className}>
         <AppWrapper>
           {children}
