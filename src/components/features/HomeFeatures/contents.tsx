@@ -45,7 +45,7 @@ export const HomeContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isXtendlyVisible) {
                         setTimeout(() => {
-                            setXtendly(inView);
+                            setXtendly(true);
                         }, 750);
                     }
                 }}>
@@ -245,7 +245,7 @@ export const HomeContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isVontosVisible) {
                         setTimeout(() => {
-                            setVontos(inView);
+                            setVontos(true);
                         }, 750);
                     }
                 }}>
@@ -385,7 +385,7 @@ export const HomeContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isZuittVisible) {
                         setTimeout(() => {
-                            setZuitt(inView);
+                            setZuitt(true);
                         }, 750);
                     }
                 }}>
@@ -589,7 +589,7 @@ export const HomeContents: FC<any> = () => {
                 <Spacer className='w-10 h-10' />
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isNewsVisible) {
-                        setNews(inView);
+                        setNews(true);
                     }
                 }}>
                     {

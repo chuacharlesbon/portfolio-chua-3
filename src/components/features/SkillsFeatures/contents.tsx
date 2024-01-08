@@ -31,7 +31,7 @@ export const SkillsContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isCodingVisible) {
                         setTimeout(() => {
-                            setCoding(inView);
+                            setCoding(true);
                         }, 750);
                     }
                 }}>
@@ -302,7 +302,7 @@ export const SkillsContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isTechVisible) {
                         setTimeout(() => {
-                            setTech(inView);
+                            setTech(true);
                         }, 750);
                     }
                 }}>
@@ -410,7 +410,7 @@ export const SkillsContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isOthersVisible) {
                         setTimeout(() => {
-                            setOthers(inView);
+                            setOthers(true);
                         }, 750);
                     }
                 }}>

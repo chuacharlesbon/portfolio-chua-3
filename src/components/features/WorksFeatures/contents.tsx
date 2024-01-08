@@ -138,7 +138,7 @@ export const WorksContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isReactjsVisible) {
                         setTimeout(() => {
-                            setReactjs(inView);
+                            setReactjs(true);
                         }, 750);
                     }
                 }}>

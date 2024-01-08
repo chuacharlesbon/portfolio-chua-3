@@ -32,7 +32,7 @@ export const AboutContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isWorkVisible) {
                         setTimeout(() => {
-                            setWork(inView);
+                            setWork(true);
                         }, 750);
                     }
                 }}>
@@ -172,7 +172,7 @@ export const AboutContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isTrainingVisible) {
                         setTimeout(() => {
-                            setTraining(inView);
+                            setTraining(true);
                         }, 750);
                     }
                 }}>
@@ -308,7 +308,7 @@ export const AboutContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isAcademicVisible) {
                         setTimeout(() => {
-                            setAcademic(inView);
+                            setAcademic(true);
                         }, 750);
                     }
                 }}>
@@ -438,7 +438,7 @@ export const AboutContents: FC<any> = () => {
                 <InView as="div" onChange={(inView, entry) => {
                     if (!isOthersVisible) {
                         setTimeout(() => {
-                            setOthers(inView);
+                            setOthers(true);
                         }, 750);
                     }
                 }}>
