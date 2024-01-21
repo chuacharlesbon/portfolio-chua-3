@@ -26,11 +26,12 @@ export async function getStaticProps() {
             console.log(data2.data.products);
         });
         //console.log(`This is the response ${testApi.toString()}`);
-        data = ["test"];
+        data = [{result: "test"}];
         //res.status(200).json({products});
     } catch (error) {
         //res.status(500).json({ products: [] });
         console.log(error);
+        data = [{result: "error"}];
     }
 
     console.log(`This is the data ${data.toString()}`);
@@ -51,6 +52,7 @@ export default function Home({ products, ...otherProps} : {products: any;}) {
     
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
+    console.log(`This is the product prop ${products[0].result}`);
 
     return (
         <AppWrapper>
