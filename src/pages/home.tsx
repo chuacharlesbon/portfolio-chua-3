@@ -14,8 +14,36 @@ import { HomeContents } from '@/components/features/HomeFeatures/contents';
 import { DimElement } from '@/components/features/dim_element';
 import { ToastDialogInfo } from '@/components/core/Toast';
 import UserContext, { AppWrapper } from '@/context';
+import axios from 'axios';
 
-export default function Home() {
+export async function getStaticProps() {
+    let data: any = [];
+    try {
+        await axios.get('/api/products')
+		//.then(res => res.json())
+		.then(data2 => {
+            console.log(data2.data);
+            console.log(data2.data.products);
+        });
+        //console.log(`This is the response ${testApi.toString()}`);
+        data = ["test"];
+        //res.status(200).json({products});
+    } catch (error) {
+        //res.status(500).json({ products: [] });
+        console.log(error);
+    }
+
+    console.log(`This is the data ${data.toString()}`);
+  
+    return {
+      // Pass data as a prop to the page component
+      props: {
+        products: data,
+      },
+    };
+}
+
+export default function Home({ products, ...otherProps} : {products: any;}) {
     
     const [loading, setIsLoading] = React.useState(false);
     const [isDim, setDim] = React.useState(false);
