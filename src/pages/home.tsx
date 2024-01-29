@@ -48,7 +48,7 @@ export default function Home({ products, ...otherProps} : {products: any;}) {
     
     const [loading, setIsLoading] = React.useState(false);
     const [isDim, setDim] = React.useState(false);
-    const [isToastOpen, setToastOpen] = React.useState(true);
+    const [isToastOpen, setToastOpen] = React.useState(false);
     
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
