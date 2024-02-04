@@ -137,6 +137,32 @@ export const WorksSlider: FC<any> = () => {
                     </FlexRow>
                 </Div>
                 <Div className='w-full h-500px' style={{
+                    backgroundImage: `url(${Images.aspnet})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'right',
+                }}>
+                    <FlexRow className='phone:w-full tablet:w-4/5 h-full bg-gradient-to-r from-fullBlack justify-start items-center'>
+                        <Spacer className='phone:hidden tablet:block w-20 h-20' />
+                        <Div className="phone:w-full tablet:w-auto">
+                            <Text className='font-bold text-white text-xl phone:text-center tablet:text-left'>
+                                ASP.NET Core MVC
+                            </Text>
+                            <Text className='w-300px text-white py-4 phone:text-center tablet:text-left phone:mx-auto tablet:mr-auto tablet:ml-0'>
+                            Is ASP.NET Core MVC good?
+NET Core is one of the most popular and loved web-development frameworks to build web apps. It's a cross-platform open-source project with excellent technical assistance.
+                            </Text>
+                            <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => {   
+                                const element = document.getElementById('works-content-asp');
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}>
+                                LEARN MORE
+                            </ButtonClassA>
+                        </Div>
+                    </FlexRow>
+                </Div>
+                <Div className='w-full h-500px' style={{
                     backgroundImage: `url(${Images.native})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',

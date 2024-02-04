@@ -70,6 +70,9 @@ export const Images = {
     coverAnime: "assets/cover-anime.jpg",
     animeFilo: "assets/img-filo.jpg",
     animeRap: "assets/img-rap.jpg",
+    aspnet: "assets/aspnet.png",
+    worksAsp: "assets/works-asp.png",
+    worksAsp2: "assets/works-asp2.png",
 }
 
 export const ImageUrl = {
@@ -109,6 +112,7 @@ export const Icons = {
     figma: "/assets/logo-figma.jpg",
     sap: "/assets/logo-sap.png",
     krita: "/assets/logo-krita.png",
+    asp: "/assets/logo-asp.jpg",
 }
 
 export const Certificates = {

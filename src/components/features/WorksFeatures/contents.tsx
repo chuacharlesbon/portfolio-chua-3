@@ -716,6 +716,111 @@ export const WorksContents: FC<any> = () => {
                 {/* //////////////////////// */}
                 {/* HTML5 Section           */}
                 {/* //////////////////////// */}
+                <div id='works-content-asp' />
+                <Spacer className='w-20 h-20 hidden laptop:block' />
+                <Spacer className='w-10 h-10' />
+                <Text className="text-dark-100 text-2xl laptop:text-3xl desktop:text-4xl text-center font-semibold">
+                    ASP.NET Core MVC Projects
+                </Text>
+                <Spacer className='w-10 h-10' />
+                <InView as="div" onChange={(inView, entry) => {
+                    if (!isHTMLVisible) {
+                        setTimeout(() => {
+                            setHTML(inView);
+                        }, 500);
+                    }
+                }}>
+                    {
+                        isHTMLVisible
+                            ? <Div className='py-4'>
+                                <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 gap-4 tabletWide:gap-8 items-center justify-center'>
+                                    <motion.div
+                                        animate={{
+                                            opacity: 1,
+                                            y: 0, // Reset the y position to avoid jumping
+                                        }}
+                                        transition={{
+                                            delay: 0.25,
+                                            duration: 0.5,
+                                            ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                        }}
+                                        initial={{
+                                            opacity: 0,
+                                            y: +50, // Start the element off the top of the screen
+                                        }}
+                                    >
+                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
+                                                <Div
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksAsp})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
+                                                >
+                                                </Div>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
+                                                    CMT Learning Institute
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
+                                                    January 2024
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
+                                                </Text>
+                                            </Div>
+                                        </Div>
+                                    </motion.div>
+                                    <motion.div
+                                        animate={{
+                                            opacity: 1,
+                                            y: 0, // Reset the y position to avoid jumping
+                                        }}
+                                        transition={{
+                                            delay: 0.50,
+                                            duration: 0.5,
+                                            ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                        }}
+                                        initial={{
+                                            opacity: 0,
+                                            y: +50, // Start the element off the top of the screen
+                                        }}
+                                    >
+                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                            <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
+                                                <Div
+                                                    className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
+                                                    style={{
+                                                        backgroundImage: `url(${Images.worksAsp2})`,
+                                                        backgroundSize: 'cover',
+                                                        backgroundPosition: 'center',
+                                                    }}
+                                                >
+                                                </Div>
+                                                <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
+                                                <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
+                                                    Admin Dashboard
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light'>
+                                                    September 2023
+                                                </Text>
+                                                <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
+                                                    <GoDotFill className="mr-2 text-yellow-100" />Sample Project
+                                                </Text>
+                                            </Div>
+                                        </Div>
+                                    </motion.div>
+                                </Div>
+                            </Div>
+                            : <ImSpinner className="animate-spin my-16 text-grey-400 text-4xl text-center mx-auto" />
+                    }
+                </InView>
+
+                {/* //////////////////////// */}
+                {/* HTML5 Section           */}
+                {/* //////////////////////// */}
                 <div id='works-content-html' />
                 <Spacer className='w-20 h-20 hidden laptop:block' />
                 <Spacer className='w-10 h-10' />

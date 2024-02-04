@@ -282,6 +282,30 @@ export const SkillsContents: FC<any> = () => {
                                                 VS Code
                                             </Text>
                                         </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.asp}
+                                                alt="ASP.NET"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                                ASP.NET
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.next}
+                                                alt="Next.js"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                            Next.js
+                                            </Text>
+                                        </FlexColumn>
                                     </Div>
                                 </motion.div>
                             </Div>
@@ -437,7 +461,7 @@ export const SkillsContents: FC<any> = () => {
                                             <Image
                                                 src={Icons.windows}
                                                 alt="Windows"
-                                                className='mx-auto text-center rounded-md'
+                                                className='mx-auto text-center'
                                                 width={50}
                                                 height={50}
                                             />
