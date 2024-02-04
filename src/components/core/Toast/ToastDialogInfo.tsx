@@ -14,7 +14,7 @@ interface ButtonProps {
 }
 
 export const ToastDialogInfo: FC<ButtonProps> = ({
-  title, description, onClose, isOpen, toastKind, children
+  className, title, description, onClose, isOpen, toastKind, children
 }) => {
 
   const getTitle = () => {
@@ -85,7 +85,7 @@ export const ToastDialogInfo: FC<ButtonProps> = ({
       align-middle transition-all transform flex flex-col justify-center items-center"
             >
               <div
-                className={`flex flex-col justify-around p-4 text-gray-500 w-300px rounded-lg shadow-xl dark:text-gray-400 font-robot bg-white`}
+                className={`flex flex-col justify-around p-4 text-gray-500 w-300px rounded-lg shadow-xl dark:text-gray-400 font-robot bg-white ${className}`}
                 id="toast-success"
                 role="alert"
               >

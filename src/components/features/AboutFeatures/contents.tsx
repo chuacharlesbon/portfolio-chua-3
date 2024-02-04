@@ -7,6 +7,9 @@ import { Icons, Images } from "@/constants/assets";
 import { InView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { ImSpinner } from 'react-icons/im';
+import Link from 'next/link';
+import { ToastDialogInfo } from '@/components/core/Toast';
+import { CertificateSlider } from './certificate_toast';
 
 export const AboutContents: FC<any> = () => {
 
@@ -15,9 +18,24 @@ export const AboutContents: FC<any> = () => {
     const [isAcademicVisible, setAcademic] = React.useState(false);
     const [isOthersVisible, setOthers] = React.useState(false);
 
+    const [isToastOpen, setToastOpen] = React.useState(false);
+
     return (
         <Div className='w-full bg-grey-600'>
             <Div className='phone:w-full tablet:w-10/12 mx-auto p-4'>
+
+                {/* /////////////////////////// */}
+                {/* Certification View          */}
+                {/* /////////////////////////// */}
+                <ToastDialogInfo
+                    className='phone:w-full medium:w-10/12'
+                    title='CERTIFICATES'
+                    toastKind='info'
+                    onClose={() => setToastOpen(false)}
+                    isOpen={isToastOpen}
+                >
+                    <CertificateSlider/>
+                </ToastDialogInfo>
 
                 {/* /////////////////////////// */}
                 {/* Marketplace Section         */}
@@ -140,10 +158,10 @@ export const AboutContents: FC<any> = () => {
                                             </Text>
                                             <Text className='text-secondary-200 text-xs'>
                                                 Consultant
-                                            </Text> 
+                                            </Text>
                                             <Text className='text-secondary-200 text-xs'>
                                                 Since July 2023
-                                            </Text> 
+                                            </Text>
                                             <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
                                                 &#8226; Consultations with web and mobile developers aid in achieving the projects digital objectives.
@@ -152,6 +170,28 @@ export const AboutContents: FC<any> = () => {
                                                 &#8226; Work independently or as part of a team, able to provide low-level technical documentations
                                             </Text>
                                         </Div>
+                                    </FlexRow>
+                                </motion.div>
+                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                <motion.div
+                                    animate={{
+                                        opacity: 1,
+                                        y: 0, // Reset the y position to avoid jumping
+                                    }}
+                                    transition={{
+                                        delay: 1.75,
+                                        duration: 0.5,
+                                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                    }}
+                                    initial={{
+                                        opacity: 0,
+                                        y: +50, // Start the element off the top of the screen
+                                    }}
+                                >
+                                    <FlexRow className='w-full items-center justify-center'>
+                                        <Link className="mx-auto text-white text-center p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100 duration-700" href="/assets/docs/resume-chua-ms-word-2024.docx" download target="_blank">
+                                            Download Resume
+                                        </Link>
                                     </FlexRow>
                                 </motion.div>
                             </Div>
@@ -288,6 +328,30 @@ export const AboutContents: FC<any> = () => {
                                                 &#8226; December 2023
                                             </Text>
                                         </Div>
+                                    </FlexRow>
+                                </motion.div>
+                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                <motion.div
+                                    animate={{
+                                        opacity: 1,
+                                        y: 0, // Reset the y position to avoid jumping
+                                    }}
+                                    transition={{
+                                        delay: 1.75,
+                                        duration: 0.5,
+                                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                    }}
+                                    initial={{
+                                        opacity: 0,
+                                        y: +50, // Start the element off the top of the screen
+                                    }}
+                                >
+                                    <FlexRow className='w-full items-center justify-center'>
+                                        <ButtonClassA
+                                            className="mx-auto text-white text-center phone:p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100"
+                                            onClick={() => setToastOpen(true)}>
+                                            View Certificates
+                                        </ButtonClassA>
                                     </FlexRow>
                                 </motion.div>
                             </Div>
@@ -502,7 +566,7 @@ export const AboutContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            Chowking
+                                                Chowking
                                             </Text>
                                         </FlexColumn>
                                         <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>

@@ -110,3 +110,10 @@ export const Icons = {
     sap: "/assets/logo-sap.png",
     krita: "/assets/logo-krita.png",
 }
+
+export const Certificates = {
+    fullStack: "/assets/docs/Full-Stack-Web-Development.jpeg",
+    aspnet: "/assets/docs/ASP.NET-Core-MVP.jpeg",
+    laravel: "/assets/docs/Laravel-PHP.jpeg",
+    aws: "/assets/docs/AWS-Concepts.jpeg",
+}

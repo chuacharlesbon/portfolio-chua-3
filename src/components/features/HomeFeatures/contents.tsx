@@ -12,6 +12,9 @@ import { FormLabel } from '@/components/core/Forms/FormLabel';
 import { ImSpinner } from 'react-icons/im';
 import { RedirectionURL } from '@/constants/constants';
 import UserContext from '@/context';
+import Link from 'next/link';
+import { ToastDialogInfo } from '@/components/core/Toast';
+import { CertificateSlider } from '../AboutFeatures/certificate_toast';
 
 export const HomeContents: FC<any> = () => {
 
@@ -28,11 +31,26 @@ export const HomeContents: FC<any> = () => {
         console.log(user);
     }, []);
 
+    const [isToastOpen, setToastOpen] = React.useState(false);
+
     return (
         <Div className='w-full bg-grey-600'>
             <Div className='tablet:w-10/12 mx-auto p-4'>
                 <div id='home-content-1' />
 
+                {/* /////////////////////////// */}
+                {/* Certification View          */}
+                {/* /////////////////////////// */}
+                <ToastDialogInfo
+                    className='phone:w-full medium:w-10/12'
+                    title='CERTIFICATES'
+                    toastKind='info'
+                    onClose={() => setToastOpen(false)}
+                    isOpen={isToastOpen}
+                >
+                    <CertificateSlider/>
+                </ToastDialogInfo>
+                
                 {/* /////////////////////// */}
                 {/* Work Section 1          */}
                 {/* /////////////////////// */}
@@ -572,6 +590,52 @@ export const HomeContents: FC<any> = () => {
                                             </Text>
                                         </FlexColumn>
                                     </Div>
+                                </motion.div>
+                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                <motion.div
+                                    animate={{
+                                        opacity: 1,
+                                        y: 0, // Reset the y position to avoid jumping
+                                    }}
+                                    transition={{
+                                        delay: 1.75,
+                                        duration: 0.5,
+                                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                    }}
+                                    initial={{
+                                        opacity: 0,
+                                        y: +50, // Start the element off the top of the screen
+                                    }}
+                                >
+                                    <FlexRow className='w-full items-center justify-center'>
+                                        <Link className="mx-auto text-white text-center p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100 duration-700" href="/assets/docs/resume-chua-ms-word-2024.docx" download target="_blank">
+                                            Download Resume
+                                        </Link>
+                                    </FlexRow>
+                                </motion.div>
+                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                <motion.div
+                                    animate={{
+                                        opacity: 1,
+                                        y: 0, // Reset the y position to avoid jumping
+                                    }}
+                                    transition={{
+                                        delay: 2.25,
+                                        duration: 0.5,
+                                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                    }}
+                                    initial={{
+                                        opacity: 0,
+                                        y: +50, // Start the element off the top of the screen
+                                    }}
+                                >
+                                    <FlexRow className='w-full items-center justify-center'>
+                                        <ButtonClassA
+                                            className="mx-auto text-white text-center phone:p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100"
+                                            onClick={() => setToastOpen(true)}>
+                                            View Certificates
+                                        </ButtonClassA>
+                                    </FlexRow>
                                 </motion.div>
                             </Div>
                             : <ImSpinner className="animate-spin my-16 text-grey-400 text-4xl text-center mx-auto" />
