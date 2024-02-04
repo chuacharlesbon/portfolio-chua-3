@@ -148,8 +148,7 @@ export const WorksSlider: FC<any> = () => {
                                 ASP.NET Core MVC
                             </Text>
                             <Text className='w-300px text-white py-4 phone:text-center tablet:text-left phone:mx-auto tablet:mr-auto tablet:ml-0'>
-                            Is ASP.NET Core MVC good?
-NET Core is one of the most popular and loved web-development frameworks to build web apps. It's a cross-platform open-source project with excellent technical assistance.
+                                NET Core is one of the most popular and loved web-development frameworks to build web apps. It is a cross-platform open-source project with excellent technical assistance.
                             </Text>
                             <ButtonClassA className="border border-2 border-white phone:bg-transparent hover:bg-white text-white hover:text-dark-100 phone:py-2 phone:px-4 my-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => {   
                                 const element = document.getElementById('works-content-asp');
