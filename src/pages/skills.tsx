@@ -12,9 +12,20 @@ import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
 import { SkillsContents } from '@/components/features/SkillsFeatures/contents';
 import { SkillsSlider } from '@/components/features/SkillsFeatures/slider';
+import { performGTM } from '@/helpers/gtm-script';
 
 export default function Skills() {
     const [loading, setIsLoading] = React.useState(false);
+    const [initPage, setInitPage] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("trigger");
+        if(!initPage){
+            setInitPage(true);
+            performGTM();
+        }
+    }, [])
+
     return (
         <>
             <Head>

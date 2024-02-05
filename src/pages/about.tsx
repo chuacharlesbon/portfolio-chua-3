@@ -11,9 +11,20 @@ import { LoadingElement } from '@/components/features/loading_element';
 import { AboutSlider } from '@/components/features/AboutFeatures/slider';
 import { BackButton } from '@/components/features/back_button';
 import { AboutContents } from '@/components/features/AboutFeatures/contents';
+import { performGTM } from '@/helpers/gtm-script';
 
 export default function About() {
     const [loading, setIsLoading] = React.useState(false);
+    const [initPage, setInitPage] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("trigger");
+        if(!initPage){
+            setInitPage(true);
+            performGTM();
+        }
+    }, [])
+
     return (
         <>
             <Head>

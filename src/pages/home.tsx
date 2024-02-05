@@ -15,6 +15,7 @@ import { DimElement } from '@/components/features/dim_element';
 import { ToastDialogInfo } from '@/components/core/Toast';
 import UserContext, { AppWrapper } from '@/context';
 import axios from 'axios';
+import { performGTM } from '@/helpers/gtm-script';
 
 export async function getStaticProps() {
     let data: any = [];
@@ -53,6 +54,17 @@ export default function Home({ products, ...otherProps} : {products: any;}) {
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
     console.log(`This is the product prop ${products[0].result}`);
+    
+    const [initPage, setInitPage] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("trigger");
+        if(!initPage){
+            setInitPage(true);
+            performGTM();
+        }
+    }, [])
+
 
     return (
         <AppWrapper>

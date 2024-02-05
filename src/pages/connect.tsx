@@ -12,9 +12,20 @@ import { RedirectionURL, RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
 import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
+import { performGTM } from '@/helpers/gtm-script';
 
 export default function Connect() {
     const [loading, setIsLoading] = React.useState(false);
+    const [initPage, setInitPage] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("trigger");
+        if(!initPage){
+            setInitPage(true);
+            performGTM();
+        }
+    }, [])
+
     return (
         <>
             <Head>

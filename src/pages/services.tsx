@@ -12,9 +12,20 @@ import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
 import { ServicesSlider } from '@/components/features/ServicesFeatures/slider';
 import { ServicesContents } from '@/components/features/ServicesFeatures/contents';
+import { performGTM } from '@/helpers/gtm-script';
 
 export default function Services() {
     const [loading, setIsLoading] = React.useState(false);
+    const [initPage, setInitPage] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("trigger");
+        if(!initPage){
+            setInitPage(true);
+            performGTM();
+        }
+    }, [])
+
     return (
         <>
             <Head>

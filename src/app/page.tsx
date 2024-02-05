@@ -4,10 +4,11 @@ import Head from 'next/head';
 import Script from 'next/script';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import { Div } from "@/components/core/Containers";
 import { Images } from '@/constants/assets';
+import { performGTM } from '@/helpers/gtm-script';
 
 export default function Home() {
   const router = useRouter();
@@ -48,12 +49,20 @@ export default function Home() {
     );
   };
 
+  const [initPage, setInitPage] = useState(false);
+
   useEffect(() => {
     axios.get('https://cmt-server-2.vercel.app/api/ping');
     setTimeout(() => {
       router.push('/home');
     }, 2000)
-  }, []);
+    console.log("trigger");
+    if(!initPage){
+      setInitPage(true);
+      performGTM();
+    }
+  }, [])
+
 
   return (
     <>

@@ -13,11 +13,23 @@ import { Text } from "@/components/core/TextElements";
 import { ContactSlider } from '@/components/features/ContactFeatures/slider';
 import { ContactContents } from '@/components/features/ContactFeatures/contents';
 import UserContext, { AppWrapper } from '@/context';
+import { performGTM } from '@/helpers/gtm-script';
 
 export default function Contact() {
     const [loading, setIsLoading] = React.useState(false);
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
+    
+    const [initPage, setInitPage] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("trigger");
+        if(!initPage){
+            setInitPage(true);
+            performGTM();
+        }
+    }, [])
+
     return (
         <AppWrapper>
             <Head>

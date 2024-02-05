@@ -12,9 +12,20 @@ import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
 import { WorksSlider } from '@/components/features/WorksFeatures/slider';
 import { WorksContents } from '@/components/features/WorksFeatures/contents';
+import { performGTM } from '@/helpers/gtm-script';
 
 export default function Works() {
     const [loading, setIsLoading] = React.useState(false);
+    const [initPage, setInitPage] = React.useState(false);
+
+    React.useEffect(() => {
+        console.log("trigger");
+        if(!initPage){
+            setInitPage(true);
+            performGTM();
+        }
+    }, [])
+
     return (
         <>
             <Head>
