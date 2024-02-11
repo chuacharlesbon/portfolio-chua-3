@@ -80,19 +80,9 @@ export default async function Home({ products, ...otherProps} : {products: any;}
     
     const [initPage, setInitPage] = React.useState(false);
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
-        authDomain: "my-portfolio-73bbd.firebaseapp.com",
-        projectId: "my-portfolio-73bbd",
-        storageBucket: "my-portfolio-73bbd.appspot.com",
-        messagingSenderId: "633292878880",
-        appId: "1:633292878880:web:e0f6c065300d7dd9367845",
-        measurementId: "G-8EG7WTTNQT"
-    };
-
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage && typeof window !== "undefined"){
+        if(!initPage && products){
             setInitPage(true);
             // performGTM();
             logEvent(products, document.title, {
