@@ -59,7 +59,7 @@ export async function getStaticProps() {
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    const analytics: any = isSupported().then(yes => yes ? getAnalytics(app) : null);
 
     return {
       // Pass data as a prop to the page component

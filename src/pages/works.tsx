@@ -15,11 +15,9 @@ import { WorksContents } from '@/components/features/WorksFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
 import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
+import { useRouter } from 'next/router';
 
-export default async function Works() {
-    const [loading, setIsLoading] = React.useState(false);
-    const [initPage, setInitPage] = React.useState(false);
-
+export async function getStaticProps() {
     const firebaseConfig = {
         apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
         authDomain: "my-portfolio-73bbd.firebaseapp.com",
@@ -33,16 +31,27 @@ export default async function Works() {
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics: any = isSupported().then(yes => yes ? getAnalytics(app) : null);
-    // const isFASupported = await isSupported();
-    // const analytics = getAnalytics(app);
+
+    return {
+      // Pass data as a prop to the page component
+      props: {
+        faAnalytics: analytics,
+      },
+    };
+}
+
+export default async function Works({ faAnalytics, ...otherProps} : {faAnalytics: any;}) {
+    const router = useRouter();
+    const [loading, setIsLoading] = React.useState(false);
+    const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage && analytics) {
+        if (!initPage && faAnalytics) {
             setInitPage(true);
             // performGTM();
-            logEvent(analytics, document.title, {
-                path: window.location.pathname,
+            logEvent(faAnalytics, document.title, {
+                path: router.pathname,
             });
         }
     }, [])
