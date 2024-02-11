@@ -71,12 +71,12 @@ export default async function Home({ products, ...otherProps} : {products: any;}
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    const isFASupported = await isSupported();
+    // const isFASupported = await isSupported();
     // const analytics = getAnalytics(app);
 
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage && isFASupported){
+        if(!initPage && typeof window !== "undefined"){
             setInitPage(true);
             // performGTM();
             const analytics = getAnalytics(app);
