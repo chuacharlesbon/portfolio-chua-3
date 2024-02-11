@@ -57,7 +57,7 @@ export default function Home() {
       router.push('/home');
     }, 2000)
     console.log("trigger");
-    if (!initPage) {
+    if(!initPage){
       setInitPage(true);
       performGTM();
     }
@@ -75,21 +75,6 @@ export default function Home() {
         <meta property="og:title" content="Charles C." />
         <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
         <meta property="og:image" content={Images.favicon} />
-        <Script
-          id="gtag-root-1"
-          strategy="lazyOnload"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
-        />
-        <Script id="gtag-root-2" strategy="lazyOnload">
-          {`
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-                            gtag('config', 'G-8EG7WTTNQT', {
-                            page_path: window.location.pathname,
-                            });
-                        `}
-        </Script>
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center p-24">
         <Div className=''>{/* border border-dark-100 rounded-md p-2 */}
