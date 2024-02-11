@@ -64,34 +64,34 @@ export async function getStaticProps() {
     return {
       // Pass data as a prop to the page component
       props: {
-        products: analytics,
+        faAnalytics: analytics,
       },
     };
 }
 
-export default async function Home({ products, ...otherProps} : {products: any;}) {
+export default async function Home({ faAnalytics, ...otherProps} : {faAnalytics: any;}) {
     
+    const router = useRouter();
     const [loading, setIsLoading] = React.useState(false);
     const [isDim, setDim] = React.useState(false);
     const [isToastOpen, setToastOpen] = React.useState(false);
     
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
-    console.log(`This is the FA analytics prop ${products ? "initialized" : "err"}`);
+    console.log(`This is the FA analytics prop ${faAnalytics ? "initialized" : "err"}`);
     
     const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage && products){
+        if(!initPage && faAnalytics){
             setInitPage(true);
             // performGTM();
-            logEvent(products, document.title, {
-                path: useRouter().pathname,
+            logEvent(faAnalytics, document.title, {
+                path: router.pathname,
             });
         }
     }, [])
-
 
     return (
         <AppWrapper>
