@@ -18,6 +18,7 @@ import axios from 'axios';
 import { performGTM } from '@/helpers/gtm-script';
 import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
+import { useRouter } from 'next/router';
 
 export async function getStaticProps() {
     // let data: any = [];
@@ -86,7 +87,7 @@ export default async function Home({ products, ...otherProps} : {products: any;}
             setInitPage(true);
             // performGTM();
             logEvent(products, document.title, {
-                path: window.location.pathname,
+                path: useRouter().pathname,
             });
         }
     }, [])
