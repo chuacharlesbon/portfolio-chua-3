@@ -14,6 +14,8 @@ import { ContactSlider } from '@/components/features/ContactFeatures/slider';
 import { ContactContents } from '@/components/features/ContactFeatures/contents';
 import UserContext, { AppWrapper } from '@/context';
 import { performGTM } from '@/helpers/gtm-script';
+import { initializeApp } from "firebase/app";
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 export default function Contact() {
     const [loading, setIsLoading] = React.useState(false);
@@ -22,11 +24,28 @@ export default function Contact() {
     
     const [initPage, setInitPage] = React.useState(false);
 
+    const firebaseConfig = {
+        apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
+        authDomain: "my-portfolio-73bbd.firebaseapp.com",
+        projectId: "my-portfolio-73bbd",
+        storageBucket: "my-portfolio-73bbd.appspot.com",
+        messagingSenderId: "633292878880",
+        appId: "1:633292878880:web:e0f6c065300d7dd9367845",
+        measurementId: "G-8EG7WTTNQT"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
     React.useEffect(() => {
         console.log("trigger");
         if(!initPage){
             setInitPage(true);
-            performGTM();
+            // performGTM();
+            logEvent(analytics, document.title, {
+                path: window.location.pathname,
+            });
         }
     }, [])
 
