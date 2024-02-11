@@ -20,44 +20,31 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 
 export async function getStaticProps() {
-    let data: any = [];
-    try {
-        await axios.get('/api/products')
-		//.then(res => res.json())
-		.then(data2 => {
-            console.log(data2.data);
-            console.log(data2.data.products);
-        });
-        //console.log(`This is the response ${testApi.toString()}`);
-        data = [{result: "test"}];
-        //res.status(200).json({products});
-    } catch (error) {
-        //res.status(500).json({ products: [] });
-        console.log(error);
-        data = [{result: "error"}];
-    }
+    // let data: any = [];
+    // try {
+    //     await axios.get('/api/products')
+	// 	//.then(res => res.json())
+	// 	.then(data2 => {
+    //         console.log(data2.data);
+    //         console.log(data2.data.products);
+    //     });
+    //     //console.log(`This is the response ${testApi.toString()}`);
+    //     data = [{result: "test"}];
+    //     //res.status(200).json({products});
+    // } catch (error) {
+    //     //res.status(500).json({ products: [] });
+    //     console.log(error);
+    //     data = [{result: "error"}];
+    // }
 
-    console.log(`This is the data ${data.toString()}`);
+    // console.log(`This is the data ${data.toString()}`);
   
-    return {
-      // Pass data as a prop to the page component
-      props: {
-        products: data,
-      },
-    };
-}
-
-export default async function Home({ products, ...otherProps} : {products: any;}) {
-    
-    const [loading, setIsLoading] = React.useState(false);
-    const [isDim, setDim] = React.useState(false);
-    const [isToastOpen, setToastOpen] = React.useState(false);
-    
-    const {user, setUser} = React.useContext(UserContext);
-    console.log(user);
-    console.log(`This is the product prop ${products[0].result}`);
-    
-    const [initPage, setInitPage] = React.useState(false);
+    // return {
+    //   // Pass data as a prop to the page component
+    //   props: {
+    //     products: data,
+    //   },
+    // };
 
     const firebaseConfig = {
         apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
@@ -71,16 +58,44 @@ export default async function Home({ products, ...otherProps} : {products: any;}
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    // const isFASupported = await isSupported();
-    // const analytics = getAnalytics(app);
+    const analytics = getAnalytics(app);
+
+    return {
+      // Pass data as a prop to the page component
+      props: {
+        products: analytics,
+      },
+    };
+}
+
+export default async function Home({ products, ...otherProps} : {products: any;}) {
+    
+    const [loading, setIsLoading] = React.useState(false);
+    const [isDim, setDim] = React.useState(false);
+    const [isToastOpen, setToastOpen] = React.useState(false);
+    
+    const {user, setUser} = React.useContext(UserContext);
+    console.log(user);
+    console.log(`This is the FA analytics prop ${products ? "initialized" : "err"}`);
+    
+    const [initPage, setInitPage] = React.useState(false);
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
+        authDomain: "my-portfolio-73bbd.firebaseapp.com",
+        projectId: "my-portfolio-73bbd",
+        storageBucket: "my-portfolio-73bbd.appspot.com",
+        messagingSenderId: "633292878880",
+        appId: "1:633292878880:web:e0f6c065300d7dd9367845",
+        measurementId: "G-8EG7WTTNQT"
+    };
 
     React.useEffect(() => {
         console.log("trigger");
         if(!initPage && typeof window !== "undefined"){
             setInitPage(true);
             // performGTM();
-            const analytics = getAnalytics(app);
-            logEvent(analytics, document.title, {
+            logEvent(products, document.title, {
                 path: window.location.pathname,
             });
         }

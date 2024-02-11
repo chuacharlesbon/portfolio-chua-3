@@ -32,15 +32,15 @@ export default async function Works() {
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
+    const analytics: any = isSupported().then(yes => yes ? getAnalytics(app) : null);
     // const isFASupported = await isSupported();
     // const analytics = getAnalytics(app);
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage && typeof window !== "undefined") {
+        if (!initPage && analytics) {
             setInitPage(true);
             // performGTM();
-            const analytics = getAnalytics(app);
             logEvent(analytics, document.title, {
                 path: window.location.pathname,
             });
