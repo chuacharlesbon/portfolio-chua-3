@@ -11,9 +11,6 @@ export const performGTM = () => {
         event_category: 'user_interaction',
         event_label: 'clicked_button',
     });
-    window.gtag('config', 'G-8EG7WTTNQT', {
-        page_path: window.location.pathname,
-    });
     console.log("manual gtm completed");
 }
 
