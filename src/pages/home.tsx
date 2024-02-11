@@ -17,7 +17,7 @@ import UserContext, { AppWrapper } from '@/context';
 import axios from 'axios';
 import { performGTM } from '@/helpers/gtm-script';
 import { initializeApp } from "firebase/app";
-import { getAnalytics, logEvent } from "firebase/analytics";
+import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 
 export async function getStaticProps() {
     let data: any = [];
@@ -47,7 +47,7 @@ export async function getStaticProps() {
     };
 }
 
-export default function Home({ products, ...otherProps} : {products: any;}) {
+export default async function Home({ products, ...otherProps} : {products: any;}) {
     
     const [loading, setIsLoading] = React.useState(false);
     const [isDim, setDim] = React.useState(false);
@@ -71,13 +71,15 @@ export default function Home({ products, ...otherProps} : {products: any;}) {
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    const isFASupported = await isSupported();
+    // const analytics = getAnalytics(app);
 
     React.useEffect(() => {
         console.log("trigger");
         if(!initPage){
             setInitPage(true);
             // performGTM();
+            const analytics = getAnalytics(app);
             logEvent(analytics, document.title, {
                 path: window.location.pathname,
             });

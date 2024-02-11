@@ -14,9 +14,9 @@ import { SkillsContents } from '@/components/features/SkillsFeatures/contents';
 import { SkillsSlider } from '@/components/features/SkillsFeatures/slider';
 import { performGTM } from '@/helpers/gtm-script';
 import { initializeApp } from "firebase/app";
-import { getAnalytics, logEvent } from "firebase/analytics";
+import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 
-export default function Skills() {
+export default async function Skills() {
     const [loading, setIsLoading] = React.useState(false);
     const [initPage, setInitPage] = React.useState(false);
 
@@ -32,13 +32,15 @@ export default function Skills() {
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    const isFASupported = await isSupported();
+    // const analytics = getAnalytics(app);
 
     React.useEffect(() => {
         console.log("trigger");
         if(!initPage){
             setInitPage(true);
             // performGTM();
+            const analytics = getAnalytics(app);
             logEvent(analytics, document.title, {
                 path: window.location.pathname,
             });
