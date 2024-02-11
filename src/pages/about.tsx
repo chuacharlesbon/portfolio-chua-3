@@ -23,8 +23,6 @@ export default function About() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
-            const router = useRouter();
-            router.reload();
         }
     }, [])
 

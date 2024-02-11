@@ -28,8 +28,6 @@ export default function Contact() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
-            const router = useRouter();
-            router.reload();
         }
     }, [])
 

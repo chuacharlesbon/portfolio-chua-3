@@ -16,6 +16,7 @@ import { ToastDialogInfo } from '@/components/core/Toast';
 import UserContext, { AppWrapper } from '@/context';
 import axios from 'axios';
 import { performGTM } from '@/helpers/gtm-script';
+import { useRouter } from 'next/router';
 
 export async function getStaticProps() {
     let data: any = [];
@@ -62,8 +63,6 @@ export default function Home({ products, ...otherProps }: { products: any; }) {
         if (!initPage) {
             setInitPage(true);
             performGTM();
-            const router = useRouter();
-            router.reload();
         }
     }, [])
 

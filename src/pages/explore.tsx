@@ -24,8 +24,6 @@ export default function Explore() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
-            const router = useRouter();
-            router.reload();
         }
     }, [])
 

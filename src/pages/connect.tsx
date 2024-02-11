@@ -24,8 +24,6 @@ export default function Connect() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
-            const router = useRouter();
-            router.reload();
         }
     }, [])
 
