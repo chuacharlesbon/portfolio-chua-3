@@ -13,6 +13,7 @@ import { Text } from "@/components/core/TextElements";
 import { SkillsContents } from '@/components/features/SkillsFeatures/contents';
 import { SkillsSlider } from '@/components/features/SkillsFeatures/slider';
 import { performGTM } from '@/helpers/gtm-script';
+import { useRouter } from 'next/router';
 
 export default function Skills() {
     const [loading, setIsLoading] = React.useState(false);
@@ -23,6 +24,8 @@ export default function Skills() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
+            const router = useRouter();
+            router.reload();
         }
     }, [])
 

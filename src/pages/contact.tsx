@@ -14,6 +14,7 @@ import { ContactSlider } from '@/components/features/ContactFeatures/slider';
 import { ContactContents } from '@/components/features/ContactFeatures/contents';
 import UserContext, { AppWrapper } from '@/context';
 import { performGTM } from '@/helpers/gtm-script';
+import { useRouter } from 'next/router';
 
 export default function Contact() {
     const [loading, setIsLoading] = React.useState(false);
@@ -27,6 +28,8 @@ export default function Contact() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
+            const router = useRouter();
+            router.reload();
         }
     }, [])
 

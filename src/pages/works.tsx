@@ -13,6 +13,7 @@ import { Text } from "@/components/core/TextElements";
 import { WorksSlider } from '@/components/features/WorksFeatures/slider';
 import { WorksContents } from '@/components/features/WorksFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
+import { useRouter } from 'next/router';
 
 export default function Works() {
     const [loading, setIsLoading] = React.useState(false);
@@ -23,6 +24,8 @@ export default function Works() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
+            const router = useRouter();
+            router.reload();
         }
     }, [])
 

@@ -62,6 +62,8 @@ export default function Home({ products, ...otherProps }: { products: any; }) {
         if (!initPage) {
             setInitPage(true);
             performGTM();
+            const router = useRouter();
+            router.reload();
         }
     }, [])
 

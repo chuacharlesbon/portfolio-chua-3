@@ -13,6 +13,7 @@ import { LoadingElement } from '@/components/features/loading_element';
 import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
 import { performGTM } from '@/helpers/gtm-script';
+import { useRouter } from 'next/router';
 
 export default function Explore() {
     const [loading, setIsLoading] = React.useState(false);
@@ -23,6 +24,8 @@ export default function Explore() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
+            const router = useRouter();
+            router.reload();
         }
     }, [])
 

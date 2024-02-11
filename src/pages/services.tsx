@@ -13,6 +13,7 @@ import { Text } from "@/components/core/TextElements";
 import { ServicesSlider } from '@/components/features/ServicesFeatures/slider';
 import { ServicesContents } from '@/components/features/ServicesFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
+import { useRouter } from 'next/router';
 
 export default function Services() {
     const [loading, setIsLoading] = React.useState(false);
@@ -23,6 +24,8 @@ export default function Services() {
         if (!initPage) {
             setInitPage(true);
             performGTM();
+            const router = useRouter();
+            router.reload();
         }
     }, [])
 
