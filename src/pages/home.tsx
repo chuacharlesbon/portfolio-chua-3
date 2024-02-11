@@ -76,7 +76,7 @@ export default async function Home({ products, ...otherProps} : {products: any;}
 
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage){
+        if(!initPage && isFASupported){
             setInitPage(true);
             // performGTM();
             const analytics = getAnalytics(app);

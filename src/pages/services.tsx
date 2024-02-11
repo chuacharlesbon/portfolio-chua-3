@@ -37,7 +37,7 @@ export default async function Services() {
 
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage){
+        if(!initPage && isFASupported){
             setInitPage(true);
             // performGTM();
             const analytics = getAnalytics(app);

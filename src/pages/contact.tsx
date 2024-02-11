@@ -41,7 +41,7 @@ export default async function Contact() {
 
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage){
+        if(!initPage && isFASupported){
             setInitPage(true);
             // performGTM();
             const analytics = getAnalytics(app);
