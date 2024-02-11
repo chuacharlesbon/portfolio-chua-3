@@ -13,7 +13,6 @@ import { Text } from "@/components/core/TextElements";
 import { ServicesSlider } from '@/components/features/ServicesFeatures/slider';
 import { ServicesContents } from '@/components/features/ServicesFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
-import { useRouter } from 'next/router';
 
 export default function Services() {
     const [loading, setIsLoading] = React.useState(false);
@@ -21,7 +20,7 @@ export default function Services() {
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage) {
+        if(!initPage){
             setInitPage(true);
             performGTM();
         }
@@ -39,13 +38,14 @@ export default function Services() {
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
                 <meta property="og:image" content={Images.seoServices} />
                 <meta name="google-site-verification" content="V8I3HSifNNoKc_jFdX3ysuEMvJz9hBT3VOoXUEXiQS4" />
-                <Script
-                    id="gtag-services-1"
-                    strategy="lazyOnload"
-                    src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
-                />
-                <Script id="gtag-services-2" strategy="lazyOnload">
-                    {`
+            </Head>
+            <Script
+                id="gtag-services-1"
+                strategy="lazyOnload"
+                src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
+            />
+            <Script id="gtag-services-2" strategy="lazyOnload">
+                {`
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
@@ -53,13 +53,12 @@ export default function Services() {
                             page_path: window.location.pathname,
                             });
                         `}
-                </Script>
-                <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
-                    crossOrigin="anonymous"></Script>
-                <Script id="g-ads-2">
-                    (adsbygoogle = window.adsbygoogle || []).push({ });
-                </Script>
-            </Head>
+            </Script>
+            <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
+                crossOrigin="anonymous"></Script>
+            <Script id="g-ads-2">
+                (adsbygoogle = window.adsbygoogle || []).push({ });
+            </Script>
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
                     loading ? <LoadingElement /> : <Spacer />
