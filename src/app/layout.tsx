@@ -4,6 +4,7 @@ import './globals.css'
 import { ImageUrl } from '@/constants/assets'
 import { AppWrapper } from '@/context'
 import Script from 'next/script'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,13 +30,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script
-        id="gtag-root-1"
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
-      />
-      <Script id="gtag-root-2" strategy="lazyOnload">
-        {`
+      <Head>
+        <Script
+          id="gtag-root-1"
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
+        />
+        <Script id="gtag-root-2" strategy="lazyOnload">
+          {`
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
@@ -43,7 +45,8 @@ export default function RootLayout({
                             page_path: window.location.pathname,
                             });
                         `}
-      </Script>
+        </Script>
+      </Head>
       <body className={inter.className}>
         <AppWrapper>
           {children}

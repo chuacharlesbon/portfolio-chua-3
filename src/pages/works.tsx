@@ -20,7 +20,7 @@ export default function Works() {
 
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage){
+        if (!initPage) {
             setInitPage(true);
             performGTM();
         }
@@ -38,14 +38,13 @@ export default function Works() {
                 <meta property="og:description" content="Developer Portfolio - Charles Bon Chua: Full Stack Developer" />
                 <meta property="og:image" content={Images.desktopMobile} />
                 <meta name="google-site-verification" content="V8I3HSifNNoKc_jFdX3ysuEMvJz9hBT3VOoXUEXiQS4" />
-            </Head>
-            <Script
-                id="gtag-works-1"
-                strategy="lazyOnload"
-                src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
-            />
-            <Script id="gtag-works-2" strategy="lazyOnload">
-                {`
+                <Script
+                    id="gtag-works-1"
+                    strategy="lazyOnload"
+                    src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
+                />
+                <Script id="gtag-works-2" strategy="lazyOnload">
+                    {`
                             window.dataLayer = window.dataLayer || [];
                             function gtag(){dataLayer.push(arguments);}
                             gtag('js', new Date());
@@ -53,12 +52,13 @@ export default function Works() {
                             page_path: window.location.pathname,
                             });
                         `}
-            </Script>
-            <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
-                crossOrigin="anonymous"></Script>
-            <Script id="g-ads-2">
-                (adsbygoogle = window.adsbygoogle || []).push({ });
-            </Script>
+                </Script>
+                <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
+                    crossOrigin="anonymous"></Script>
+                <Script id="g-ads-2">
+                    (adsbygoogle = window.adsbygoogle || []).push({ });
+                </Script>
+            </Head>
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
                     loading ? <LoadingElement /> : <Spacer />
