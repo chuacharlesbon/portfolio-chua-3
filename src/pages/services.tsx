@@ -14,15 +14,15 @@ import { ServicesSlider } from '@/components/features/ServicesFeatures/slider';
 import { ServicesContents } from '@/components/features/ServicesFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
 
-export default async function Services() {
+export default function Services() {
     const [loading, setIsLoading] = React.useState(false);
     const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage) {
+        if(!initPage){
             setInitPage(true);
-            // performGTM();
+            performGTM();
         }
     }, [])
 
@@ -45,7 +45,7 @@ export default async function Services() {
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
             <Script
-                id="gtag-about-2"
+                id="gtag-services-2"
                 strategy="lazyOnload"
                 dangerouslySetInnerHTML={{
                     __html: `

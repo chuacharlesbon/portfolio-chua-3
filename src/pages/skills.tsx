@@ -14,15 +14,15 @@ import { SkillsContents } from '@/components/features/SkillsFeatures/contents';
 import { SkillsSlider } from '@/components/features/SkillsFeatures/slider';
 import { performGTM } from '@/helpers/gtm-script';
 
-export default async function Skills() {
+export default function Skills() {
     const [loading, setIsLoading] = React.useState(false);
     const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage) {
+        if(!initPage){
             setInitPage(true);
-            // performGTM();
+            performGTM();
         }
     }, [])
 
@@ -45,7 +45,7 @@ export default async function Skills() {
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
             <Script
-                id="gtag-about-2"
+                id="gtag-skills-2"
                 strategy="lazyOnload"
                 dangerouslySetInnerHTML={{
                     __html: `

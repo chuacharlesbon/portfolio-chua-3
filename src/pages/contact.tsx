@@ -15,7 +15,7 @@ import { ContactContents } from '@/components/features/ContactFeatures/contents'
 import UserContext, { AppWrapper } from '@/context';
 import { performGTM } from '@/helpers/gtm-script';
 
-export default async function Contact() {
+export default function Contact() {
     const [loading, setIsLoading] = React.useState(false);
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
@@ -24,9 +24,9 @@ export default async function Contact() {
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage) {
+        if(!initPage){
             setInitPage(true);
-            // performGTM();
+            performGTM();
         }
     }, [])
 
@@ -49,7 +49,7 @@ export default async function Contact() {
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
             <Script
-                id="gtag-about-2"
+                id="gtag-contact-2"
                 strategy="lazyOnload"
                 dangerouslySetInnerHTML={{
                     __html: `

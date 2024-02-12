@@ -14,15 +14,15 @@ import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
 import { performGTM } from '@/helpers/gtm-script';
 
-export default async function Explore() {
+export default function Explore() {
     const [loading, setIsLoading] = React.useState(false);
     const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage) {
+        if(!initPage){
             setInitPage(true);
-            // performGTM();
+            performGTM();
         }
     }, [])
 
@@ -44,16 +44,19 @@ export default async function Explore() {
                 strategy="lazyOnload"
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
-            <Script id="gtag-explore-2" strategy="lazyOnload">
-                {`
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-                            gtag('config', 'G-8EG7WTTNQT', {
-                            page_path: window.location.pathname,
-                            });
-                        `}
-            </Script>
+            <Script
+                id="gtag-explore-2"
+                strategy="lazyOnload"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-8EG7WTTNQT', {
+                page_path: window.location.pathname,
+                });`,
+                }}
+            />
             <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
                 crossOrigin="anonymous"></Script>
             <Script id="g-ads-2">

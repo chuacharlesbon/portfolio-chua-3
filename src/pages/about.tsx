@@ -13,15 +13,15 @@ import { BackButton } from '@/components/features/back_button';
 import { AboutContents } from '@/components/features/AboutFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
 
-export default async function About() {
+export default function About() {
     const [loading, setIsLoading] = React.useState(false);
     const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage) {
+        if(!initPage){
             setInitPage(true);
-            // performGTM();
+            performGTM();
         }
     }, [])
 

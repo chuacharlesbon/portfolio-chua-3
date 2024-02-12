@@ -85,7 +85,7 @@ export default function Home({ products, ...otherProps} : {products: any;}) {
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
             <Script
-                id="gtag-about-2"
+                id="gtag-home-2"
                 strategy="lazyOnload"
                 dangerouslySetInnerHTML={{
                     __html: `

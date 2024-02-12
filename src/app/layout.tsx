@@ -35,7 +35,7 @@ export default function RootLayout({
         src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
       />
       <Script
-        id="gtag-about-2"
+        id="gtag-root-2"
         strategy="lazyOnload"
         dangerouslySetInnerHTML={{
           __html: `

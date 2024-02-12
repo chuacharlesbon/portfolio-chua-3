@@ -14,15 +14,15 @@ import { WorksSlider } from '@/components/features/WorksFeatures/slider';
 import { WorksContents } from '@/components/features/WorksFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
 
-export default async function Works() {
+export default function Works() {
     const [loading, setIsLoading] = React.useState(false);
     const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage) {
+        if(!initPage){
             setInitPage(true);
-            // performGTM();
+            performGTM();
         }
     }, [])
 
@@ -45,7 +45,7 @@ export default async function Works() {
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
             <Script
-                id="gtag-about-2"
+                id="gtag-works-2"
                 strategy="lazyOnload"
                 dangerouslySetInnerHTML={{
                     __html: `
