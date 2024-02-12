@@ -14,7 +14,6 @@ import { ContactSlider } from '@/components/features/ContactFeatures/slider';
 import { ContactContents } from '@/components/features/ContactFeatures/contents';
 import UserContext, { AppWrapper } from '@/context';
 import { performGTM } from '@/helpers/gtm-script';
-import { useRouter } from 'next/router';
 
 export default async function Contact() {
     const [loading, setIsLoading] = React.useState(false);

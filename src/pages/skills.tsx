@@ -13,7 +13,6 @@ import { Text } from "@/components/core/TextElements";
 import { SkillsContents } from '@/components/features/SkillsFeatures/contents';
 import { SkillsSlider } from '@/components/features/SkillsFeatures/slider';
 import { performGTM } from '@/helpers/gtm-script';
-import { useRouter } from 'next/router';
 
 export default async function Skills() {
     const [loading, setIsLoading] = React.useState(false);

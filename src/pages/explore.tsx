@@ -13,7 +13,6 @@ import { LoadingElement } from '@/components/features/loading_element';
 import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
 import { performGTM } from '@/helpers/gtm-script';
-import { useRouter } from 'next/router';
 
 export default async function Explore() {
     const [loading, setIsLoading] = React.useState(false);
