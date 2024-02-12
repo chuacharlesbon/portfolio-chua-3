@@ -18,31 +18,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 import { useRouter } from 'next/router';
 
-export async function getStaticProps() {
-    const firebaseConfig = {
-        apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
-        authDomain: "my-portfolio-73bbd.firebaseapp.com",
-        projectId: "my-portfolio-73bbd",
-        storageBucket: "my-portfolio-73bbd.appspot.com",
-        messagingSenderId: "633292878880",
-        appId: "1:633292878880:web:e0f6c065300d7dd9367845",
-        measurementId: "G-8EG7WTTNQT"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics: any = await isSupported().then(yes => yes ? getAnalytics(app) : null);
-
-    return {
-      // Pass data as a prop to the page component
-      props: {
-        faAnalytics: analytics,
-      },
-    };
-}
-
-export default async function Contact({ faAnalytics, ...otherProps} : {faAnalytics: any;}) {
-    const router = useRouter();
+export default async function Contact() {
     const [loading, setIsLoading] = React.useState(false);
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
@@ -51,12 +27,9 @@ export default async function Contact({ faAnalytics, ...otherProps} : {faAnalyti
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage && faAnalytics) {
+        if (!initPage) {
             setInitPage(true);
             // performGTM();
-            logEvent(faAnalytics, document.title, {
-                path: router.pathname,
-            });
         }
     }, [])
 
@@ -78,16 +51,19 @@ export default async function Contact({ faAnalytics, ...otherProps} : {faAnalyti
                 strategy="lazyOnload"
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
-            <Script id="gtag-contact-2" strategy="lazyOnload">
-                {`
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-                            gtag('config', 'G-8EG7WTTNQT', {
-                            page_path: window.location.pathname,
-                            });
-                        `}
-            </Script>
+            <Script
+                id="gtag-about-2"
+                strategy="lazyOnload"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-8EG7WTTNQT', {
+                page_path: window.location.pathname,
+                });`,
+                }}
+            />
             <Script async id="g-ads-1" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8167368561700289"
                 crossOrigin="anonymous"></Script>
             <Script id="g-ads-2">

@@ -34,16 +34,19 @@ export default function RootLayout({
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
       />
-      <Script id="gtag-root-2" strategy="lazyOnload">
-        {`
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-                            gtag('config', 'G-8EG7WTTNQT', {
-                            page_path: window.location.pathname,
-                            });
-                        `}
-      </Script>
+      <Script
+        id="gtag-about-2"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-8EG7WTTNQT', {
+                page_path: window.location.pathname,
+                });`,
+        }}
+      />
       <body className={inter.className}>
         <AppWrapper>
           {children}

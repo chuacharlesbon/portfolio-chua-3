@@ -47,49 +47,44 @@ export async function getStaticProps() {
     //   },
     // };
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
-        authDomain: "my-portfolio-73bbd.firebaseapp.com",
-        projectId: "my-portfolio-73bbd",
-        storageBucket: "my-portfolio-73bbd.appspot.com",
-        messagingSenderId: "633292878880",
-        appId: "1:633292878880:web:e0f6c065300d7dd9367845",
-        measurementId: "G-8EG7WTTNQT"
-    };
+    // const firebaseConfig = {
+    //     apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
+    //     authDomain: "my-portfolio-73bbd.firebaseapp.com",
+    //     projectId: "my-portfolio-73bbd",
+    //     storageBucket: "my-portfolio-73bbd.appspot.com",
+    //     messagingSenderId: "633292878880",
+    //     appId: "1:633292878880:web:e0f6c065300d7dd9367845",
+    //     measurementId: "G-8EG7WTTNQT"
+    // };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics: any = await isSupported().then(yes => yes ? getAnalytics(app) : null);
+    // // Initialize Firebase
+    // const app = initializeApp(firebaseConfig);
+    // const analytics: any = await isSupported().then(yes => yes ? getAnalytics(app) : null);
 
-    return {
-      // Pass data as a prop to the page component
-      props: {
-        faAnalytics: analytics,
-      },
-    };
+    // return {
+    //   // Pass data as a prop to the page component
+    //   props: {
+    //     faAnalytics: analytics,
+    //   },
+    // };
 }
 
-export default async function Home({ faAnalytics, ...otherProps} : {faAnalytics: any;}) {
+export default async function Home() {
     
-    const router = useRouter();
     const [loading, setIsLoading] = React.useState(false);
     const [isDim, setDim] = React.useState(false);
     const [isToastOpen, setToastOpen] = React.useState(false);
     
     const {user, setUser} = React.useContext(UserContext);
     console.log(user);
-    console.log(`This is the FA analytics prop ${faAnalytics ? "initialized" : "err"}`);
     
     const [initPage, setInitPage] = React.useState(false);
 
     React.useEffect(() => {
         console.log("trigger");
-        if(!initPage && faAnalytics){
+        if(!initPage){
             setInitPage(true);
             // performGTM();
-            logEvent(faAnalytics, document.title, {
-                path: router.pathname,
-            });
         }
     }, [])
 
@@ -111,16 +106,19 @@ export default async function Home({ faAnalytics, ...otherProps} : {faAnalytics:
                 strategy="lazyOnload"
                 src={`https://www.googletagmanager.com/gtag/js?id=G-8EG7WTTNQT`}
             />
-            <Script id="gtag-home-2" strategy="lazyOnload">
-                {`
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){dataLayer.push(arguments);}
-                            gtag('js', new Date());
-                            gtag('config', 'G-8EG7WTTNQT', {
-                            page_path: window.location.pathname,
-                            });
-                        `}
-            </Script>
+            <Script
+                id="gtag-about-2"
+                strategy="lazyOnload"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-8EG7WTTNQT', {
+                page_path: window.location.pathname,
+                });`,
+                }}
+            />
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
                     loading ? <LoadingElement /> : <Spacer />
