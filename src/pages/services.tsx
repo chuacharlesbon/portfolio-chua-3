@@ -47,11 +47,10 @@ export default function Services({ faAnalytics, ...otherProps} : {faAnalytics: a
         console.log("trigger");
         if (!initPage && faAnalytics) {
             setInitPage(true);
-            // performGTM();
+            performGTM();
             logEvent(faAnalytics, document.title, {
                 path: window.location.pathname,
             });
-            performGTM();
             console.log(`trigger fa gtm ${window.location.pathname}`);
         }
     }, [])
