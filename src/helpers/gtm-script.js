@@ -11,6 +11,6 @@ export const performGTM = () => {
         event_category: 'user_interaction',
         event_label: 'clicked_button',
     });
-    console.log("manual gtm completed");
+    console.log(`manual gtm completed ${window.location.pathname}`);
 }
 
