@@ -13,8 +13,6 @@ import { Text } from "@/components/core/TextElements";
 import { WorksSlider } from '@/components/features/WorksFeatures/slider';
 import { WorksContents } from '@/components/features/WorksFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
-import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 import { useRouter } from 'next/router';
 
 export default async function Works() {

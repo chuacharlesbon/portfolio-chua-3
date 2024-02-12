@@ -13,8 +13,6 @@ import { Text } from "@/components/core/TextElements";
 import { ServicesSlider } from '@/components/features/ServicesFeatures/slider';
 import { ServicesContents } from '@/components/features/ServicesFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
-import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 import { useRouter } from 'next/router';
 
 export default async function Services() {

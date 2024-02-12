@@ -12,8 +12,6 @@ import { AboutSlider } from '@/components/features/AboutFeatures/slider';
 import { BackButton } from '@/components/features/back_button';
 import { AboutContents } from '@/components/features/AboutFeatures/contents';
 import { performGTM } from '@/helpers/gtm-script';
-import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 import { useRouter } from 'next/router';
 
 export default async function About() {

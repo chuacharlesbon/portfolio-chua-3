@@ -16,8 +16,6 @@ import { ToastDialogInfo } from '@/components/core/Toast';
 import UserContext, { AppWrapper } from '@/context';
 import axios from 'axios';
 import { performGTM } from '@/helpers/gtm-script';
-import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported, logEvent } from "firebase/analytics";
 import { useRouter } from 'next/router';
 
 export async function getStaticProps() {
