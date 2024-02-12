@@ -18,55 +18,6 @@ import axios from 'axios';
 import { performGTM } from '@/helpers/gtm-script';
 import { useRouter } from 'next/router';
 
-export async function getStaticProps() {
-    // let data: any = [];
-    // try {
-    //     await axios.get('/api/products')
-	// 	//.then(res => res.json())
-	// 	.then(data2 => {
-    //         console.log(data2.data);
-    //         console.log(data2.data.products);
-    //     });
-    //     //console.log(`This is the response ${testApi.toString()}`);
-    //     data = [{result: "test"}];
-    //     //res.status(200).json({products});
-    // } catch (error) {
-    //     //res.status(500).json({ products: [] });
-    //     console.log(error);
-    //     data = [{result: "error"}];
-    // }
-
-    // console.log(`This is the data ${data.toString()}`);
-  
-    // return {
-    //   // Pass data as a prop to the page component
-    //   props: {
-    //     products: data,
-    //   },
-    // };
-
-    // const firebaseConfig = {
-    //     apiKey: "AIzaSyDyJ77768PKJECg-hHgqGNcnovTSIxiqXs",
-    //     authDomain: "my-portfolio-73bbd.firebaseapp.com",
-    //     projectId: "my-portfolio-73bbd",
-    //     storageBucket: "my-portfolio-73bbd.appspot.com",
-    //     messagingSenderId: "633292878880",
-    //     appId: "1:633292878880:web:e0f6c065300d7dd9367845",
-    //     measurementId: "G-8EG7WTTNQT"
-    // };
-
-    // // Initialize Firebase
-    // const app = initializeApp(firebaseConfig);
-    // const analytics: any = await isSupported().then(yes => yes ? getAnalytics(app) : null);
-
-    // return {
-    //   // Pass data as a prop to the page component
-    //   props: {
-    //     faAnalytics: analytics,
-    //   },
-    // };
-}
-
 export default async function Home() {
     
     const [loading, setIsLoading] = React.useState(false);
