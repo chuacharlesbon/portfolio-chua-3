@@ -45,12 +45,12 @@ export default function Connect({ faAnalytics, ...otherProps} : {faAnalytics: an
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage && faAnalytics) {
+        if (!initPage) {
             setInitPage(true);
             performGTM();
-            logEvent(faAnalytics, document.title, {
-                path: window.location.pathname,
-            });
+            // logEvent(faAnalytics, document.title, {
+            //     path: window.location.pathname,
+            // });
             console.log(`trigger fa gtm ${window.location.pathname}`);
         }
     }, [])

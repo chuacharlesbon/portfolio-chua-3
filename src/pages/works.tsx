@@ -31,6 +31,8 @@ export async function getStaticProps() {
     const app = initializeApp(firebaseConfig);
     const analytics: any = await isSupported().then(yes => yes ? getAnalytics(app) : null);
 
+    console.log(analytics);
+
     return {
       // Pass data as a prop to the page component
       props: {
