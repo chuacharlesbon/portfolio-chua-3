@@ -296,6 +296,30 @@ export const SkillsContents: FC<any> = () => {
                                         </FlexColumn>
                                         <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
+                                                src={Icons.angular}
+                                                alt="Angular.js"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                            Angular.js
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.shopify}
+                                                alt="Shopify"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                            Shopify
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
                                                 src={Icons.next}
                                                 alt="Next.js"
                                                 className='mx-auto text-center rounded-md'
@@ -304,6 +328,30 @@ export const SkillsContents: FC<any> = () => {
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                             Next.js
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.wordpress}
+                                                alt="WordPress"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                            WordPress
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.php}
+                                                alt="PHP"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                            PHP
                                             </Text>
                                         </FlexColumn>
                                     </Div>

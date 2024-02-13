@@ -31,8 +31,6 @@ export async function getStaticProps() {
     const app = initializeApp(firebaseConfig);
     const analytics: any = await isSupported().then(yes => yes ? getAnalytics(app) : null);
 
-    console.log(analytics);
-
     return {
       // Pass data as a prop to the page component
       props: {
@@ -47,12 +45,12 @@ export default function Works({ faAnalytics, ...otherProps} : {faAnalytics: any;
 
     React.useEffect(() => {
         console.log("trigger");
-        if (!initPage && faAnalytics) {
+        if (!initPage) {
             setInitPage(true);
             performGTM();
-            logEvent(faAnalytics, document.title, {
-                path: window.location.pathname,
-            });
+            // logEvent(faAnalytics, document.title, {
+            //     path: window.location.pathname,
+            // });
             console.log(`trigger fa gtm ${window.location.pathname}`);
         }
     }, [])

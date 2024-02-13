@@ -73,6 +73,8 @@ export const Images = {
     aspnet: "assets/aspnet.png",
     worksAsp: "assets/works-asp.png",
     worksAsp2: "assets/works-asp2.png",
+    angular: "assets/angular.png",
+    worksAngular: "assets/works-angular.png",
 }
 
 export const ImageUrl = {
@@ -113,6 +115,10 @@ export const Icons = {
     sap: "/assets/logo-sap.png",
     krita: "/assets/logo-krita.png",
     asp: "/assets/logo-asp.jpg",
+    angular: "/assets/logo-angular.png",
+    shopify: "/assets/logo-shopify.png",
+    wordpress: "/assets/logo-wordpress.png",
+    php: "/assets/logo-php.png",
 }
 
 export const Certificates = {
