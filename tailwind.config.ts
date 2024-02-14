@@ -58,6 +58,7 @@ const config: Config = {
         '700px': '700px',
         '600px': '600px',
         '500px': '500px',
+        '450px': '450px',
         '400px': '400px',
         '350px': '350px',
         '300px': '300px',
@@ -167,6 +168,9 @@ const config: Config = {
       },
       blueGreen: {
         100: '#0d98ba',
+      },
+      brown: {
+        100: '#a67c00',
       }
     },
   },

@@ -75,6 +75,7 @@ export const Images = {
     worksAsp2: "assets/works-asp2.png",
     angular: "assets/angular.png",
     worksAngular: "assets/works-angular.png",
+    bgScroll: "assets/bg-scroll.png",
 }
 
 export const ImageUrl = {

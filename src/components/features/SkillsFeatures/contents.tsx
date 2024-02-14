@@ -2,11 +2,12 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { Div, FlexColumn, FlexRow, Spacer, TextDivider } from "@/components/core/Containers";
 import { ButtonClassA } from '@/components/core/Forms/Buttons';
-import { Text } from "@/components/core/TextElements";
+import { Span, Text } from "@/components/core/TextElements";
 import { Icons, Images } from "@/constants/assets";
 import { InView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { ImSpinner } from 'react-icons/im';
+import '../../../app/globals.css'
 
 export const SkillsContents: FC<any> = () => {
 
@@ -54,7 +55,7 @@ export const SkillsContents: FC<any> = () => {
                                     }}
                                 >
                                     <Div className='mx-auto text-center grid grid-cols-2 tablet:w-1/2 tablet:grid-cols-4 laptopSm:w-3/5 laptopSm:grid-cols-6 laptop:w-3/4 laptop:grid-cols-8 gap-4 items-center justify-center'>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.html}
                                                 alt="HTML5"
@@ -65,8 +66,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 HTML5
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.css}
                                                 alt="CSS3"
@@ -77,8 +106,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 CSS3
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.bootstrap}
                                                 alt="Bootstrap"
@@ -89,8 +146,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Bootstrap
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.tailwind}
                                                 alt="Tailwind"
@@ -101,8 +186,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Tailwind
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.8 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.node}
                                                 alt="Node.js"
@@ -113,8 +226,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Node.js
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.9 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.react}
                                                 alt="Reactjs"
@@ -125,8 +266,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 React.js
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.9 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.react}
                                                 alt="Reactjs"
@@ -137,8 +306,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 React Native
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 6 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "60%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 5 months</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.firebase}
                                                 alt="Firebase"
@@ -149,8 +346,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Firebase
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 7.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "75%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 7.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "75%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 8 months</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.gcp}
                                                 alt="Google Cloud"
@@ -161,8 +386,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 GCP
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 8 months</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.flutter}
                                                 alt="Flutter"
@@ -173,8 +426,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Flutter
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.dart}
                                                 alt="Dart"
@@ -185,8 +466,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Dart
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.appstore}
                                                 alt="App Store"
@@ -197,8 +506,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 App Store
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 8 months</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.xcode}
                                                 alt="XCode"
@@ -209,8 +546,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 XCode
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 7.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "75%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 7.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "75%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 8 months</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.postman}
                                                 alt="Postman"
@@ -221,8 +586,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Postman
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.9 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.restapi}
                                                 alt="Rest API"
@@ -233,8 +626,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Rest API
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.9 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.mongodb}
                                                 alt="MongoDB"
@@ -245,8 +666,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 MongoDB
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1.9 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.git}
                                                 alt="Git"
@@ -257,8 +706,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Git
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.sublime}
                                                 alt="Sublime Text 3"
@@ -269,8 +746,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 Sublime Text 3
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.vscode}
                                                 alt="VS Code"
@@ -281,8 +786,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 VS Code
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "85%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.asp}
                                                 alt="ASP.NET"
@@ -293,8 +826,36 @@ export const SkillsContents: FC<any> = () => {
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
                                                 ASP.NET
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 6 months</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.angular}
                                                 alt="Angular.js"
@@ -303,10 +864,38 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            Angular.js
+                                                Angular.js
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 5.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "55%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 5.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "55%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1 month</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.shopify}
                                                 alt="Shopify"
@@ -315,10 +904,38 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            Shopify
+                                                Shopify
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 7 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "70%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1 month</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.next}
                                                 alt="Next.js"
@@ -327,10 +944,38 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            Next.js
+                                                Next.js
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 8 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "80%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 8 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "80%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 6 months</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.wordpress}
                                                 alt="WordPress"
@@ -339,10 +984,38 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            WordPress
+                                                WordPress
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 6.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "65%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 6.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "65%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 1 month</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.php}
                                                 alt="PHP"
@@ -351,8 +1024,36 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            PHP
+                                                PHP
                                             </Text>
+                                            <Div
+                                                className='childTooltip z-50 w-450px h-300px px-28 py-20 top-1/2 mt-4 text-left flex flex-col justify-center items-start'
+                                                style={{
+                                                    backgroundImage: `url(${Images.bgScroll})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundPosition: 'center',
+                                                    backgroundRepeat: 'no-repeat'
+                                                }}
+                                            >
+                                                <Text className="font-semibold text-brown-100 text-center text-xl mt-2 mb-4">
+                                                    SKILL METRICS
+                                                </Text>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Proficiency: 6.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-blue rounded-full' style={{ width: "65%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Knowledge: 6.5 / 10
+                                                </Text>
+                                                <Div className='h-2 bg-grey-400 rounded-full w-full my-2'>
+                                                    <Div className='h-2 background-play-green rounded-full' style={{ width: "65%" }} />
+                                                </Div>
+                                                <Text className="font-semibold text-brown-100">
+                                                    Years of EXP: <Span className='font-normal'>+ 2 years</Span>
+                                                </Text>
+                                            </Div>
                                         </FlexColumn>
                                     </Div>
                                 </motion.div>
@@ -505,7 +1206,7 @@ export const SkillsContents: FC<any> = () => {
                                     }}
                                 >
                                     <Div className='mx-auto text-center grid grid-cols-2 tablet:w-1/2 tablet:grid-cols-3 laptopSm:w-3/5 laptopSm:grid-cols-6 gap-4 items-center justify-center'>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.windows}
                                                 alt="Windows"
@@ -514,10 +1215,10 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            Windows
+                                                Windows
                                             </Text>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.apple}
                                                 alt="Apple"
@@ -529,7 +1230,7 @@ export const SkillsContents: FC<any> = () => {
                                                 Mac
                                             </Text>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.linux}
                                                 alt="Linux"
@@ -541,7 +1242,7 @@ export const SkillsContents: FC<any> = () => {
                                                 Linux
                                             </Text>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.figma}
                                                 alt="Figma"
@@ -550,10 +1251,10 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            Figma
+                                                Figma
                                             </Text>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.krita}
                                                 alt="Krita"
@@ -562,10 +1263,10 @@ export const SkillsContents: FC<any> = () => {
                                                 height={50}
                                             />
                                             <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
-                                            Krita
+                                                Krita
                                             </Text>
                                         </FlexColumn>
-                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                        <FlexColumn className='parentToolTip duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
                                             <Image
                                                 src={Icons.sap}
                                                 alt="SAP"
