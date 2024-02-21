@@ -40,7 +40,7 @@ export const ContactContents: FC<any> = () => {
                 fromApp: "Portfolio 2024 Website"
             },
         ) */
-        await fetch('https://cmt-server-1.vercel.app/api/s1/message', {
+        await fetch('/api/s1/message', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
