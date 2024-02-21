@@ -33,9 +33,6 @@ export const POST = async (
     }
 }
 
-export const GET = async (
-    req: NextApiRequest,
-    res: NextApiResponse<ResponseData>
-) => {
+export const GET = async () => {
     return NextResponse.json({ message: "Server is up!" });
 }
