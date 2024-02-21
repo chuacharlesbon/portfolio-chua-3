@@ -31,11 +31,13 @@ export const ContactContents: FC<any> = () => {
             headers: { 'Content-Type': 'multipart/form-data' },
         }) */
         axios.post(
-            'https://nomadic-autumn-404208.uc.r.appspot.com/messages',
+            'https://cmt-server-1.vercel.app/api/s1/message',
             {
-                content: `${name.toUpperCase()}: ${message}`,
-                receiver: "Admin",
-                sender: email
+                referrer: "https://portfolio-chua-c.vercel.app",
+                senderName: name,
+                email: email,
+                message: message,
+                fromApp: "Portfolio 2024 Website"
             },
         )
             .then((response) => {
