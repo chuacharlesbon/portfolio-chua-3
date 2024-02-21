@@ -1,27 +1,27 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { NextApiRequest, NextApiResponse } from "next";
 import { Clients } from "../../../../mongodb";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 type ResponseData = {
     message: string
 }
 
 export const POST = async (
-    req: NextApiRequest,
-    res: NextApiResponse<ResponseData>
+    req: NextRequest,
+    res: NextResponse<ResponseData>
 ) => {
     try {
-        const { referrer, senderName, email, message, fromApp } = req.body;
-        if (email) {
+        const postBody = await req.json();
+        if (postBody) {
             const newDate = new Date();
             const db = await Clients.connectToMongoDBS1();
             await db.collection('messages').insertOne({
-                referrer: referrer ?? "N/A",
-                senderName: senderName,
-                email: email,
-                message: message,
-                fromApp: fromApp,
+                referrer: postBody.referrer ?? "N/A",
+                senderName: postBody.senderName,
+                email: postBody.email,
+                message: postBody.message,
+                fromApp: postBody.fromApp,
                 createdAt: newDate.toISOString()
             });
             return NextResponse.json({ message: "Message has been sent." });
