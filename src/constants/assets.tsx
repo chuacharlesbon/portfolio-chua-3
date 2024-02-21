@@ -77,6 +77,7 @@ export const Images = {
     worksAngular: "assets/works-angular.png",
     bgScroll: "assets/bg-scroll.png",
     privacy: "assets/privacy.png",
+    magicQr: "assets/magic-qr.jpg",
 }
 
 export const ImageUrl = {

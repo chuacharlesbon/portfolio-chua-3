@@ -8,13 +8,15 @@ import { IoWarning } from "react-icons/io5";
 import { Appbar2, Footer } from "@/components";
 import { Div, FlexRow, FlexColumn, Spacer, TextDivider } from "@/components/core/Containers";
 import { Images } from "@/constants/assets";
-import { RouteNames } from "@/constants/constants";
+import { RedirectionURL, RouteNames } from "@/constants/constants";
 import { LoadingElement } from '@/components/features/loading_element';
 import { BackButton } from '@/components/features/back_button';
 import { Text } from "@/components/core/TextElements";
-import { performGTM } from '@/helpers/gtm-script';
+import { performGTM, performGTMMagic } from '@/helpers/gtm-script';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics, isSupported, logEvent } from 'firebase/analytics';
+import { ButtonClassA } from '@/components/core/Forms/Buttons';
+import { redirect, useRouter, useSearchParams } from 'next/navigation';
 
 export async function getStaticProps() {
     const firebaseConfig = {
@@ -32,16 +34,28 @@ export async function getStaticProps() {
     const analytics: any = await isSupported().then(yes => yes ? getAnalytics(app) : null);
 
     return {
-      // Pass data as a prop to the page component
-      props: {
-        faAnalytics: analytics,
-      },
+        // Pass data as a prop to the page component
+        props: {
+            faAnalytics: analytics,
+        },
     };
 }
 
-export default function Explore({ faAnalytics, ...otherProps} : {faAnalytics: any;}) {
+export default function Explore({ faAnalytics, ...otherProps }: { faAnalytics: any; }) {
+    const router = useRouter();
+    const searchParams = useSearchParams();
+    const isMagic: any = searchParams?.get('bonus') ?? "";
+
     const [loading, setIsLoading] = React.useState(false);
     const [initPage, setInitPage] = React.useState(false);
+
+    const magicRedirect = async () => {
+        setIsLoading(true);
+        await performGTMMagic();
+        setTimeout(() => {
+            router.push(RedirectionURL.magicUrl);
+        }, 5000)
+    }
 
     React.useEffect(() => {
         console.log("trigger");
@@ -52,6 +66,15 @@ export default function Explore({ faAnalytics, ...otherProps} : {faAnalytics: an
             //     path: window.location.pathname,
             // });
             console.log(`trigger fa gtm ${window.location.pathname}`);
+        }
+
+        if (isMagic != "") {
+            setTimeout(() => {
+                const element = document.getElementById('magic-content');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 2000)
         }
     }, [])
 
@@ -265,6 +288,57 @@ export default function Explore({ faAnalytics, ...otherProps} : {faAnalytics: an
                                             backgroundPosition: 'center',
                                         }}
                                     />
+                                </FlexRow>
+                            </Div>
+                        </Div>
+                        <div id='magic-content' />
+                        <Div
+                            className='w-full'
+                            style={{
+                                backgroundImage: `url(${Images.backGalaxy})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                            }}
+                        >
+                            <Spacer className='h-12 w-32' />
+                            <Div className='w-full py-4 bg-white bg-opacity-75'>
+                                <TextDivider
+                                    className='bg-grey-100 phone:hidden tabletWide:block'
+                                    textType='center'
+                                    textElement={
+                                        <Text className='text-xl tabletWide:w-1/3 tabletWide:text-3xl text-dark-100 text-center font-serif uppercase'>
+                                            BONUS
+                                        </Text>
+                                    }
+                                />
+                            </Div>
+                            <Div
+                                className='w-full bg-white bg-opacity-25 py-10 laptop:py-20'
+                            >
+                                <FlexRow className='phone:flex-col tablet:flex-row mx-auto p-4 w-full laptop:w-10/12 justify-center items-center'>
+                                    <Div className='flex flex-col items-center justify-center w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-square'>
+                                        <Div
+                                            className='w-60 h-60'
+                                            style={{
+                                                backgroundImage: `url(${Images.magicQr})`,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
+                                    <FlexColumn className='w-full tablet:w-1/2 tabletWide:w-2/5 laptopSm:w-1/3 aspect-square items-center justify-center bg-white bg-opacity-75'>
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Scan QR Code now to get BOUNS credits for tutorials and other programs.
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <Text className='italic font-serif w-64 tablet:w-72'>
+                                            Or visit this page to fill up the form.
+                                        </Text>
+                                        <Spacer className='h-10 w-10' />
+                                        <ButtonClassA className="border border-2 border-grey-100 phone:bg-transparent hover:bg-grey-100 text-dark-100 hover:text-white phone:py-2 phone:px-4 my-8 block phone:mx-auto" onClick={() => magicRedirect()}>
+                                            CLICK HERE
+                                        </ButtonClassA>
+                                    </FlexColumn>
                                 </FlexRow>
                             </Div>
                         </Div>

@@ -21,6 +21,7 @@ export const RedirectionURL = {
     githubUrl: "https://github.com/chuacharlesbon",
     linkedInUrl: "https://www.linkedin.com/in/charles-chua-12116122a/",
     tempUrl: "https://portfolio-chua-c.vercel.app/home",
+    magicUrl: "https://myqrcode.mobi/a3da6cf0"
 }
 
 export const MenuList = [
