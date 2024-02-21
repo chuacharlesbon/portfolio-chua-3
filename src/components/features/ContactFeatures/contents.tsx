@@ -20,17 +20,22 @@ export const ContactContents: FC<any> = () => {
     const [isToastOpenError, setToastOpenError] = React.useState(false);
 
     const onSubmit = async () => {
-        /* axios({
+        axios({
             method: 'POST',
-            url: 'https://nomadic-autumn-404208.uc.r.appspot.com/messages',
+            url: 'https://cmt-server-1.vercel.app/api/s1/message',
             data: {
-                content: `${name.toUpperCase()}: ${message}`,
-                receiver: "Admin",
-                sender: email
+                referrer: "https://portfolio-chua-c.vercel.app",
+                senderName: name,
+                email: email,
+                message: message,
+                fromApp: "Portfolio 2024 Website"
             },
-            headers: { 'Content-Type': 'multipart/form-data' },
-        }) */
-        axios.post(
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: 'Bearer '
+            },
+        })
+        /* axios.post(
             'https://cmt-server-1.vercel.app/api/s1/message',
             {
                 referrer: "https://portfolio-chua-c.vercel.app",
@@ -39,7 +44,7 @@ export const ContactContents: FC<any> = () => {
                 message: message,
                 fromApp: "Portfolio 2024 Website"
             },
-        )
+        ) */
         /* await fetch('https://cmt-server-1.vercel.app/api/s1/message', {
 			method: 'POST',
 			headers: {
