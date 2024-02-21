@@ -20,6 +20,7 @@ export const RedirectionURL = {
     gitlabUrl: "https://gitlab.com/chuacharlesbon",
     githubUrl: "https://github.com/chuacharlesbon",
     linkedInUrl: "https://www.linkedin.com/in/charles-chua-12116122a/",
+    tempUrl: "https://portfolio-chua-c.vercel.app/home",
 }
 
 export const MenuList = [

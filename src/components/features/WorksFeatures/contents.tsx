@@ -168,7 +168,7 @@ export const WorksContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.worksXfil})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -176,7 +176,7 @@ export const WorksContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
                                                 <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
-                                                    Xffiliate
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     October 2022
@@ -207,7 +207,7 @@ export const WorksContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.worksGPA})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -215,7 +215,7 @@ export const WorksContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
                                                 <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
-                                                    Guam Power Authority
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     2022
@@ -351,7 +351,7 @@ export const WorksContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.worksCebuana})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -359,7 +359,7 @@ export const WorksContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
                                                 <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
-                                                    Cebuana Lhuillier
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     November 2023
@@ -390,7 +390,7 @@ export const WorksContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.tmbpCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -398,7 +398,7 @@ export const WorksContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
                                                 <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
-                                                    Timberland Bike Park
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     December 2023
@@ -429,7 +429,7 @@ export const WorksContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.worksAlajeras})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -437,7 +437,7 @@ export const WorksContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
                                                 <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
-                                                    Alajeras
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     December 2023
@@ -468,7 +468,7 @@ export const WorksContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.okadaCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -476,7 +476,7 @@ export const WorksContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 tabletWide:h-4 laptop:h-8' />
                                                 <Text className='text-dark-100 font-bold laptopSm:text-lg desktop:text-xl'>
-                                                    Okada App
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
                                                     2024

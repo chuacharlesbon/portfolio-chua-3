@@ -24,7 +24,7 @@ export const HomeContents: FC<any> = () => {
     const [isZuittVisible, setZuitt] = React.useState(false);
     const [isNewsVisible, setNews] = React.useState(false);
 
-    const {user, setUser} = React.useContext(UserContext);
+    const { user, setUser } = React.useContext(UserContext);
     console.log(user);
     React.useEffect(() => {
         setUser("Home content");
@@ -48,9 +48,9 @@ export const HomeContents: FC<any> = () => {
                     onClose={() => setToastOpen(false)}
                     isOpen={isToastOpen}
                 >
-                    <CertificateSlider/>
+                    <CertificateSlider />
                 </ToastDialogInfo>
-                
+
                 {/* /////////////////////// */}
                 {/* Work Section 1          */}
                 {/* /////////////////////// */}
@@ -677,7 +677,7 @@ export const HomeContents: FC<any> = () => {
                                     <Div className='w-full mx-auto grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4 gap-4 tablet:gap-8 items-center justify-center'>
                                         <a
                                             className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
-                                            href={RedirectionURL.okadaUrl}
+                                            href={RedirectionURL.tempUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -685,7 +685,7 @@ export const HomeContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full h-3/4 bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.okadaCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -694,7 +694,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
-                                                    Okada Mobile App is now on App Store & Google Play
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
                                                     2024
@@ -703,7 +703,7 @@ export const HomeContents: FC<any> = () => {
                                         </a>
                                         <a
                                             className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
-                                            href={RedirectionURL.tmbpUrl}
+                                            href={RedirectionURL.tempUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -711,7 +711,7 @@ export const HomeContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full h-3/4 bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.tmbpCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -720,7 +720,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
-                                                    Timberland Bike Park App now on App Store & Google Play
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
                                                     December 2023
@@ -729,7 +729,7 @@ export const HomeContents: FC<any> = () => {
                                         </a>
                                         <a
                                             className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
-                                            href={RedirectionURL.cljUrl}
+                                            href={RedirectionURL.tempUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -737,7 +737,7 @@ export const HomeContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full h-3/4 bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.cljCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -746,7 +746,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
-                                                    Cebuana Lhuillier Jewelry released their new website
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
                                                     November 2023
@@ -755,7 +755,7 @@ export const HomeContents: FC<any> = () => {
                                         </a>
                                         <a
                                             className='block duration-700 p-6 phone:w-full aspect-[3/2] rounded-lg shadow-md bg-white hover:bg-grey-400 hover:shadow-lg phone:my-4 tabletWide:my-0'
-                                            href={RedirectionURL.xfilUrl}
+                                            href={RedirectionURL.tempUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -763,7 +763,7 @@ export const HomeContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full h-3/4 bg-grey-400 border border-grey-500'
                                                     style={{
-                                                        backgroundImage: `url(${Images.xfilCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -772,7 +772,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
-                                                    Try Affiliate Marketing seamlessly with Xffiliate!
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
                                                     October 2022
@@ -786,7 +786,7 @@ export const HomeContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full h-3/5 bg-grey-400'
                                                     style={{
-                                                        backgroundImage: `url(${Images.tmbpCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -795,7 +795,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
-                                                    Timberland Bike Park App now on App Store & Google Play
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
                                                     December 2023
@@ -807,7 +807,7 @@ export const HomeContents: FC<any> = () => {
                                                 <Div
                                                     className='w-full aspect-[2/1] bg-grey-400'
                                                     style={{
-                                                        backgroundImage: `url(${Images.cljCover})`,
+                                                        backgroundImage: `url(${Images.privacy})`,
                                                         backgroundSize: 'cover',
                                                         backgroundPosition: 'center',
                                                     }}
@@ -816,7 +816,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
-                                                    Cebuana Lhuillier released their new website
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
                                                     November 2023
@@ -837,7 +837,7 @@ export const HomeContents: FC<any> = () => {
                                                 </Div>
                                                 <Spacer className='w-2 h-2 ' />
                                                 <Text className='text-dark-100 font-bold'>
-                                                    Try Affiliate Marketing seamlessly with Xffiliate!
+                                                    Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
                                                     October 2022
@@ -855,11 +855,11 @@ export const HomeContents: FC<any> = () => {
 
                 <Div className='px-4 mx-auto text-center w-full bg-grey-600'>
                     <iframe
-                    src={`https://www.youtube.com/embed/0v-NODONCLU`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Embedded youtube"
-                    className="mx-auto text-center w-full aspect-[3/2] tablet:w-400px laptop:w-500px"
+                        src={`https://www.youtube.com/embed/0v-NODONCLU`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Embedded youtube"
+                        className="mx-auto text-center w-full aspect-[3/2] tablet:w-400px laptop:w-500px"
                     />
                 </Div>
 

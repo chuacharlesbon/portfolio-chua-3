@@ -76,6 +76,7 @@ export const Images = {
     angular: "assets/angular.png",
     worksAngular: "assets/works-angular.png",
     bgScroll: "assets/bg-scroll.png",
+    privacy: "assets/privacy.png",
 }
 
 export const ImageUrl = {
