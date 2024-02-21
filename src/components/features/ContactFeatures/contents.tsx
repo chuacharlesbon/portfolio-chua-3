@@ -22,7 +22,7 @@ export const ContactContents: FC<any> = () => {
     const onSubmit = async () => {
         axios({
             method: 'POST',
-            url: 'http://localhost:3000/api/message',
+            url: 'https://portfolio-chua-c.vercel.app/api/message',
             data: {
                 referrer: "https://portfolio-chua-c.vercel.app",
                 senderName: name,
