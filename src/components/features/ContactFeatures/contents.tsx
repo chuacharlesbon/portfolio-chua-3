@@ -30,7 +30,7 @@ export const ContactContents: FC<any> = () => {
             },
             headers: { 'Content-Type': 'multipart/form-data' },
         }) */
-        /* axios.post(
+        axios.post(
             'https://cmt-server-1.vercel.app/api/s1/message',
             {
                 referrer: "https://portfolio-chua-c.vercel.app",
@@ -39,12 +39,11 @@ export const ContactContents: FC<any> = () => {
                 message: message,
                 fromApp: "Portfolio 2024 Website"
             },
-        ) */
-        await fetch('/api/s1/message', {
+        )
+        /* await fetch('https://cmt-server-1.vercel.app/api/s1/message', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
-				Authorization: `Bearer ${localStorage.getItem("token")}`
 			},
 			body: JSON.stringify({
 				referrer: "https://portfolio-chua-c.vercel.app",
@@ -53,7 +52,7 @@ export const ContactContents: FC<any> = () => {
                 message: message,
                 fromApp: "Portfolio 2024 Website"
 			})
-		})
+		}) */
             .then((response) => {
                 setName('');
                 setEmail('');
