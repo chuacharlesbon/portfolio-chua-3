@@ -60,7 +60,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.portfolio2024}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -104,7 +104,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.fileShare}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -253,7 +253,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.shopNetwork}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -297,7 +297,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.rpg}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -524,7 +524,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.captivePortal}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -778,7 +778,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.cmtInst}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -821,7 +821,7 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'>
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -888,7 +888,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.sceenry}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -899,7 +899,7 @@ export const WorksContents: FC<any> = () => {
                                                     style={{
                                                         backgroundImage: `url(${Images.worksAngular})`,
                                                         backgroundSize: 'cover',
-                                                        backgroundPosition: 'center',
+                                                        backgroundPosition: 'left',
                                                     }}
                                                 >
                                                 </Div>
@@ -932,7 +932,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.testAng}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -1003,7 +1003,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.portfolio2022}
                                             target="_blank"
                                             rel="noopener noreferrer"
@@ -1047,7 +1047,7 @@ export const WorksContents: FC<any> = () => {
                                         }}
                                     >
                                         <a
-                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4 block'
                                             href={projectsUrl.testApps}
                                             target="_blank"
                                             rel="noopener noreferrer"
