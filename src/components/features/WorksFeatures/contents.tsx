@@ -8,6 +8,7 @@ import { InView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { GoDotFill } from "react-icons/go";
 import { ImSpinner } from 'react-icons/im';
+import { projectsUrl } from '@/constants/constants';
 
 export const WorksContents: FC<any> = () => {
 
@@ -58,7 +59,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.portfolio2024}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -80,7 +86,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                     <motion.div
                                         animate={{
@@ -97,7 +103,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.fileShare}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -119,7 +130,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                 </Div>
                             </Div>
@@ -179,7 +190,7 @@ export const WorksContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
-                                                    October 2022
+                                                    October 2022 (Corporate)
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
                                                     <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
@@ -218,7 +229,7 @@ export const WorksContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
-                                                    2022
+                                                    2022 (Corporate)
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
                                                     <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
@@ -241,7 +252,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.shopNetwork}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -263,7 +279,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                     <motion.div
                                         animate={{
@@ -280,7 +296,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.rpg}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -302,7 +323,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                 </Div>
                             </Div>
@@ -362,7 +383,7 @@ export const WorksContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
-                                                    November 2023
+                                                    November 2023 (Corporate)
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
                                                     <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
@@ -401,7 +422,7 @@ export const WorksContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
-                                                    December 2023
+                                                    December 2023 (Corporate)
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
                                                     <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
@@ -440,7 +461,7 @@ export const WorksContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
-                                                    December 2023
+                                                    December 2023 (Corporate)
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
                                                     <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
@@ -479,7 +500,7 @@ export const WorksContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base  font-light'>
-                                                    2024
+                                                    2024 (Corporate)
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptopSm:text-sm desktop:text-base font-light flex flex-row items-center'>
                                                     <GoDotFill className="mr-2 text-blueGreen-100" />LIVE
@@ -502,7 +523,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='mx-auto duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.captivePortal}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -524,7 +550,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Prototype
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                 </Div>
                             </Div>
@@ -751,7 +777,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.cmtInst}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -773,7 +804,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                     <motion.div
                                         animate={{
@@ -856,7 +887,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.sceenry}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -878,7 +914,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project (On-going)
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                     <motion.div
                                         animate={{
@@ -895,7 +931,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.testAng}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -917,7 +958,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                 </Div>
                             </Div>
@@ -961,7 +1002,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.portfolio2022}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -983,7 +1029,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                     <motion.div
                                         animate={{
@@ -1000,7 +1046,12 @@ export const WorksContents: FC<any> = () => {
                                             y: +50, // Start the element off the top of the screen
                                         }}
                                     >
-                                        <Div className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'>
+                                        <a
+                                            className='duration-700 p-6 aspect-square tabletWide:aspect-[5/4] shadow-md bg-white hover:shadow-lg hover:p-4'
+                                            href={projectsUrl.testApps}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
                                             <Div className='w-full aspect-square tabletWide:aspect-[5/4]'>
                                                 <Div
                                                     className='w-full aspect-[3/2] bg-grey-400 border border-grey-500'
@@ -1022,7 +1073,7 @@ export const WorksContents: FC<any> = () => {
                                                     <GoDotFill className="mr-2 text-yellow-100" />Sample Project
                                                 </Text>
                                             </Div>
-                                        </Div>
+                                        </a>
                                     </motion.div>
                                 </Div>
                             </Div>

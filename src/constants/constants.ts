@@ -24,6 +24,19 @@ export const RedirectionURL = {
     magicUrl: "https://myqrcode.mobi/a3da6cf0"
 }
 
+export const projectsUrl = {
+  portfolio2024: "https://portfolio-chua-c.vercel.app/",
+  portfolio2022: "https://chuacharlesbon.github.io/portfolio-chua/",
+  fileShare: "https://file-share-rust.vercel.app/",
+  captivePortal: "https://captive-portal-tekqore.vercel.app/",
+  shopNetwork: "https://react-shopnetwork-chua.vercel.app/",
+  rpg: "https://rpg-inc-ph.vercel.app/",
+  cmtInst: "https://webapplication120240130141357.azurewebsites.net/Home/LoginAdmin",
+  sceenry: "https://sceenry-itinerary.vercel.app/",
+  testAng: "https://my-angular-app-iota.vercel.app/",
+  testApps: "https://chuacharlesbon.github.io/portfolio-chua/appshome.html",
+}
+
 export const MenuList = [
     {
       name: 'USER 1',

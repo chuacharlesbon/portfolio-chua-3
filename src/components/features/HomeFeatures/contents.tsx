@@ -697,7 +697,7 @@ export const HomeContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    2024
+                                                    2024 (Corporate)
                                                 </Text>
                                             </Div>
                                         </a>
@@ -723,7 +723,7 @@ export const HomeContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    December 2023
+                                                    December 2023 (Corporate)
                                                 </Text>
                                             </Div>
                                         </a>
@@ -749,7 +749,7 @@ export const HomeContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    November 2023
+                                                    November 2023 (Corporate)
                                                 </Text>
                                             </Div>
                                         </a>
@@ -775,7 +775,7 @@ export const HomeContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    October 2022
+                                                    October 2022 (Corporate)
                                                 </Text>
                                             </Div>
                                         </a>
@@ -798,7 +798,7 @@ export const HomeContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    December 2023
+                                                    December 2023 (Corporate)
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -819,7 +819,7 @@ export const HomeContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    November 2023
+                                                    November 2023 (Corporate)
                                                 </Text>
                                             </Div>
                                         </Div>
@@ -840,7 +840,7 @@ export const HomeContents: FC<any> = () => {
                                                     Temporary Hidden due to Privacy Data Policy Security
                                                 </Text>
                                                 <Text className='text-dark-100 text-xs laptop:text-sm font-light'>
-                                                    October 2022
+                                                    October 2022 (Corporate)
                                                 </Text>
                                             </Div>
                                         </Div>
