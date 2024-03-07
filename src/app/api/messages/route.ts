@@ -7,6 +7,10 @@ type ResponseData = {
     message: string
 }
 
+export const GET = async () => {
+    return NextResponse.json({ message: "Server is up!" });
+}
+
 export const POST = async (
     req: NextRequest,
     res: NextResponse<ResponseData>
@@ -31,8 +35,4 @@ export const POST = async (
     } catch (error) {
         return NextResponse.json({ message: "Something went wrong. Please try again later." });
     }
-}
-
-export const GET = async () => {
-    return NextResponse.json({ message: "Server is up!" });
 }
