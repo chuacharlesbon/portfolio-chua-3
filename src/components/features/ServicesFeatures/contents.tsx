@@ -2,10 +2,11 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { Div, FlexColumn, FlexRow, Spacer, TextDivider } from "@/components/core/Containers";
 import { ButtonClassA } from '@/components/core/Forms/Buttons';
-import { Text } from "@/components/core/TextElements";
+import { Span, Text } from "@/components/core/TextElements";
 import { Images } from "@/constants/assets";
 import { useRouter } from 'next/router';
 import { RedirectionURL, RouteNames } from '@/constants/constants';
+import { FaCheck } from 'react-icons/fa6';
 
 export const ServicesContents: FC<any> = () => {
 
@@ -16,12 +17,151 @@ export const ServicesContents: FC<any> = () => {
             <Div className='phone:w-full tablet:w-10/12 mx-auto p-4'>
 
                 <Spacer className='w-20 h-20 hidden laptop:block' />
-                <div id='services-content-consult' />
-                <Spacer className='w-10 h-10 laptop:h-20' />
+
+                {/* ///////////////////////////  */}
+                {/* Development Packages Section */}
+                {/* ///////////////////////////  */}
+                <div id='services-content-packages' />
+                <Spacer className='w-10 h-10' />
+
+                {/* <TextDivider
+                    className='bg-grey-100'
+                    textType='center'
+                    textElement={
+                        <Text className='w-1/3 text-3xl text-dark-100 text-center font-serif uppercase'>
+                            Programming Consultant
+                        </Text>
+                    }
+                /> */}
+                <Text className="text-dark-100 text-2xl laptop:text-3xl desktop:text-4xl text-center font-semibold">
+                    Plans and Packages
+                </Text>
+
+                <Spacer className='w-12 h-12' />
+                <FlexRow className='w-full items-center phone:flex-col tabletWide:flex-row phone:justify-start tabletWide:justify-around tabletWide:items-start'>
+                    <FlexColumn className='p-4 phone:w-full tabletWide:w-30p tabletWide:h-700px laptop:h-600px desktop:h-500px shadow-lg rounded-xl border border-white hover:border-grey-400 hover:shadow-2xl duration-700 justify-between'>
+                        <Div>
+                            <Text className='font-bold text-3xl'>
+                                Basic
+                                <Span className='block text-sm mx-1'>starts at ₱ 10,000.00</Span>
+                                <Span className='block text-secondary-200 text-sm mx-1 font-normal'>{"(Development fee)"}</Span>
+                            </Text>
+                            <Spacer className='w-5 h-5' />
+                            <Text className='text-sm'>Perfect for: Startups, small businesses, or individuals needing a simple online presence quickly and affordably.</Text>
+                            <Spacer className='w-full h-5 mb-5 border-b border-grey-400' />
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>With website and admin dashboard management</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>via Wix / Shopify</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Basic SEO setup (title tags, meta descriptions).</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Domain name not included</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>from ₱ 1,250.00 / month {"(Maintenance Fee after launch)"}</Text>
+                            </FlexRow>
+                            <Spacer className='w-full h-5 mb-5 border-b border-grey-400' />
+                            <Text className='text-sm'>Price may vary for one-time development or long-term support</Text>    
+                        </Div>
+                        <ButtonClassA className="border border-2 border-grey-100 phone:bg-transparent hover:bg-grey-100 text-dark-100 hover:text-white phone:py-2 phone:px-4 mt-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => router.push(`/${RouteNames.contact}`)}>
+                            Learn More
+                        </ButtonClassA>
+                    </FlexColumn>
+                    <FlexColumn className='p-4 phone:w-full tabletWide:w-30p tabletWide:h-700px laptop:h-600px desktop:h-500px shadow-lg rounded-xl border border-white hover:border-grey-400 hover:shadow-2xl duration-700 justify-between'>
+                        <Div>
+                            <Text className='font-bold text-3xl'>
+                                Custom
+                                <Span className='block text-sm mx-1'>starts at ₱ 50,000.00</Span>
+                                <Span className='block text-secondary-200 text-sm mx-1 font-normal'>{"(Development fee)"}</Span>
+                            </Text>
+                            <Spacer className='w-5 h-5' />
+                            <Text className='text-sm'>Perfect for: Businesses requiring a unique and scalable web solution tailored to their specific needs.</Text>
+                            <Spacer className='w-full h-5 mb-5 border-b border-grey-400' />
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>With website and admin dashboard management</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>A fully custom-built website using modern frameworks</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Advanced SEO optimization.</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Google / Firebase / AWS for hosting</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>from ₱ 2,500.00 / month {"(Maintenance Fee after launch)"}</Text>
+                            </FlexRow>
+                            <Spacer className='w-full h-5 mb-5 border-b border-grey-400' />
+                            <Text className='text-sm'>Price may vary for one-time development or long-term support</Text>
+                        </Div>
+                        <ButtonClassA className="border border-2 border-grey-100 phone:bg-transparent hover:bg-grey-100 text-dark-100 hover:text-white phone:py-2 phone:px-4 mt-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => router.push(`/${RouteNames.contact}`)}>
+                            Learn More
+                        </ButtonClassA>
+                    </FlexColumn>
+                    <FlexColumn className='p-4 phone:w-full tabletWide:w-30p tabletWide:h-700px laptop:h-600px desktop:h-500px shadow-lg rounded-xl border border-white hover:border-grey-400 hover:shadow-2xl duration-700 justify-between'>
+                        <Div>
+                            <Text className='font-bold text-3xl'>
+                                Enterprise
+                                <Span className='block text-sm mx-1'>{"Set an appointment"}</Span>
+                                <Span className='block text-secondary-200 text-sm mx-1 font-normal'>{"(Development fee)"}</Span>
+                            </Text>
+                            <Spacer className='w-5 h-5' />
+                            <Text className='text-sm'>Perfect for: Businesses requiring a unique and scalable web solution tailored to their specific needs.</Text>
+                            <Spacer className='w-full h-5 mb-5 border-b border-grey-400' />
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Everything included in the Custom Plan, plus:</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Dedicated project manager.</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2 hidden'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Custom API development and integrations.</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Scalable architecture to handle high traffic and data volumes.</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Priority support and maintenance.</Text>
+                            </FlexRow>
+                            <FlexRow className='justify-start items-center my-2'>
+                                <FaCheck className='block text-sm text-green-100 mr-4' />
+                                <Text className='text-sm'>Advanced security measures and compliance.</Text>
+                            </FlexRow>
+                            <Spacer className='w-full h-5 mb-5 border-b border-grey-400' />
+                            <Text className='text-sm'>Price may vary for one-time development or long-term support</Text>
+                        </Div>
+                        <ButtonClassA className="border border-2 border-grey-100 phone:bg-transparent hover:bg-grey-100 text-dark-100 hover:text-white phone:py-2 phone:px-4 mt-8 block phone:mx-auto tablet:mr-auto tablet:ml-0" onClick={() => router.push(`/${RouteNames.contact}`)}>
+                            Learn More
+                        </ButtonClassA>
+                    </FlexColumn>
+                </FlexRow>
+                
 
                 {/* /////////////////////////// */}
                 {/* Consultant Section         */}
                 {/* /////////////////////////// */}
+                <div id='services-content-consult' />
+                <Spacer className='w-10 h-10 laptop:h-20' />
 
                 {/* <TextDivider
                     className='bg-grey-100'
