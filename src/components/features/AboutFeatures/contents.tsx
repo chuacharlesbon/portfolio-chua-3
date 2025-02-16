@@ -74,6 +74,67 @@ export const AboutContents: FC<any> = () => {
                                 >
                                     <Div className='py-4 w-full tablet:hidden'>
                                         <Div
+                                            className='w-32 h-5 mx-auto'
+                                            style={{
+                                                backgroundImage: `url(${Images.prosperna})`,
+                                                backgroundSize: 'contain',
+                                                backgroundRepeat: 'no-repeat',
+                                                backgroundPosition: 'center',
+                                            }}
+                                        />
+                                    </Div>
+                                    <FlexRow className='w-full items-center justify-between'>
+                                        <Div className='phone:hidden tablet:block w-1/5'>
+                                            <Div
+                                                className='w-32 h-5 mx-auto'
+                                                style={{
+                                                    backgroundImage: `url(${Images.prosperna})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundRepeat: 'no-repeat',
+                                                    backgroundPosition: 'center',
+                                                }} />
+                                        </Div>
+                                        <Div className='phone:w-full tablet:w-4/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Prosperna Philippines, Inc.
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Full Stack Web/Mobile Developer
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Since January 2024
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
+                                            <Text className='text-secondary-200'>
+                                                &#8226; Responsible for developing and maintaining enterprise projects for ecommerce, booking and management systems.
+                                            </Text>
+                                            <Text className='text-secondary-200 hidden'>
+                                                &#8226; Developer websites and mobile apps using React.js & Flutter.
+                                            </Text>
+                                            <Text className='text-secondary-200 hidden'>
+                                                &#8226; Setup Firebase, GCP, App Store
+                                            </Text>
+                                        </Div>
+                                    </FlexRow>
+                                </motion.div>
+                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                <motion.div
+                                    animate={{
+                                        opacity: 1,
+                                        y: 0, // Reset the y position to avoid jumping
+                                    }}
+                                    transition={{
+                                        delay: 0.75,
+                                        duration: 0.5,
+                                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                    }}
+                                    initial={{
+                                        opacity: 0,
+                                        y: +50, // Start the element off the top of the screen
+                                    }}
+                                >
+                                    <Div className='py-4 w-full tablet:hidden'>
+                                        <Div
                                             className='w-12 h-12 laptop:w-16 laptop:h-16 desktop:w-20 desktop:h-20 mx-auto'
                                             style={{
                                                 backgroundImage: `url(${Images.xtendlyLogo})`,
@@ -189,7 +250,7 @@ export const AboutContents: FC<any> = () => {
                                     }}
                                 >
                                     <FlexRow className='w-full items-center justify-center'>
-                                        <Link className="mx-auto text-white text-center p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100 duration-700" href="/assets/docs/resume-chua-ms-word-2024.docx" download target="_blank">
+                                        <Link className="mx-auto text-white text-center p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100 duration-700" href="/assets/docs/curriculum-vitae-2025.pdf" download target="_blank">
                                             Download Resume
                                         </Link>
                                     </FlexRow>

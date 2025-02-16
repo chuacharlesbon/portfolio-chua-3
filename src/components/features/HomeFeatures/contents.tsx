@@ -19,6 +19,7 @@ import { CertificateSlider } from '../AboutFeatures/certificate_toast';
 export const HomeContents: FC<any> = () => {
 
     const [myState, setState] = React.useState('');
+    const [isProspernaVisible, setProsperna] = React.useState(false);
     const [isXtendlyVisible, setXtendly] = React.useState(false);
     const [isVontosVisible, setVontos] = React.useState(false);
     const [isZuittVisible, setZuitt] = React.useState(false);
@@ -50,6 +51,149 @@ export const HomeContents: FC<any> = () => {
                 >
                     <CertificateSlider />
                 </ToastDialogInfo>
+
+                {/* /////////////////////// */}
+                {/* Work Section 0          */}
+                {/* /////////////////////// */}
+                <Spacer className='w-20 h-20 hidden laptop:block' />
+                <Spacer className='w-10 h-10' />
+                <Text className="text-dark-100 text-2xl laptop:text-3xl desktop:text-4xl text-center font-semibold">
+                    Software Developer | Prosperna
+                </Text>
+                <Spacer className='w-10 h-10' />
+                <InView as="div" onChange={(inView, entry) => {
+                    if (!isProspernaVisible) {
+                        setTimeout(() => {
+                            setProsperna(inView);
+                        }, 500);
+                    }
+                }}>
+                    {
+                        isProspernaVisible
+                            ? <Div className='py-12 rounded-md shadow-lg bg-white'>
+                                <motion.div
+                                    animate={{
+                                        opacity: 1,
+                                        y: 0, // Reset the y position to avoid jumping
+                                    }}
+                                    transition={{
+                                        delay: 0.75,
+                                        duration: 0.5,
+                                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                    }}
+                                    initial={{
+                                        opacity: 0,
+                                        y: +50, // Start the element off the top of the screen
+                                    }}
+                                >
+                                    <FlexRow className='w-full text-base phone:flex-col tabletWide:flex-row items-center phone:justify-center tabletWide:justify-around'>
+                                        <Div className='phone:w-full tabletWide:w-1/4'>
+                                            <Div
+                                                className='w-60 h-10 mx-auto'
+                                                style={{
+                                                    backgroundImage: `url(${Images.prosperna})`,
+                                                    backgroundSize: 'contain',
+                                                    backgroundRepeat: 'no-repeat',
+                                                    backgroundPosition: 'center',
+                                                }} />
+                                        </Div>
+                                        <Div className='phone:w-full tabletWide:w-3/5 p-4'>
+                                            <Text className='text-secondary-200 font-semibold'>
+                                                Prosperna Philippines Inc.
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Software Developer
+                                            </Text>
+                                            <Text className='text-secondary-200 text-xs'>
+                                                Since January 2024
+                                            </Text>
+                                            <Spacer className='w-4 h-4' />
+                                            <Text className='text-secondary-200 laptop:text-lg desktop:text-xl'>
+                                                Responsible for developing and maintaining enterprise projects for ecommerce, booking and management systems.
+                                            </Text>
+                                            <Spacer className='w-2 h-2 hidden' />
+                                            <Text className='text-secondary-200 laptop:text-lg desktop:text-xl hidden'>
+                                                Work independently or as part of a team, able to provide low-level technical documentations
+                                            </Text>
+                                        </Div>
+                                    </FlexRow>
+                                </motion.div>
+
+                                <motion.div
+                                    animate={{
+                                        opacity: 1,
+                                        y: 0, // Reset the y position to avoid jumping
+                                    }}
+                                    transition={{
+                                        delay: 1.25,
+                                        duration: 0.5,
+                                        ease: [0.4, 0.08, 0.23, 0.96], // Ease-in-out animation
+                                    }}
+                                    initial={{
+                                        opacity: 0,
+                                        y: +50, // Start the element off the top of the screen
+                                    }}
+                                >
+                                    <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                    <Text className='text-blue-100 text-center font-semibold'>
+                                        Tools, Skills and Tech Stack
+                                    </Text>
+                                    <Spacer className='w-4 h-4' />
+                                    <Div className='mx-auto text-center grid grid-cols-2 tablet:w-1/2 tablet:grid-cols-4 laptop:w-3/5 gap-4 items-center justify-center'>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.react}
+                                                alt="Next.js"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                                React.js
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.flutter}
+                                                alt="Flutter"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                                Flutter
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.node}
+                                                alt="Node.js"
+                                                className='mx-auto text-center rounded-md'
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                                Node.js
+                                            </Text>
+                                        </FlexColumn>
+                                        <FlexColumn className='duration-700 w-20 h-20 aspect-square items-center justify-center hover:bg-blue-100 hover:bg-opacity-25 rounded-md mx-auto'>
+                                            <Image
+                                                src={Icons.php}
+                                                alt="Javascript"
+                                                className='mx-auto text-center rounded-md'
+                                                width={36}
+                                                height={36}
+                                            />
+                                            <Text className='text-secondary-200 text-xs laptop:text-sm font-light'>
+                                                PHP
+                                            </Text>
+                                        </FlexColumn>
+                                    </Div>
+                                </motion.div>
+                            </Div>
+                            : <ImSpinner className="animate-spin my-16 text-grey-400 text-4xl text-center mx-auto" />
+                    }
+                </InView>
 
                 {/* /////////////////////// */}
                 {/* Work Section 1          */}
@@ -447,6 +591,10 @@ export const HomeContents: FC<any> = () => {
                                             </Text>
                                             <Spacer className='w-4 h-4' />
                                             <Text className='text-secondary-200'>
+                                                Zuitt Japanese Language N5 Program (May 2024)
+                                            </Text>
+                                            <Spacer className='w-2 h-2' />
+                                            <Text className='text-secondary-200'>
                                                 Front-End Web Development with HTML5, CSS3, BootStrap 4 (March 2022)
                                             </Text>
                                             <Spacer className='w-2 h-2' />
@@ -608,7 +756,7 @@ export const HomeContents: FC<any> = () => {
                                     }}
                                 >
                                     <FlexRow className='w-full items-center justify-center'>
-                                        <Link className="mx-auto text-white text-center p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100 duration-700" href="/assets/docs/resume-chua-ms-word-2024.docx" download target="_blank">
+                                        <Link className="mx-auto text-white text-center p-2 rounded-md bg-blue-300 font-bold hover:bg-blue-100 duration-700" href="/assets/docs/curriculum-vitae-2025.pdf" download target="_blank">
                                             Download Resume
                                         </Link>
                                     </FlexRow>
