@@ -33,7 +33,7 @@ export const ServicesContents: FC<any> = () => {
                         </Text>
                     }
                 /> */}
-                <Text className="text-dark-100 text-2xl laptop:text-3xl desktop:text-4xl text-center font-semibold">
+                {/* <Text className="text-dark-100 text-2xl laptop:text-3xl desktop:text-4xl text-center font-semibold">
                     Plans and Packages
                 </Text>
 
@@ -154,7 +154,7 @@ export const ServicesContents: FC<any> = () => {
                             Learn More
                         </ButtonClassA>
                     </FlexColumn>
-                </FlexRow>
+                </FlexRow> */}
                 
 
                 {/* /////////////////////////// */}
