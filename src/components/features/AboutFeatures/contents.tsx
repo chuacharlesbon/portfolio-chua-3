@@ -178,7 +178,7 @@ export const AboutContents: FC<any> = () => {
                                     </FlexRow>
                                 </motion.div>
                                 <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
-                                <motion.div
+                                {/* <motion.div
                                     animate={{
                                         opacity: 1,
                                         y: 0, // Reset the y position to avoid jumping
@@ -233,7 +233,7 @@ export const AboutContents: FC<any> = () => {
                                         </Div>
                                     </FlexRow>
                                 </motion.div>
-                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' />
+                                <Spacer className='w-4 h-4 laptop:h-6 desktop:h-8' /> */}
                                 <motion.div
                                     animate={{
                                         opacity: 1,

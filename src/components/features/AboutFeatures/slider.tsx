@@ -37,7 +37,7 @@ export const AboutSlider: FC<any> = () => {
                 removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
             >
                 <Div className='w-full h-500px' style={{
-                    backgroundImage: `url(${Images.xtendly2})`,
+                    backgroundImage: `url("N/A")`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'right',
                 }}>

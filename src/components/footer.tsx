@@ -54,7 +54,7 @@ export const Footer: FC<DataProps> = ({ isDarkTheme }) => (
                         </Link>
                     </FlexRow>
                     <FlexRow className='items-center justify-around phone:w-full tablet:w-auto'>
-                        <Link className="text-center phone:w-1/2 tablet:w-auto" href="https://www.vontos.co/" target='_blank'>
+                        <Link className="text-center phone:w-1/2 tablet:w-auto hidden" href="https://www.vontos.co/" target='_blank'>
                             <Image
                                 src={Images.vontos}
                                 alt="C Logo"

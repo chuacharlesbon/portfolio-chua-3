@@ -398,7 +398,7 @@ export const HomeContents: FC<any> = () => {
                 {/* /////////////////////// */}
                 {/* Work Section 1          */}
                 {/* /////////////////////// */}
-                <Spacer className='w-20 h-20 hidden laptop:block' />
+                {/* <Spacer className='w-20 h-20 hidden laptop:block' />
                 <Spacer className='w-10 h-10' />
                 <Text className="text-dark-100 text-2xl laptop:text-3xl desktop:text-4xl text-center font-semibold">
                     Development Consultant | Vontos
@@ -536,7 +536,7 @@ export const HomeContents: FC<any> = () => {
                             </Div>
                             : <ImSpinner className="animate-spin my-16 text-grey-400 text-4xl text-center mx-auto" />
                     }
-                </InView>
+                </InView> */}
 
                 <Spacer className='w-20 h-20 hidden laptop:block' />
                 <Spacer className='w-10 h-10' />
