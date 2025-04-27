@@ -124,6 +124,13 @@ export default function Home({ faAnalytics, ...otherProps} : {faAnalytics: any;}
                 });`,
                 }}
             />
+            <Script
+                type="text/javascript"
+                id="hs-script-loader"
+                async
+                defer
+                src="//js-na2.hs-scripts.com/242641079.js"
+            />
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white">
                 {
                     loading ? <LoadingElement /> : <Spacer />
